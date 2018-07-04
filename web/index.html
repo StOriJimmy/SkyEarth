@@ -29,10 +29,13 @@
 		<link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
 		<link href="css/responsive-calendar.css" rel="stylesheet" type="text/css">
 		<link href="css/chosen.css" rel="stylesheet" type="text/css">
-		<link href="jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />	
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-buttons.css?v=1.0.5" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-thumbs.css?v=1.0.7" />
 		<link href="css/cloud-zoom.css" rel="stylesheet" type="text/css" />
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
+	
 		
 		<!--[if IE 9]>
 			<link rel="stylesheet" href="css/ie9.css">
@@ -40,13 +43,8 @@
 		
 		<!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<link href="css/jackbox-ie8.css" rel="stylesheet" type="text/css" />
 			<link rel="stylesheet" href="css/ie.css">
         <![endif]-->
-		
-		<!--[if gt IE 8]>
-			<link href="css/jackbox-ie9.css" rel="stylesheet" type="text/css" />
-		<![endif]-->
 		
 		<!--[if IE 7]>
 			<link rel="stylesheet" href="css/fontello-ie7.css">
@@ -62,7 +60,10 @@
 		
 		<!-- Preloader -->
 		<script src="js/jquery.queryloader2.min.js"></script>
+		<script src="https://map.qq.com/api/js?v=2.exp"></script>
+
 		
+
 		<script type="text/javascript">
 		$('html').addClass('no-fouc');
 		
@@ -148,7 +149,7 @@
 					
 				</div>
 				<!-- /Main Header -->
-				
+
 				<!-- Lower Header -->
 				<div id="lower-header">
 					
@@ -245,130 +246,131 @@
 
 			<section id="content">
 			
-			<!-- Section -->
-			<section class="section full-width-bg">
+				<!-- Section -->
+				<section class="section full-width-bg">
 				
-				<div class="row">
+					<div class="row">
 				
-					<div class="col-lg-9 col-md-9 col-sm-8">
+						<div class="col-lg-9 col-md-9 col-sm-8">
 						
-						<!-- Main Slider -->
-						<div class="flexslider main-flexslider">
+							<!-- Main Slider -->
+							<div class="flexslider main-flexslider">
 							
-							<ul class="slides">
+								<ul class="slides">
 								
-								<li id="main_flex_1">
+									<li id="main_flex_1">
 									
 									<div class="slide align-right">
 										<h2><br><br><br></h2>
-										<a href="#" class="button big button-arrow">加入我们</a>
+										<a href="team/index.html" class="button big button-arrow">加入我们</a>
 									</div>
+										
+									</li>
 									
-								</li>
-								
-								<li id="main_flex_2">
+									<li id="main_flex_2">
 								
 									<div class="slide align-right">
 										<h2><br><br><br></h2>
-										<a href="#" class="button big button-arrow">更多新闻</a>
+										<a href="blog/index.html" class="button big button-arrow">更多新闻</a>
 									</div>
+										
+									</li>
 									
-								</li>
-								
-								<li id="main_flex_3">
+									<li id="main_flex_3">
 								
 									<div class="slide align-center">
 										<h2><br></h2>
 										<h4 class="great-vibes">地理成像  天地测图</h4>
 										<h2> </h2>
-										<a href="#" class="button big button-arrow">更多项目</a>
+										<a href="projects/index.html" class="button big button-arrow">更多项目</a>
 									</div>
+										
+									</li>
 									
-								</li>
+								</ul>
 								
-							</ul>
+							</div>	
+							<!-- /Main Slider -->
 							
-						</div>	
-						<!-- /Main Slider -->
-						
-					</div>
+						</div>					
 					
-					
-					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
-						
-						<div class="banner-wrapper">
-							<a class="banner" href="#">
-								<i class="icons icon-user"></i>
-								<h4>团队成员</h4>
-								<p>联系方式 | 加入我们</p>
-							</a>
-						</div>
-						
-						<div class="banner-wrapper">
-							<a class="banner" href="#">
-								<i class="icons icon-graduation-cap"></i>
-								<h4>科研成果</h4>
-								<p>论文著作 | 知识产权</p>
-							</a>
-						</div>
-						
-						<div class="banner-wrapper">
-							<a class="banner" href="#">
-								<i class="icons icon-book-open"></i>
-								<h4>科研项目</h4>
-								<p>研究方向 | 支撑项目</p>
-							</a>
-						</div>
-
-						<div class="banner-wrapper">
-							<a class="banner" href="#">
-								<i class="icons icon-photo-1"></i>
-								<h4>博客</h4>
-								<p>新闻 | 相册</p>
-							</a>
-						</div>
-						
-						<div class="social-media">
-							<span class="small-caption">Get connected:</span>
-							<ul class="social-icons">
-								<li class="researchgate"><a href="https://www.researchgate.net/profile/Yongjun_Zhang7" class="tooltip-ontop" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
-								<li class="googlescholar"><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN" class="tooltip-ontop" title="Google Scholar"><i class="icons icon-google"></i></a></li>
-								<li class="github"><a href="https://github.com/YongjunZhangWHU" class="tooltip-ontop" title="Github"><i class="icons icon-github-circled"></i></a></li>
-								<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
-							</ul>
-						</div>						
-					</div>
-				
-				</div>
-				
-			</section>
-			<!-- /Section -->
-			
-			
-			<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
-			
-			<!-- Section -->
-			<section class="section full-width-bg gray-bg">
-				
-				<div class="row">
-				
-					<div class="col-lg-9 col-md-9 col-sm-8">
-
-						<!-- Owl Carousel -->
-						<div class="owl-carousel-container">							
-							<div class="owl-header">								
-								<h3 class="animate-onscroll no-margin-top">科研项目</h3>
-								<div class="carousel-arrows animate-onscroll">
-									<span class="left-arrow"><i class="icons icon-left-dir"></i></span>
-									<span class="right-arrow"><i class="icons icon-right-dir"></i></span>
-								</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+							
+							<div class="banner-wrapper">
+								<a class="banner" href="#">
+									<i class="icons icon-user"></i>
+									<h4>团队成员</h4>
+									<p>联系方式 | 加入我们</p>
+								</a>
 							</div>
 							
-							<div class="owl-carousel" data-max-items="3">
+							<div class="banner-wrapper">
+								<a class="banner" href="#">
+									<i class="icons icon-graduation-cap"></i>
+									<h4>科研成果</h4>
+									<p>论文著作 | 知识产权</p>
+								</a>
+							</div>
+							
+							<div class="banner-wrapper">
+								<a class="banner" href="#">
+									<i class="icons icon-book-open"></i>
+									<h4>科研项目</h4>
+									<p>研究方向 | 支撑项目</p>
+								</a>
+							</div>
+	
+							<div class="banner-wrapper">
+								<a class="banner" href="#">
+									<i class="icons icon-photo-1"></i>
+									<h4>博客</h4>
+									<p>新闻 | 相册</p>
+								</a>
+							</div>
 
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
+							<!-- Featured Video -->
+							<div class="media-item" style="margin-top: 30px;">
+								<div class="media-image">
+									<video poster="img/team_video.jpg" width=100% onmouseover="controls=true" onmouseout="controls=false">
+  										<source src="img/team.mp4" type="video/mp4"></source>
+									</video>
+								</div>
+							</div>
+							<!-- /Featured Video -->
+
+						</div>
+					
+					</div>
+					
+				</section>
+				<!-- /Section -->				
+				
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+				
+				<!-- Section -->
+				<section class="section full-width-bg gray-bg">
+				
+					<div class="row">
+					
+						<div class="col-lg-9 col-md-9 col-sm-8">
+	
+							<!-- Owl Carousel -->
+							<div class="owl-carousel-container">
+
+								<div class="owl-header">
+
+									<h3 class="no-margin-top">科研项目</h3>
+									<div class="carousel-arrows">
+										<span class="left-arrow"><i class="icons icon-left-dir"></i></span>
+										<span class="right-arrow"><i class="icons icon-right-dir"></i></span>
+										<span><i class="icons icon-list" href="projects/index.html"></i></span>
+									</div>
+
+								</div>
+								
+								<div class="owl-carousel" data-max-items="3">
+	
+									<!-- Owl Item -->
 									<div class="blog-post animate-onscroll">
 										<div class="post-image">
 											<img src="projects/img/prj10_brief.jpg" alt="prj10">
@@ -376,16 +378,11 @@
 										<h4 class="post-title"><a href="projects/#prj10">人工智能驱动的领域知识建模与深度共享服务</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2018.05 - 2020.12</span>
-										</div>
-										<a href="projects/#prj10" class="button read-more-button small button-arrow">项目详情</a>
+										</div>											
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
 									<div class="blog-post animate-onscroll">										
 										<div class="post-image">
 											<img src="projects/img/prj9_brief.jpg" alt="prj9">
@@ -394,15 +391,10 @@
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2016.01 - 2019.12</span>
 										</div>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
 									<div class="blog-post animate-onscroll">										
 										<div class="post-image">
 											<img src="projects/img/prj8_brief.jpg" alt="prj8">
@@ -410,163 +402,116 @@
 										<h4 class="post-title"><a href="projects/index.html">数字摄影测量与遥感<br>&nbsp</a></h4>	
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2014.01 - 2016.12</span>
-										</div>				
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj7_brief.jpg" alt="prj7">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">基于多源数据联合平差的机载LiDAR点云精度优化</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2012.01 - 2015.12</span>
-										</div>										
-										<p>国家自然基金</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj6_brief.jpg" alt="prj6">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">中低空自由飞行遥感影像智能处理系统</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2011.01 - 2013.06</span>
-										</div>										
-										<p>国家科技支撑计划</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj5_brief.jpg" alt="prj5">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">多源线阵、面阵光学影像的联合区域网空中三角测量</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2011.01 - 2013.12</span>
-										</div>										
-										<p>国家自然基金</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj4_brief.jpg" alt="prj4">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">村镇地理信息采集技术与设备研发</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2007.01 - 2009.08</span>
-										</div>										
-										<p>国家科技支撑计划</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj3_brief.jpg" alt="prj3">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">遥感影像自动匹配<br>&nbsp</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2007.01 - 2009.12</span>
-										</div>										
-										<p>863计划</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj2_brief.jpg" alt="prj2">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">广义点摄影测量解算方法及其应用基础研究</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2007.01 - 2009.12</span>
-										</div>										
-										<p>国家自然基金</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>									
-									<!-- Blog Post -->
-									<div class="blog-post animate-onscroll">										
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
 										<div class="post-image">
 											<img src="projects/img/prj1_brief.jpg" alt="prj1">
 										</div>										
 										<h4 class="post-title"><a href="projects/index.html">基于视频摄影测量的城市三维建模关键技术研究</a></h4>										
 										<div class="post-meta">
 											<span><i class="icons icon-calendar"></i>2004.01 - 2006.12</span>
-										</div>										
-										<p>国家自然基金</p>
-										<a href="projects/index.html" class="button read-more-button small button-arrow">项目详情</a>
+										</div>
 									</div>
-									<!-- /Blog Post -->									
+									<!-- /Owl Item -->
+								
 								</div>
-								<!-- /Owl Item -->
-							
-							</div>						
-						</div>
-						<!-- /Owl Carousel -->
 
-						<!-- Owl Carousel -->
-						<div class="owl-carousel-container">
-							
-							<div class="owl-header">
+							</div>
+							<!-- /Owl Carousel -->
+	
+							<!-- Owl Carousel -->
+							<div class="owl-carousel-container">
 								
-								<h3 class="animate-onscroll">团队成员</h3>
-								
-								<div class="carousel-arrows animate-onscroll">
-									<span class="left-arrow"><i class="icons icon-left-dir"></i></span>
-									<span class="right-arrow"><i class="icons icon-right-dir"></i></span>
+								<div class="owl-header">
+
+									<h3 class="no-margin-top">团队成员</h3>									
+									<div class="carousel-arrows">
+										<span class="left-arrow"><i class="icons icon-left-dir"></i></span>
+										<span class="right-arrow"><i class="icons icon-right-dir"></i></span>
+										<span><i class="icons icon-list" href="team/index.html"></i></span>
+									</div>
+
 								</div>
 								
-							</div>
-							
-							<div class="owl-carousel" data-max-items="4">
-								
-								<!-- Owl Item -->
-								<div>
+								<div class="owl-carousel" data-max-items="4">									
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member animate-onscroll">										
 										<img class="team-member-image" src="team/img/zhangyj.jpg" alt="zhangyj">										
 										<div class="team-member-info">										
 											<h3>张永军</h3>
@@ -576,7 +521,8 @@
 												<div class="social-media">
 													<span class="small-caption">Get connected:</span>
 													<ul class="social-icons">
-														<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li><li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
+														<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
+														<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
 													</ul>
 													<ul class="social-buttons">
 													</ul>
@@ -585,13 +531,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member animate-onscroll">										
 										<img class="team-member-image" src="team/img/wanyi.jpg" alt="wanyi">										
 										<div class="team-member-info">										
 											<h3>万一</h3>
@@ -610,13 +552,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member animate-onscroll">										
 										<img class="team-member-image" src="team/img/xiexunwei.jpg" alt="xiexunwei">										
 										<div class="team-member-info">										
 											<h3>谢勋伟</h3>
@@ -635,13 +573,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member animate-onscroll">										
 										<img class="team-member-image" src="team/img/wangxiang.jpg" alt="wangxiang">										
 										<div class="team-member-info">										
 											<h3>王祥</h3>
@@ -660,13 +594,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/liuxinyi.jpg" alt="liuxinyi">										
 										<div class="team-member-info">										
 											<h3>刘欣怡</h3>
@@ -682,16 +612,12 @@
 													</ul>
 												</div>
 											</div>										
-										</div>									
+										</div>
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/wenfei.jpg" alt="wenfei">										
 										<div class="team-member-info">										
 											<h3>文飞</h3>
@@ -710,13 +636,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/liuchi.jpg" alt="liuchi">										
 										<div class="team-member-info">										
 											<h3>刘驰</h3>
@@ -735,13 +657,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/zhuxianzhang.jpg" alt="zhuxianzhang">										
 										<div class="team-member-info">										
 											<h3>祝宪章</h3>
@@ -760,13 +678,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/weidong.jpg" alt="weidong">										
 										<div class="team-member-info">										
 											<h3>魏东</h3>
@@ -785,13 +699,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/liuxiaojian.jpg" alt="liuxiaojian">										
 										<div class="team-member-info">										
 											<h3>刘晓建</h3>
@@ -810,13 +720,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/yangwangshan.jpg" alt="yangwangshan">										
 										<div class="team-member-info">										
 											<h3>杨望山</h3>
@@ -835,13 +741,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/sunping.jpg" alt="sunping">										
 										<div class="team-member-info">										
 											<h3>孙萍</h3>
@@ -860,13 +762,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/liulinyu.jpg" alt="liulinyu">										
 										<div class="team-member-info">										
 											<h3>刘林钰</h3>
@@ -885,13 +783,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/zhengzhi.jpg" alt="zhengzhi">										
 										<div class="team-member-info">										
 											<h3>郑志</h3>
@@ -910,13 +804,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/huangxignbei.jpg" alt="huangxingbei">										
 										<div class="team-member-info">										
 											<h3>黄星北</h3>
@@ -935,13 +825,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/wangguangshuai.jpg" alt="wangguangshuai">										
 										<div class="team-member-info">										
 											<h3>王广帅</h3>
@@ -960,13 +846,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/caiping.jpg" alt="caiping">										
 										<div class="team-member-info">										
 											<h3>蔡平</h3>
@@ -985,13 +867,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/zhangbin.jpg" alt="zhangbin">										
 										<div class="team-member-info">										
 											<h3>张斌</h3>
@@ -1009,14 +887,10 @@
 											</div>										
 										</div>									
 									</div>
-									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->								
-
-								<!-- Owl Item -->
-								<div>
+									<!-- /Team Member -->					
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/xieyiming.jpg" alt="xieyiming">										
 										<div class="team-member-info">										
 											<h3>谢一鸣</h3>
@@ -1035,13 +909,9 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
-								</div>
-								<!-- /Owl Item -->
-
-								<!-- Owl Item -->
-								<div>
+	
 									<!-- Team Member -->
-									<div class="team-member animate-onscroll ">										
+									<div class="team-member">										
 										<img class="team-member-image" src="team/img/helin.jpg" alt="helin">										
 										<div class="team-member-info">										
 											<h3>何林</h3>
@@ -1060,169 +930,151 @@
 										</div>									
 									</div>
 									<!-- /Team Member -->
+	
 								</div>
-								<!-- /Owl Item -->
-
+	
 							</div>
-
+							<!-- /Owl Carousel -->
+							
 						</div>
-						<!-- /Owl Carousel -->
-						
-					</div>
+											
+						<!-- Sidebar -->
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+	
+							<!-- Upcoming Events -->
+							<div class="sidebar-box white">
+								<h3>Upcoming Events</h3>
+								<ul class="upcoming-events">
+								
+									<!-- Event -->
+									<li>
+										<div class="date">
+											<span>
+												<span class="day">6</span>
+												<span class="month">SEP</span>
+											</span>
+										</div>
 										
-					<!-- Sidebar -->
-					<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
-						
-						<!-- Featured Video -->
-						<!-- Media Item -->
-						<div class="media-item animate-onscroll gallery-media">								
-							<div class="media-image">								
-								<img src="img/team_video.jpg" alt="">									
-								<div class="media-hover">
-									<div class="media-icons">
-										<a href="img/team.mp4" data-group="media-jackbox" data-thumbnail="img/team_video.jpg" class="jackbox media-icon"><i class="icons icon-play"></i></a>
-										<a href="portfolio-single-sidebar.html" class="media-icon"><i class="icons icon-link"></i></a>
-									</div>
-								</div>
-							</div>							
-						</div>
-						<!-- /Media Item -->
-						<!-- /Featured Video -->						
-
-						<!-- Upcoming Events -->
-						<div class="sidebar-box white animate-onscroll">
-							<h3>Upcoming Events</h3>
-							<ul class="upcoming-events">
-							
-								<!-- Event -->
-								<li>
-									<div class="date">
-										<span>
-											<span class="day">6</span>
-											<span class="month">SEP</span>
-										</span>
-									</div>
-									
-									<div class="event-content">
-										<h6><a href="event/index.html">例会</a></h6>
-										<ul class="event-meta">
-											<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
-											<li><i class="icons icon-location"></i> 遥感院207会议室</li>
-										</ul>
-									</div>
-								</li>
-								<!-- /Event -->
-								
-								<!-- Event -->
-								<li>
-									<div class="date">
-										<span>
-											<span class="day">14</span>
-											<span class="month">SEP</span>
-										</span>
-									</div>
-									
-									<div class="event-content">
-										<h6><a href="event-post-v2.html">例会</a></h6>
-										<ul class="event-meta">
-											<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
-											<li><i class="icons icon-location"></i> 遥感院207会议室</li>
-										</ul>
-									</div>
-								</li>
-								<!-- /Event -->								
-								
-							</ul>
-							<a href="#" class="button transparent button-arrow">更多</a>
-						</div>
-						<!-- /Upcoming Events -->	
-
-						<!-- Banner Rotator -->
-						<div class="banner-rotator animate-onscroll">
-							
-							<div class="flexslider banner-rotator-flexslider">
-								
-								<ul class="slides">
-									
-									<li id="flex_rotator_1">
-										<div class="banner-rotator-content">
-											<h5>Campaign trial</h5>
-											<h2>New York</h2>
-											<span class="date">December 17th</span>
-											<a href="#" class="button big button-arrow">Details</a>
+										<div class="event-content">
+											<h6><a href="event/index.html">例会</a></h6>
+											<ul class="event-meta">
+												<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
+												<li><i class="icons icon-location"></i> 遥感院207会议室</li>
+											</ul>
 										</div>
 									</li>
+									<!-- /Event -->
 									
-									<li id="flex_rotator_2">
-										<div class="banner-rotator-content">
-											<h5>Campaign trial</h5>
-											<h2>Corden</h2>
-											<span class="date">April 12th</span>
-											<a href="#" class="button big button-arrow">Details</a>
+									<!-- Event -->
+									<li>
+										<div class="date">
+											<span>
+												<span class="day">14</span>
+												<span class="month">SEP</span>
+											</span>
+										</div>
+										
+										<div class="event-content">
+											<h6><a href="event-post-v2.html">例会</a></h6>
+											<ul class="event-meta">
+												<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
+												<li><i class="icons icon-location"></i> 遥感院207会议室</li>
+											</ul>
 										</div>
 									</li>
-									
-									<li id="flex_rotator_3">
-										<div class="banner-rotator-content">
-											<h5>Campaign trial</h5>
-											<h2>Redhedge</h2>
-											<span class="date">June 27th</span>
-											<a href="#" class="button big button-arrow">Details</a>
-										</div>
-									</li>
+									<!-- /Event -->								
 									
 								</ul>
-								
+								<a href="#" class="button transparent button-arrow">更多</a>
 							</div>
-						
+							<!-- /Upcoming Events -->	
+
+							<div id="qqmap" style="margin-top: 30px;"></div>
+    						<script>
+    						    var map = new qq.maps.Map(document.getElementById("qqmap"),{
+    						    	zoom: 20,
+    						    	center: new qq.maps.LatLng(30.525992, 114.360051),
+    						    });
+    						    var marker = new qq.maps.Marker({ position: new qq.maps.LatLng(30.525992, 114.360051), map: map });
+    						</script>						
+	
+							<!-- Banner Rotator -->
+							<div class="banner-rotator">
+								
+								<div class="flexslider banner-rotator-flexslider">
+									
+									<ul class="slides">
+										
+										<li id="flex_rotator_1">
+											<div class="banner-rotator-content">
+												<h5>Campaign trial</h5>
+												<h2>New York</h2>
+												<span class="date">December 17th</span>
+												<a href="#" class="button big button-arrow">Details</a>
+											</div>
+										</li>
+										
+										<li id="flex_rotator_2">
+											<div class="banner-rotator-content">
+												<h5>Campaign trial</h5>
+												<h2>Corden</h2>
+												<span class="date">April 12th</span>
+												<a href="#" class="button big button-arrow">Details</a>
+											</div>
+										</li>
+										
+										<li id="flex_rotator_3">
+											<div class="banner-rotator-content">
+												<h5>Campaign trial</h5>
+												<h2>Redhedge</h2>
+												<span class="date">June 27th</span>
+												<a href="#" class="button big button-arrow">Details</a>
+											</div>
+										</li>
+										
+									</ul>
+									
+								</div>
+							
+							</div>
+							<!-- /Banner Rotator -->	
+	
 						</div>
-						<!-- /Banner Rotator -->	
-
+						<!-- /Sidebar -->
+					
 					</div>
-					<!-- /Sidebar -->
 					
-					
-					
-				
-				</div>
-				
-			</section>
-			<!-- /Section -->
+				</section>
+				<!-- /Section -->
 			
 			</section>
 
-
-
-			
 			<!-- Footer -->
 			<footer id="footer">
 				
 				<!-- Main Footer -->
 				<div id="main-footer">
+
 					
 					<div class="row">
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+						<div class="col-lg-3 col-md-3 col-sm-6">
 							
-							<h4>实验室</h4>
+							<h4>XXXX实验室</h4>
 							
 							<p>武汉大学遥感信息工程学院</p>
 							
 						</div>
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
-							
-							<h4>Campaign</h4>
+						<div class="col-lg-3 col-md-3 col-sm-6">
 								
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 								
 								<ul class="menu">
-									<li><a href="#">About</a></li>
-									<li><a href="#">Issues</a></li>
-									<li><a href="#">Media</a></li>
-									<li><a href="#">Blog</a></li> 
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">Contact us</a></li>
+									<li><a href="#">团队成员</a></li>
+									<li><a href="#">联系我们</a></li>
+									<li><a href="#">博客新闻</a></li>
+									<li><a href="#">活动相册</a></li>
 								</ul>
 								
 							</div>
@@ -1230,74 +1082,53 @@
 							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
 								
 								<ul class="menu">
-									<li><a href="#">Email updates</a></li>
-									<li><a href="#">Find events</a></li>
-									<li><a href="#">Make calls</a></li>
-									<li><a href="#">Register to vote</a></li> 
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Volunteer</a></li>
+									<li><a href="#">科研项目</a></li>
+									<li><a href="#">论文著作</a></li>
+									<li><a href="#">知识产权</a></li>
+									<li><a href="#">活动日历</a></li>
 								</ul>
 								
 							</div>
 							
 						</div>
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
-							
-							<h4>Latest Tweets</h4>
-							
-							<div class="twitter-widget">
-                                
-							</div>
-							
-							<a href="#" class="button twitter-button">Follow us on twitter</a>
+						<div class="col-lg-3 col-md-3 col-sm-6">
 							
 						</div>
 						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+						<div class="col-lg-3 col-md-3 col-sm-6">
 							
-							<h4>Like us on facebook</h4>
 							
-							</div>
+							
+						</div>
 						
 					</div>
 					
 				</div>
 				<!-- /Main Footer -->
 				
-				
-				
-				
 				<!-- Lower Footer -->
 				<div id="lower-footer">
 					
 					<div class="row">
 						
-						<div class="col-lg-4 col-md-4 col-sm-4 animate-onscroll">
+						<div class="col-lg-8 col-md-8 col-sm-8 animate-onscroll">
 						
-							<p class="copyright">© 2018 DPGrid. All Rights Reserved.<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学">武汉大学</a> <a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a></p>
+							<p class="copyright">© 2018 DPGrid. All Rights Reserved.
+								<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
+								<a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a>
+							</p>
 							
 						</div>
 						
-						<div class="col-lg-8 col-md-8 col-sm-8 animate-onscroll">
+						<div class="col-lg-4 col-md-4 col-sm-4 animate-onscroll">
 							
-							<div class="social-media">
+							<div class="social-media" style="margin-right: 20px;">
 								<ul class="social-icons">
-									<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
-									<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
-									<li class="google"><a href="#" class="tooltip-ontop" title="Google Plus"><i class="icons icon-gplus"></i></a></li>
-									<li class="youtube"><a href="#" class="tooltip-ontop" title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
-									<li class="flickr"><a href="#" class="tooltip-ontop" title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
-									<li class="email"><a href="#" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
-								</ul>
-								<ul class="social-buttons">
-									<li>
-										
-									</li>
-									<li>
-										<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-									</li>
-									
+									<li class="researchgate"><a href="https://www.researchgate.net/profile/Yongjun_Zhang7" class="tooltip-ontop" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
+									<li class="googlescholar"><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN" class="tooltip-ontop" title="Google Scholar"><i class="icons icon-google"></i></a></li>
+									<li class="github"><a href="https://github.com/YongjunZhangWHU" class="tooltip-ontop" title="Github"><i class="icons icon-github-circled"></i></a></li>
+									<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
 								</ul>
 							</div>
 							
@@ -1307,13 +1138,10 @@
 					
 				</div>
 				<!-- /Lower Footer -->
-				
-			
+							
 			</footer>
 			<!-- /Footer -->
-			
-			
-			
+
 			<!-- Back To Top -->
 			<a href="#" id="button-to-top"><i class="icons icon-up-dir"></i></a>
 		
@@ -1347,9 +1175,15 @@
 		
 		<!-- MixItUp -->
 		<script type="text/javascript" src="js/jquery.mixitup.js"></script>
-		
-		<!-- JackBox -->
-		<script type="text/javascript" src="jackbox/js/jackbox-packed.min.js"></script>
+
+		<!-- Add mousewheel plugin (this is optional) -->
+		<script type="text/javascript" src="js/jquery.mousewheel.pack.js?v=3.1.3"></script>
+	
+		<!-- Add fancyBox -->
+		<script type="text/javascript" src="fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>		
+		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>	
+		<script type="text/javascript" src="js/jquery.fancybox-media.js?v=1.0.6"></script>
 		
 		<!-- CloudZoom -->
 		<script type="text/javascript" src="js/zoomsl-3.0.min.js"></script>
