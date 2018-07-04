@@ -1,0 +1,541 @@
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Title -->
+		<title>地像天图课题组</title>
+		
+		<!-- Google Fonts -->
+		<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.useso.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+		
+		<!-- Stylesheets -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/fontello.css" rel="stylesheet" type="text/css">
+		<link href="../css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="../js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="../css/owl.carousel.css" rel="stylesheet" type="text/css">
+		<link href="../css/responsive-calendar.css" rel="stylesheet" type="text/css">
+		<link href="../css/chosen.css" rel="stylesheet" type="text/css">
+		<link href="../jackbox/css/jackbox.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/cloud-zoom.css" rel="stylesheet" type="text/css" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+
+		
+		<!--[if IE 9]>
+			<link rel="stylesheet" href="css/ie9.css">
+		<![endif]-->
+		
+		<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<link href="css/jackbox-ie8.css" rel="stylesheet" type="text/css" />
+			<link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+		
+		<!--[if gt IE 8]>
+			<link href="css/jackbox-ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/fontello-ie7.css">
+		<![endif]-->
+		
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		
+		<!-- jQuery -->
+		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/jquery-ui-1.10.4.min.js"></script>
+		
+		<!-- Preloader -->
+		<script src="../js/jquery.queryloader2.min.js"></script>
+		
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		
+		$(document).ready(function(){
+			
+			$('html').show();
+			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();
+			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000,
+				onComplete: function(){
+					
+					$('.animate-onscroll').filter(function(index){
+					
+						return this.offsetTop < (window_s + window_h);
+						
+					}).each(function(index, value){
+						
+						var el = $(this);
+						var el_y = $(this).offset().top;
+						
+						if((window_s) > el_y){
+							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
+							setTimeout(function(){
+								$(el).css('opacity','1').removeClass('animated fadeInDown');
+							},2000);
+						}
+						
+					});
+					
+				}
+			});
+			
+		});
+		</script>
+		
+	</head>
+	
+	<body class="sticky-header-on tablet-sticky-header">
+	
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>		
+		<!-- Container -->
+		<div class="container">		
+			
+			<!-- Header -->
+			<header id="header" >				
+				
+				<!-- Lower Header -->
+				<div id="lower-header">
+					
+					<div class="container">
+					
+					<div id="menu-button">
+						<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+						<span>Menu</span>
+					</div>
+					
+					<ul id="navigation">
+						
+						<!-- Home -->
+						<li class="home-button current-menu-item">						
+							<a href="../index.html"><i class="icons icon-home"></i></a>
+						</li>
+						<!-- /Home -->
+												
+						<!-- Team -->
+						<li >						
+							<a href="../team/index.html">团队</a>						
+							<ul>
+								<li><a href="../team/index.html#prof">教授</a></li>
+								<li><a href="../team/index.html#phd">博士生</a></li>
+								<li><a href="../team/index.html#grad">硕士生</a></li>
+								<li><a href="../team/index.html#alumni">毕业生</a></li>
+							</ul>							
+						</li>
+						<!-- /Team -->
+						
+						<!-- Projects -->
+						<li >
+							<a href="../projects/index.html">项目</a> <!-- <span>项目</span> -->
+						</li>
+						<!-- /Projects -->
+						
+						<!-- Publication -->
+						<li >
+							<span>成果</span>							
+							<ul>
+								<li><a href="../publication/index.html#book">书</a></li>
+								<li><a href="../publication/index.html#journal">期刊论文</a></li>
+								<li><a href="../publication/index.html#conference">会议论文</a></li>
+								<li><a href="../publication/index.html#properties">知识产权</a></li>
+							</ul>
+						</li>
+						<!-- /Publication -->
+						
+						<!-- Blog -->
+						<li >						
+							<span>博客</span>							
+							<ul>							
+								<li><a href="../blog/index.html">新闻</a></li>
+								<li><a href="../blog/pictures.html">相册</a></li>	
+							</ul>							
+						</li>
+						<!-- /Blog -->						
+						
+						<!-- Events -->
+						<li >
+							<a href="../events/index.html">活动</a>
+						</li>
+						<!-- /Events -->						
+						
+						<!-- Contact -->
+						<li >
+							<a href="../contact/index.html">联系方式</a>
+						</li>
+						<!-- /Contact -->
+
+						<!-- About -->
+						<li >
+							<a href="../zhangyj/index.html">关于</a>
+						</li>
+						<!-- /About -->
+						
+						<!-- English -->
+						<li class="donate-button ">
+							<a href="#">English Version</a>
+						</li>
+						<!-- /English -->
+						
+					</ul>					
+					</div>					
+				</div>
+				<!-- /Lower Header -->				
+				
+			</header>
+			<!-- /Header -->
+
+		<section id="content">
+			
+			<!-- Section -->
+			<section class="section full-width-bg gray-bg">
+				
+				<div class="row">
+					
+					<div class="col-lg-12 col-md-12 col-sm-12">	
+						<div class="project">									
+							<img class="project-image" src="img/prj10_brief.jpg" alt="prj10">							
+							<div class="project-info">								
+								<h2>人工智能驱动的领域知识建模与深度共享服务</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2018.05 - 2020.12</span>								
+								<div class="project-more">
+									<p>国家科技支撑计划   2018YFB0505003</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div class="project">									
+							<img class="project-image" src="img/prj9_brief.jpg" alt="prj9">							
+							<div class="project-info">								
+								<h2>基于单立体模型的多视影像密集匹配理论与方法</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2016.01 - 2019.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  41571434</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div class="project">									
+							<img class="project-image" src="img/prj8_brief.jpg" alt="prj8">							
+							<div class="project-info">								
+								<h2>数字摄影测量与遥感</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2014.01 - 2016.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  41322010</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj7" class="project">									
+							<img class="project-image" src="img/prj7_brief.jpg" alt="prj7">							
+							<div class="project-info">								
+								<h2>基于多源数据联合平差的机载LiDAR点云精度优化</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2012.01 - 2015.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  41171292</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj6" class="project">									
+							<img class="project-image" src="img/prj6_brief.jpg" alt="prj6">							
+							<div class="project-info">								
+								<h2>中低空自由飞行遥感影像智能处理系统</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2011.01 - 2013.06</span>								
+								<div class="project-more">
+									<p>国家科技支撑计划  2011BAH12B05</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj5" class="project">									
+							<img class="project-image" src="img/prj5_brief.jpg" alt="prj5">							
+							<div class="project-info">								
+								<h2>多源线阵、面阵光学影像的联合区域网空中三角测量</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2011.01 - 2013.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  41071233</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj4" class="project">									
+							<img class="project-image" src="img/prj4_brief.jpg" alt="prj4">							
+							<div class="project-info">								
+								<h2>村镇地理信息采集技术与设备研发</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2007.01 - 2009.08</span>								
+								<div class="project-more">
+									<p>国家科技支撑计划  2006BAJ09B01</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj3" class="project">									
+							<img class="project-image" src="img/prj3_brief.jpg" alt="prj3">							
+							<div class="project-info">								
+								<h2>遥感影像自动匹配</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2007.01 - 2009.12</span>								
+								<div class="project-more">
+									<p>863计划  2006AA12Z136</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj2" class="project">									
+							<img class="project-image" src="img/prj2_brief.jpg" alt="prj2">							
+							<div class="project-info">								
+								<h2>广义点摄影测量解算方法及其应用基础研究</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2007.01 - 2009.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  40671157</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+
+						<div id="prj1" class="project">									
+							<img class="project-image" src="img/prj1_brief.jpg" alt="prj1">							
+							<div class="project-info">								
+								<h2>基于视频摄影测量的城市三维建模关键技术研究</h2>
+								<span class="time"><i class="icons icon-calendar"></i>2004.01 - 2006.12</span>								
+								<div class="project-more">
+									<p>国家自然基金  40301041</p>
+									<p>..</p>
+								</div>								
+							</div>							
+						</div>
+					</div>
+
+
+				
+				</div>
+				
+			</section>
+			<!-- /Section -->
+
+			<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+					
+		</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				
+				<!-- Main Footer -->
+				<div id="main-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>实验室</h4>
+							
+							<p>武汉大学遥感信息工程学院</p>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>Campaign</h4>
+								
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								
+								<ul class="menu">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Issues</a></li>
+									<li><a href="#">Media</a></li>
+									<li><a href="#">Blog</a></li> 
+									<li><a href="#">Shop</a></li>
+									<li><a href="#">Contact us</a></li>
+								</ul>
+								
+							</div>
+							
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
+								
+								<ul class="menu">
+									<li><a href="#">Email updates</a></li>
+									<li><a href="#">Find events</a></li>
+									<li><a href="#">Make calls</a></li>
+									<li><a href="#">Register to vote</a></li> 
+									<li><a href="#">Donate</a></li>
+									<li><a href="#">Volunteer</a></li>
+								</ul>
+								
+							</div>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
+							
+							<h4>Latest Tweets</h4>
+							
+							<div class="twitter-widget">
+                                
+							</div>
+							
+							<a href="#" class="button twitter-button">Follow us on twitter</a>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
+							
+							<h4>Like us on facebook</h4>
+							
+							</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Main Footer -->
+				
+				
+				
+				
+				<!-- Lower Footer -->
+				<div id="lower-footer">
+					
+					<div class="row">
+						
+						<div class="col-lg-4 col-md-4 col-sm-4 animate-onscroll">
+						
+							<p class="copyright">© 2018 DPGrid. All Rights Reserved.<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学">武汉大学</a> <a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a></p>
+							
+						</div>
+						
+						<div class="col-lg-8 col-md-8 col-sm-8 animate-onscroll">
+							
+							<div class="social-media">
+								<ul class="social-icons">
+									<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
+									<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
+									<li class="google"><a href="#" class="tooltip-ontop" title="Google Plus"><i class="icons icon-gplus"></i></a></li>
+									<li class="youtube"><a href="#" class="tooltip-ontop" title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
+									<li class="flickr"><a href="#" class="tooltip-ontop" title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
+									<li class="email"><a href="#" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
+								</ul>
+								<ul class="social-buttons">
+									<li>
+										
+									</li>
+									<li>
+										<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+									</li>
+									
+								</ul>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+				
+			
+			</footer>
+			<!-- /Footer -->
+			
+			
+			
+			<!-- Back To Top -->
+			<a href="#" id="button-to-top"><i class="icons icon-up-dir"></i></a>
+		
+		</div>
+		<!-- /Container -->	
+	
+		<!-- JavaScript -->
+		
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="../js/modernizr.js"></script>
+		
+		<!-- Sliders/Carousels -->
+		<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+		
+		<!-- Revolution Slider  -->
+		<script type="text/javascript" src="../js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
+		<script type="text/javascript" src="../js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		
+		<!-- Calendar -->
+		<script type="text/javascript" src="../js/responsive-calendar.min.js"></script>
+		
+		<!-- Raty -->
+		<script type="text/javascript" src="../js/jquery.raty.min.js"></script>
+		
+		<!-- Chosen -->
+		<script type="text/javascript" src="../js/chosen.jquery.min.js"></script>
+		
+		<!-- jFlickrFeed -->
+		<script type="text/javascript" src="../js/jflickrfeed.min.js"></script>
+		
+		<!-- InstaFeed -->
+		<script type="text/javascript" src="../js/instafeed.min.js"></script>
+		
+		<!-- Twitter -->
+		<script type="text/javascript" src="../php/twitter/jquery.tweet.js"></script>
+		
+		<!-- MixItUp -->
+		<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+		
+		<!-- JackBox -->
+		<script type="text/javascript" src="../jackbox/js/jackbox-packed.min.js"></script>
+		
+		<!-- CloudZoom -->
+		<script type="text/javascript" src="../js/zoomsl-3.0.min.js"></script>
+		
+		<!-- Main Script -->
+		<script type="text/javascript" src="../js/script.js"></script>
+		
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+			<script type="text/javascript" src="js/script_ie.js"></script>
+		<![endif]-->
+		
+		
+	</body>
+
+</html>
