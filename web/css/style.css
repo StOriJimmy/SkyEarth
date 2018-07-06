@@ -1520,6 +1520,15 @@ h6.shortcodes-caption{
 	-o-transform: scale(1);
 }
 
+.member-image{
+	width: 200px;
+}
+
+.fancybox-image{
+	padding: 0;
+
+}
+
 .project{
 	position:relative;
 	overflow:hidden;
@@ -2482,6 +2491,22 @@ button.small{
 .media-info{
 	padding:20px 20px 30px;
 }
+
+.media-info.member{
+	text-align: center;
+	padding: 10px;
+}
+.media-info.member h4{
+	margin: 0;
+}
+.media-info.member .job{
+	color:#95999e;
+	font-size:13px;
+	display:block;
+	white-space:nowrap;
+}
+
+
 
 .media-item:hover .media-format>div{
 	background:#63b2f5;
@@ -3866,7 +3891,54 @@ a.button.details-button:hover:after{
 		      /* SIDEBAR */
 /* ==================================== */
 
+.sidebar-fix{	
+}
 
+.sidebar-fix ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	position: fixed;
+}
+
+.sidebar-fix li{
+	color:#274472;
+	background:#e2eaf2;
+	padding:15px 30px;
+	position:relative;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-top:1px solid #f3f7fa;
+	border-bottom:1px solid #bfc8d7;
+	transition:background 0.3s, color 0.2s, border 0.3s;
+	-webkit-transition:background 0.3s, color 0.2s, border 0.3s;
+	-moz-transition:background 0.3s, color 0.2s, border 0.3s;
+	cursor:pointer;
+	margin-bottom:7px;
+}
+
+.sidebar-fix li.active-tab,
+.sidebar-fix li:hover{
+	background:#63b2f5;
+	border-top-color:#7cc5f8;
+	border-bottom-color:#579dd9;
+	color:#fff;
+}
+
+
+.sidebar-fix li.active-tab a,
+.sidebar-fix li:hover a{
+	color:#fff;
+}
+
+.sidebar-fix li a{
+	color:#274472;
+}
+
+.sidebar-fix li h6{
+	margin:0;
+}
 
 .sidebar-box{
 	border-radius:5px;
@@ -7700,6 +7772,10 @@ input.numeric-input:focus{
 	
 	.sidebar .banner{
 		margin:5px 0;
+	}
+
+	.sidebar-fix ul{
+		position: relative;
 	}
 	
 	.banners-inline{
