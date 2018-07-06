@@ -989,55 +989,24 @@
 							</div>
 							<!-- /Upcoming Events -->	
 
-							<div id="qqmap" style="margin-top: 30px;"></div>
+							<div id="tencentmap" style="margin-top: 30px; height: 260px;"></div>
     						<script>
-    						    var map = new qq.maps.Map(document.getElementById("qqmap"),{
+    						    var map = new qq.maps.Map(document.getElementById("tencentmap"),{
     						    	zoom: 20,
     						    	center: new qq.maps.LatLng(30.525992, 114.360051),
     						    });
     						    var marker = new qq.maps.Marker({ position: new qq.maps.LatLng(30.525992, 114.360051), map: map });
-    						</script>						
-	
-							<!-- Banner Rotator -->
-							<div class="banner-rotator">
-								
-								<div class="flexslider banner-rotator-flexslider">
-									
-									<ul class="slides">
-										
-										<li id="flex_rotator_1">
-											<div class="banner-rotator-content">
-												<h5>Campaign trial</h5>
-												<h2>New York</h2>
-												<span class="date">December 17th</span>
-												<a href="#" class="button big button-arrow">Details</a>
-											</div>
-										</li>
-										
-										<li id="flex_rotator_2">
-											<div class="banner-rotator-content">
-												<h5>Campaign trial</h5>
-												<h2>Corden</h2>
-												<span class="date">April 12th</span>
-												<a href="#" class="button big button-arrow">Details</a>
-											</div>
-										</li>
-										
-										<li id="flex_rotator_3">
-											<div class="banner-rotator-content">
-												<h5>Campaign trial</h5>
-												<h2>Redhedge</h2>
-												<span class="date">June 27th</span>
-												<a href="#" class="button big button-arrow">Details</a>
-											</div>
-										</li>
-										
-									</ul>
-									
-								</div>
-							
+    						</script>
+
+    						<div class="social-media" style="margin-top: 30px;">
+    							<span class="small-caption">Get connected:</span>
+								<ul class="social-icons">
+									<li class="researchgate"><a href="https://www.researchgate.net/profile/Yongjun_Zhang7" class="tooltip-ontop" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
+									<li class="googlescholar"><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN" class="tooltip-ontop" title="Google Scholar"><i class="icons icon-google"></i></a></li>
+									<li class="github"><a href="https://github.com/YongjunZhangWHU" class="tooltip-ontop" title="Github"><i class="icons icon-github-circled"></i></a></li>
+									<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
+								</ul>
 							</div>
-							<!-- /Banner Rotator -->	
 	
 						</div>
 						<!-- /Sidebar -->
@@ -1052,88 +1021,31 @@
 			<!-- Footer -->
 			<footer id="footer">
 				
-				<!-- Main Footer -->
-				<div id="main-footer">
-
-					
-					<div class="row">
-						
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							
-							<h4>XXXX实验室</h4>
-							
-							<p>武汉大学遥感信息工程学院</p>
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6">
-								
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
-								
-								<ul class="menu">
-									<li><a href="#">团队成员</a></li>
-									<li><a href="#">联系我们</a></li>
-									<li><a href="#">博客新闻</a></li>
-									<li><a href="#">活动相册</a></li>
-								</ul>
-								
-							</div>
-							
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
-								
-								<ul class="menu">
-									<li><a href="#">科研项目</a></li>
-									<li><a href="#">论文著作</a></li>
-									<li><a href="#">知识产权</a></li>
-									<li><a href="#">活动日历</a></li>
-								</ul>
-								
-							</div>
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6">
-							
-							
-							
-						</div>
-						
-					</div>
-					
-				</div>
-				<!-- /Main Footer -->
-				
 				<!-- Lower Footer -->
 				<div id="lower-footer">
 					
 					<div class="row">
 						
-						<div class="col-lg-8 col-md-8 col-sm-8 animate-onscroll">
+						<div class="animate-onscroll" style="text-align: center;">
+
+							<p class="footer-link">
+								<a href="#"><strong>XXXX实验室</strong></a> |
+								<a href="#">团队成员</a> | 
+								<a href="#">联系我们</a> | 
+								<a href="#">博客新闻</a> | 
+								<a href="#">活动相册</a> | 
+								<a href="#">科研项目</a> | 
+								<a href="#">论文著作</a> | 
+								<a href="#">知识产权</a> | 
+								<a href="#">活动日历</a>
+							</p>
 						
 							<p class="copyright">© 2018 DPGrid. All Rights Reserved.
 								<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
 								<a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a>
 							</p>
 							
-						</div>
-						
-						<div class="col-lg-4 col-md-4 col-sm-4 animate-onscroll">
-							
-							<div class="social-media" style="margin-right: 20px;">
-								<ul class="social-icons">
-									<li class="researchgate"><a href="https://www.researchgate.net/profile/Yongjun_Zhang7" class="tooltip-ontop" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
-									<li class="googlescholar"><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN" class="tooltip-ontop" title="Google Scholar"><i class="icons icon-google"></i></a></li>
-									<li class="github"><a href="https://github.com/YongjunZhangWHU" class="tooltip-ontop" title="Github"><i class="icons icon-github-circled"></i></a></li>
-									<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
-								</ul>
-							</div>
-							
-						</div>
-						
+						</div>						
 					</div>
 					
 				</div>

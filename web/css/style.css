@@ -933,11 +933,11 @@ h6.shortcodes-caption{
 /* Main Flex Slider */
 
 .main-flexslider{
-	height:530px;
+	height:510px;
 }
 
 .main-flexslider .slides>li{
-	height:530px;
+	height:510px;
 	color:#fff;
 	background-size:cover!important;
 	border-radius:3px;
@@ -1006,7 +1006,7 @@ h6.shortcodes-caption{
 }
 
 #main_flex_1{
-	background:url(../img/slide1.jpg) no-repeat;
+	background:url(../img/slide1.jpg) no-repeat center;
 }
 
 #main_flex_1 .slide{
@@ -1014,7 +1014,7 @@ h6.shortcodes-caption{
 }
 
 #main_flex_2{
-	background:url(../img/slide2.jpg) no-repeat;
+	background:url(../img/slide2.jpg) no-repeat center;
 }
 
 #main_flex_2 .slide{
@@ -1026,7 +1026,7 @@ h6.shortcodes-caption{
 }
 
 #main_flex_3{
-	background:url(../img/slide3.jpg) no-repeat;
+	background:url(../img/slide3.jpg) no-repeat center;
 }
 
 #main_flex_3 .slide{
@@ -4892,9 +4892,8 @@ a.tag:hover{
 /* ==================================== */
 		      /* MAP */
 /* ==================================== */
-#qqmap{
+#tencentmap{
 	width: 100%;
-	height: 200px;
 }
 
 
@@ -5119,11 +5118,30 @@ a.button.twitter-button:hover:before{
 	margin:8px 0 0!important;
 	overflow:hidden;
 }
+.footer-link{
+	color: #22a2c3;
+	font-size: 14px;
+	margin:0;
+}
+
+.footer-link a{
+	color:#63bbd0;
+}
+.footer-link a:hover{
+	color:#c3d7df;
+}
 
 .copyright{
 	color:#808ca4;
-	padding-top:13px;
+	font-size: 13px;
 	margin:0;
+}
+
+.copyright a{
+	color:#5698c3;
+}
+.copyright a:hover{
+	color:#63bbd0;
 }
 
 
