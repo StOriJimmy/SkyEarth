@@ -106,7 +106,7 @@ $(document).ready(function(){
 	
 	/* Other Plugins */
 
-	enableFancyBox();
+//	enableFancyBox();
 	
 	enableJackBox(); // JackBox Plugin
 	
@@ -306,8 +306,10 @@ $(document).ready(function(){
 			/* Number Of Items */
 			var max_items = $(this).attr('data-max-items');
 			var tablet_items = max_items;
+			var small_items = max_items;
 			if(max_items > 1){
-				tablet_items = max_items - 1;
+				small_items = max_items - 1;
+				tablet_items = max_items - 2;
 			}
 			var mobile_items = 1;
 			
@@ -317,9 +319,9 @@ $(document).ready(function(){
 				items:max_items,
 				pagination : false,
 				itemsDesktop : [1600,max_items],
-				itemsDesktopSmall : [1170,max_items],
-				itemsTablet: [991,tablet_items],
-				itemsMobile: [767,mobile_items],
+				itemsDesktopSmall : [991,small_items],
+				itemsTablet: [500,tablet_items],
+				itemsMobile: [300,mobile_items],
 				slideSpeed:400
 			});
 		
@@ -882,15 +884,7 @@ $(document).ready(function(){
 		});
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	/* Accordions */
 	function enableAccordions(){
 	
@@ -973,11 +967,6 @@ $(document).ready(function(){
 	
 	}
 	
-	
-	
-	
-	
-	
 	/* Tabs */
 	//! Liu Xinyi 20180703
 	function enableTabs(){
@@ -1043,12 +1032,6 @@ $(document).ready(function(){
 //		});
 //	}
 	
-	
-	
-	
-	
-	
-	
 	/* Alert Boxes */
 	function enableAlertBoxes(){
 		
@@ -1063,15 +1046,6 @@ $(document).ready(function(){
 		});
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	/* Progressbars */
 	function enableProgressbars(){
@@ -1151,15 +1125,6 @@ $(document).ready(function(){
 		}
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	// Custom Audio Player
 	function enableCustomAudio(){
@@ -1371,15 +1336,6 @@ $(document).ready(function(){
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/* Full Calendar */
 	function enableCalendar(){
 		
@@ -1396,14 +1352,6 @@ $(document).ready(function(){
 		});
 		
 	}	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	/* MixItUp (Filtering and Sorting) */
 	function enableMixItup(){
@@ -1454,15 +1402,6 @@ $(document).ready(function(){
 		
 	}	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	/* Start Rating */
 	function enableStarRating(){
 		
@@ -1495,12 +1434,6 @@ $(document).ready(function(){
 		
 	}
 	
-	
-	
-	
-	
-	
-	
 	/* Shopping Cart */
 	function enableShoppingCart(){
 		
@@ -1523,8 +1456,6 @@ $(document).ready(function(){
 		
 	}
 	
-	
-	
 	/* Social Share Buttons */
 	function enableSocialShare(){
 		
@@ -1540,12 +1471,6 @@ $(document).ready(function(){
 		});	
 		
 	}
-	
-	
-	
-	
-	
-	
 	
 	/* AJAX Contact Form */
 	function enableContactForm(){
@@ -1585,9 +1510,6 @@ $(document).ready(function(){
 		});
 		
 	}	
-	
-	
-	
 	
 	/* AJAX Newsletter Form */
 	function enableNewsletterForm(){
@@ -1668,11 +1590,6 @@ $(document).ready(function(){
 		});
 		
 	}
-	
-	
-	
-	
-	
 	
 	/* ClouZoom Products Slider */
 	function enableProductSlider(){
