@@ -30,7 +30,7 @@ $(document).ready(function(){
 		window_s = $(window).scrollTop();
 		
 	});
-	
+
 	
 	/* Modernizr Fix */
 	
@@ -99,7 +99,7 @@ $(document).ready(function(){
 	
 	enableShoppingCart(); // Shopping Cart 
 	
-	enableSocialShare(); // Social Share Buttons
+//	enableSocialShare(); // Social Share Buttons
 	
 	
 	
@@ -704,6 +704,11 @@ $(document).ready(function(){
 		 */
 
 		$('.fancybox').fancybox();
+
+		$('.fancybox-member').fancybox({
+			'width':535,
+			'height':360,
+		});
 
 		/*
 		 *  Different effects
