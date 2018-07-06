@@ -108,7 +108,7 @@ $(document).ready(function(){
 
 //	enableFancyBox();
 	
-	enableJackBox(); // JackBox Plugin
+//	enableJackBox(); // JackBox Plugin
 	
 	enableCalendar(); // Full Calendar
 	
