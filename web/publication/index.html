@@ -101,6 +101,8 @@
 					
 				}
 			});
+
+			
 			
 		});
 		</script>
@@ -212,7 +214,7 @@
 			<section id="content">
 			
 				<!-- Section -->
-				<section class="section full-width-bg gray-bg">
+				<section id="main-content" class="section full-width-bg gray-bg">
 				
 				<div class="row">
 
@@ -3153,118 +3155,36 @@
 			<!-- Footer -->
 			<footer id="footer">
 				
-				<!-- Main Footer -->
-				<div id="main-footer">
-					
-					<div class="row">
-						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
-							
-							<h4>实验室</h4>
-							
-							<p>武汉大学遥感信息工程学院</p>
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
-							
-							<h4>Campaign</h4>
-								
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
-								
-								<ul class="menu">
-									<li><a href="#">About</a></li>
-									<li><a href="#">Issues</a></li>
-									<li><a href="#">Media</a></li>
-									<li><a href="#">Blog</a></li> 
-									<li><a href="#">Shop</a></li>
-									<li><a href="#">Contact us</a></li>
-								</ul>
-								
-							</div>
-							
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 menu-container">
-								
-								<ul class="menu">
-									<li><a href="#">Email updates</a></li>
-									<li><a href="#">Find events</a></li>
-									<li><a href="#">Make calls</a></li>
-									<li><a href="#">Register to vote</a></li> 
-									<li><a href="#">Donate</a></li>
-									<li><a href="#">Volunteer</a></li>
-								</ul>
-								
-							</div>
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6 twitter-widget-area animate-onscroll">
-							
-							<h4>Latest Tweets</h4>
-							
-							<div class="twitter-widget">
-                                
-							</div>
-							
-							<a href="#" class="button twitter-button">Follow us on twitter</a>
-							
-						</div>
-						
-						<div class="col-lg-3 col-md-3 col-sm-6 animate-onscroll">
-							
-							<h4>Like us on facebook</h4>
-							
-							</div>
-						
-					</div>
-					
-				</div>
-				<!-- /Main Footer -->
-				
-				
-				
-				
 				<!-- Lower Footer -->
 				<div id="lower-footer">
 					
 					<div class="row">
 						
-						<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="animate-onscroll" style="text-align: center;">
+
+							<p class="footer-link">
+								<a href="#"><strong>XXXX实验室</strong></a> |
+								<a href="#">团队成员</a> | 
+								<a href="#">联系我们</a> | 
+								<a href="#">博客新闻</a> | 
+								<a href="#">活动相册</a> | 
+								<a href="#">科研项目</a> | 
+								<a href="#">论文著作</a> | 
+								<a href="#">知识产权</a> | 
+								<a href="#">活动日历</a>
+							</p>
 						
-							<p class="copyright">© 2018 DPGrid. All Rights Reserved.<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学">武汉大学</a> <a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a></p>
+							<p class="copyright">© 2018 DPGrid. All Rights Reserved.
+								<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
+								<a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a>
+							</p>
 							
-						</div>
-						
-						<div class="col-lg-8 col-md-8 col-sm-8">
-							
-							<div class="social-media">
-								<ul class="social-icons">
-									<li class="facebook"><a href="#" class="tooltip-ontop" title="Facebook"><i class="icons icon-facebook"></i></a></li>
-									<li class="twitter"><a href="#" class="tooltip-ontop" title="Twitter"><i class="icons icon-twitter"></i></a></li>
-									<li class="google"><a href="#" class="tooltip-ontop" title="Google Plus"><i class="icons icon-gplus"></i></a></li>
-									<li class="youtube"><a href="#" class="tooltip-ontop" title="Youtube"><i class="icons icon-youtube-1"></i></a></li>
-									<li class="flickr"><a href="#" class="tooltip-ontop" title="Flickr"><i class="icons icon-flickr-4"></i></a></li>
-									<li class="email"><a href="#" class="tooltip-ontop" title="Email"><i class="icons icon-mail"></i></a></li>
-								</ul>
-								<ul class="social-buttons">
-									<li>
-										
-									</li>
-									<li>
-										<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
-									</li>
-									
-								</ul>
-							</div>
-							
-						</div>
-						
+						</div>						
 					</div>
 					
 				</div>
 				<!-- /Lower Footer -->
-				
-			
+							
 			</footer>
 			<!-- /Footer -->
 			
@@ -3312,6 +3232,17 @@
 		
 		<!-- Main Script -->
 		<script type="text/javascript" src="../js/script.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var _ch = $("#content").height();
+  				var _wh = $(window).height();
+  				var header_footer = $('header').height() + $('footer').height();
+  			  	if(_wh - _ch > header_footer){
+     		   		$("#main-content").css("min-height",(_wh-header_footer)+"px");
+   				}
+			});
+		</script>
 		
 		
 		<!--[if lt IE 9]>
