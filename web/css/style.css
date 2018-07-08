@@ -70,6 +70,10 @@ iframe{
 	margin-bottom:0!important;
 }
 
+.mo-padding-left{
+	padding-left: 0!important;
+}
+
 
 /* Content Animation */
 .animated{
@@ -5730,7 +5734,7 @@ button.active-button:after{
 .accordion-icon.papers{
 	position:absolute;
 	top:-2px;
-	left:8px;
+	left:0px;
 	font-size:15px;
 }
 
