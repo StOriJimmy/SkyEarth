@@ -520,7 +520,7 @@ var pJS = function(tag_id, params){
 
       /* move the particle */
       if(pJS.particles.move.enable){
-        var ms = pJS.particles.move.speed/2;
+        var ms = pJS.particles.move.speed/5;
         p.x += p.vx * ms;
         p.y += p.vy * ms;
       }

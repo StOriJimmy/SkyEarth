@@ -459,6 +459,11 @@ h3.profile-title {
     height: 100%;
 }
 
+.welcome-box {
+  padding: 0 10px;
+  margin-bottom: 18px;
+}
+
 .welcome-text {
   position: relative;
   z-index: 4;
@@ -467,7 +472,7 @@ h3.profile-title {
   font-size: 35px;
   font-family: 'robotobold';
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .welcome-text h4 {
   font-size: 18px;
@@ -475,6 +480,7 @@ h3.profile-title {
   font-weight: 1;
   color: white;
   text-align: justify;
+  line-height: 23px;
 }
 
 .overlay-box{
@@ -493,8 +499,7 @@ h3.profile-title {
   padding: 5px 16px;
   border-bottom:1px solid #c7d2d4;
 }
-li.box-item:hover{
-  
+li.box-item:hover{  
   background-color: rgba(205, 209, 211, 0.3);
 }
 
@@ -601,6 +606,34 @@ li.box-item:hover{
   color: white;
   font-size: 13px;
   line-height: 20px;
+}
+
+.accordions-title{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.accordion-title-header{  
+  position:relative;
+  border-top:1px solid #f3f7fa;
+  border-bottom:1px solid #bfc8d7;
+  transition:background 0.3s, color 0.2s, border 0.3s;
+  -webkit-transition:background 0.3s, color 0.2s, border 0.3s;
+  -moz-transition:background 0.3s, color 0.2s, border 0.3s;
+  cursor:pointer;
+}
+
+.accordion-title-active .accordion-title-header,
+.accordion-title-header:hover{
+  background-color: rgba(205, 209, 211, 0.3);
+}
+
+.accordion-title-content{
+  color:#3e474c;
+  background-color: rgba(248, 244, 237, 0.9);
+  padding:5px 10px;
+  border-bottom:1px solid #c7d2d4;
 }
 
 /*------ contact ------ */

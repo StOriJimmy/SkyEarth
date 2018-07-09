@@ -62,6 +62,8 @@ iframe{
 	margin-top:0!important;
 }
 
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
 .no-margin-top{
 	margin-top:0!important;
 }
