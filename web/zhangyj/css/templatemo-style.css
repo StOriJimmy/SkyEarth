@@ -224,16 +224,30 @@ h1, h2, h3, h4, h5 {
   float: right;
   width: 85%;
 }
+.banner-bg {
+  padding: 100px 80px;
+}
 @media screen and (max-width: 1290px) {
   .main-content,
   .banner-bg {
     width: 72%;
+  }
+  .banner-bg {
+    padding: 60px 40px;
   }
 }
 @media screen and (max-width: 992px) {
   .main-content,
   .banner-bg {
     width: 100%;
+  }
+  .banner-bg {
+    padding: 30px 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banner-bg {
+    padding: 20px 10px;
   }
 }
 
@@ -431,7 +445,6 @@ h3.profile-title {
 -------------------------------------------------------- */
 /*------ banner ------ */
 .banner-bg {
-  padding: 100px 80px;
   position: relative;
   background: url("../img/bg.jpg");
   background-repeat: no-repeat;
