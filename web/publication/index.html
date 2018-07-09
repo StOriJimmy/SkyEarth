@@ -213,7 +213,7 @@
 
 						<div class="tab-header col-lg-2 col-md-2 col-sm-3">
 							<ul>
-								<li id="book1"><a href="#book"><h6>书</h6></a></li>
+								<li id="book1"><a href="#book" onclick="location.reload();"><h6>书</h6></a></li>
 								<li id="journal1"><a href="#journal" onclick="location.reload();"><h6>期刊论文</h6></a></li>
 								<li id="conference1"><a href="#conference" onclick="location.reload();"><h6>会议论文</h6></a></li>
 								<li id="properties1"><a href="#properties" onclick="location.reload();"><h6>知识产权</h6></a></li>
@@ -3201,7 +3201,8 @@
   			  	//if(_wh - _ch > header_footer){
      		   	//	$("#main-content").css("min-height",(_wh-header_footer)+"px");
    				//}
-   				$("#main-content").css("min-height",800);
+   				//$("#main-content").css("min-height",800);
+
 
    				$(".owl-carousel").owlCarousel({
                     items:1,
@@ -3221,6 +3222,11 @@
    				enableAccordions();
 
                 enableMixItup();
+
+    			enableStickyFooter();
+    			$(window).resize(function(){
+    				enableStickyFooter();
+    			});
 
 			});
 
