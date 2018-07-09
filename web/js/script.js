@@ -1385,6 +1385,38 @@ function enableProductSlider(){
 	
 }
 
+function enableTencentMap(){
+	var center = new qq.maps.LatLng(30.525753,114.361174);
+    var map = new qq.maps.Map(document.getElementById("tencentmap"),{
+        zoom: 16,
+        center: center,
+    });
+
+    var pos1 = new qq.maps.LatLng(30.525992, 114.360051);
+    var marker1 = new qq.maps.Marker({ position: pos1, map: map });
+    var info1 = new qq.maps.InfoWindow({
+        map: map
+    });
+    qq.maps.event.addListener(marker1, 'click', function() {
+        info1.open(); 
+        info1.setContent('<div style="text-align:center;white-space:wrap;'+
+        'margin-bottom:-50px;">武汉大学遥感信息工程学院5号楼220机房</div>');
+        info1.setPosition(pos1); 
+    });
+
+    var pos2 = new qq.maps.LatLng(30.525471,114.362049);
+    var marker2 = new qq.maps.Marker({ position: pos2, map: map });
+    var info2 = new qq.maps.InfoWindow({
+        map: map
+    });
+    qq.maps.event.addListener(marker2, 'click', function() {
+        info2.open(); 
+        info2.setContent('<div style="text-align:center;white-space:wrap;'+
+        'margin-bottom:-50px;">武汉大学信息学部教学实验大楼910室</div>');
+        info2.setPosition(pos2); 
+    });
+}
+
 $(document).ready(function(){
 	
 	"use strict";

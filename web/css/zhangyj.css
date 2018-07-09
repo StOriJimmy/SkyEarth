@@ -644,7 +644,7 @@ li.box-item:hover{
 
 .accordion-title-content{
   color:#3e474c;
-  background-color: rgba(248, 244, 237, 0.9);
+  background-color: rgba(248, 244, 237, 0.7);
   padding:5px 10px;
   border-bottom:1px solid #c7d2d4;
 }
@@ -675,8 +675,11 @@ li.box-item:hover{
 /*---------------------------------------------------------
  5. Footer
 -------------------------------------------------------- */
+#footer {
+  text-align: center;
+  padding: 40px 0;
+}
 #footer p.copyright-text {
-  margin: 40px 0;
   font-size: 13px;
 }
 #footer p.copyright-text a {

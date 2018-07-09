@@ -1182,7 +1182,7 @@ h6.shortcodes-caption{
 
 .owl-carousel-container{
 	margin:0 -15px;
-	margin-bottom:50px;
+	margin-bottom:30px;
 }
 
 .testimonial-carousel + a.button{
@@ -1702,10 +1702,6 @@ h6.shortcodes-caption{
 
 .event-calendar{
 	overflow:visible;
-}
-
-.calendar-header{
-	margin-top:50px;
 }
 
 .calendar-header .filter-dropdown{

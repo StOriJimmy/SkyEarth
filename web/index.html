@@ -27,7 +27,7 @@
 		<link href="css/flexslider.css" rel="stylesheet" type="text/css">
 		<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
 		<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
-		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<link href="css/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" media="screen" />
 		<link href="css/style.css" rel="stylesheet" type="text/css">
 
 	
@@ -55,7 +55,6 @@
 		
 		<!-- Preloader -->
 		<script src="js/jquery.queryloader2.min.js"></script>
-		<script src="https://map.qq.com/api/js?v=2.exp"></script>
 
 		
 
@@ -209,19 +208,19 @@
 						
 						<!-- Events -->
 						<li >
-							<a href="events/index.html">活动</a>
+							<a href="blog/events.html">活动</a>
 						</li>
 						<!-- /Events -->						
 						
 						<!-- Contact -->
 						<li >
-							<a href="contact/index.html">联系方式</a>
+							<a href="https://www.origamesh.com/contact/">联系方式</a>
 						</li>
 						<!-- /Contact -->
 
 						<!-- About -->
 						<li >
-							<a href="zhangyj/index.html">关于</a>
+							<a href="https://www.origamesh.com/zhangyj/">关于</a>
 						</li>
 						<!-- /About -->
 						
@@ -930,7 +929,7 @@
 										</div>
 										
 										<div class="event-content">
-											<h6><a href="event/index.html">例会</a></h6>
+											<h6><a href="blog/events.html">例会</a></h6>
 											<ul class="event-meta">
 												<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
 												<li><i class="icons icon-location"></i> 遥感院207会议室</li>
@@ -964,39 +963,7 @@
 							<!-- /Upcoming Events -->	
 
 							<div id="tencentmap" style="margin-top: 30px; height: 260px;"></div>
-    						<script>
-    							var center = new qq.maps.LatLng(30.525753,114.361174);
-    						    var map = new qq.maps.Map(document.getElementById("tencentmap"),{
-    						    	zoom: 16,
-    						    	center: center,
-    						    });
-
-    						    var pos1 = new qq.maps.LatLng(30.525992, 114.360051);
-    						    var marker1 = new qq.maps.Marker({ position: pos1, map: map });
-    							var info1 = new qq.maps.InfoWindow({
-    							    map: map
-    							});
-    							qq.maps.event.addListener(marker1, 'click', function() {
-    							    info1.open(); 
-    							    info1.setContent('<div style="text-align:center;white-space:wrap;'+
-    							    'margin-bottom:-50px;">武汉大学遥感信息工程学院5号楼220机房</div>');
-    							    info1.setPosition(pos1); 
-    							});
-
-    							var pos2 = new qq.maps.LatLng(30.525471,114.362049);
-    						    var marker2 = new qq.maps.Marker({ position: pos2, map: map });
-    							var info2 = new qq.maps.InfoWindow({
-    							    map: map
-    							});
-    							qq.maps.event.addListener(marker2, 'click', function() {
-    							    info2.open(); 
-    							    info2.setContent('<div style="text-align:center;white-space:wrap;'+
-    							    'margin-bottom:-50px;">武汉大学信息学部教学实验大楼910室</div>');
-    							    info2.setPosition(pos2); 
-    							});
-
-    						</script>
-
+    						
     						<div class="social-media" style="margin-top: 30px;">
     							<span class="small-caption">Get connected:</span>
 								<ul class="social-icons">
@@ -1028,20 +995,20 @@
 						<div class="animate-onscroll" style="text-align: center;">
 
 							<p class="footer-link">
-								<a href="#"><strong>XXXX实验室</strong></a> |
-								<a href="#">团队成员</a> | 
-								<a href="#">联系我们</a> | 
-								<a href="#">博客新闻</a> | 
-								<a href="#">活动相册</a> | 
-								<a href="#">科研项目</a> | 
-								<a href="#">论文著作</a> | 
-								<a href="#">知识产权</a> | 
-								<a href="#">活动日历</a>
+								<a href="https://www.origamesh.com"><strong>XXXX实验室</strong></a> |
+								<a href="https://www.origamesh.com/team/">团队成员</a> | 
+								<a href="https://www.origamesh.com/contact/">联系我们</a> | 
+								<a href="https://www.origamesh.com/blog/">博客新闻</a> | 
+								<a href="https://www.origamesh.com/blog/events.html">活动日历</a> | 
+								<a href="https://www.origamesh.com/projects/">科研项目</a> | 
+								<a href="https://www.origamesh.com/publication/">论文著作</a> | 
+								<a href="https://www.origamesh.com/publication/index.html#properties">知识产权</a> | 
+								<a href="https://www.origamesh.com/zhangyj/">关于我们</a>
 							</p>
 						
 							<p class="copyright">© 2018 DPGrid. All Rights Reserved.
 								<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
-								<a href="http://rsgis.whu.edu.cn/" title="遥感" target="_blank">遥感信息工程学院</a>
+								<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">遥感信息工程学院</a>
 							</p>
 							
 						</div>						
@@ -1075,6 +1042,9 @@
 		<script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 		<script type="text/javascript" src="js/jquery.fancybox-buttons.js?v=1.0.5"></script>		
 		<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+		<!-- Tencent Map-->		
+		<script src="https://map.qq.com/api/js?v=2.exp"></script>
 				
 		<!-- Main Script -->
 		<script type="text/javascript" src="js/script.js"></script>
@@ -1087,6 +1057,8 @@
 				enableOwlCarousel();
 				enableFlexSlider();
 				enableBannerHoverEffect();
+
+				enableTencentMap();
 			});
 		</script>
 		
