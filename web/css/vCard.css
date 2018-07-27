@@ -8,7 +8,7 @@ body {
     color: #555;
     padding-top: 0;
     
-	background-image: url(../img/header-bg.jpg);
+	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -25,7 +25,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
-
+.autoScroll { 
+	overflow: auto; 
+}
 
 /* Paragraph & Typographic */
 p {
@@ -35,6 +37,28 @@ p {
 
 .centered {
     text-align: center;
+}
+
+.card-block {
+	display: block;
+	margin: auto;
+	width: 600px;
+}
+
+img {
+	width: 100%;
+}
+
+.card-block-test {
+	display: block;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 500px;
+	height: 357px;
 }
 
 /* Links */
@@ -129,6 +153,7 @@ a:after {
 	padding-left: 15px;
 	padding-top: 20px;
 	padding-right: 15px;
+	overflow: hidden;
 }
 
 .tab-content h5 {
