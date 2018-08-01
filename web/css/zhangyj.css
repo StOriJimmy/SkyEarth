@@ -522,6 +522,57 @@ li.box-item:hover{
   background: #1a94bc;
 }
 
+.box-item li{
+  color:#274472;
+  position:relative;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  transition:background 0.3s, color 0.2s, border 0.3s;
+  -webkit-transition:background 0.3s, color 0.2s, border 0.3s;
+  -moz-transition:background 0.3s, color 0.2s, border 0.3s;
+/*cursor:pointer;*/
+  background:transparent;
+  padding:2px 0px;
+  text-align: justify;
+  font-weight: 1;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.box-item.reviewer li{
+  padding: 4.5px 0;
+}
+
+.box-item li:hover{
+  background:#8CCEFB;
+  border-top-color:#7cc5f8;
+  border-bottom-color:#579dd9;
+  color:#fff;
+}
+
+.box-item li:before{
+  color:#fff;
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .8em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  content: '\e9f4';
+  color:#808ca4;
+  transition:color 0.3s;
+  -webkit-transition:color 0.3s;
+  -moz-transition:color 0.3s;
+}
+
 .box-item .icon{
   margin-right: 10px;
 }
