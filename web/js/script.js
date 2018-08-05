@@ -201,7 +201,7 @@ function enableOwlCarousel(){
 		
 		
 		/* Initialize */
-		$(this).owlCarousel({
+		$(this).owlCarousel({			
 			items:max_items,
 			responsiveClass:true,
 			responsive:{
