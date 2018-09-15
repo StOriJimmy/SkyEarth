@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./favicon.png">
+
+    <title>刘晓建</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.min-3.1.1.css" rel="stylesheet">
+    <link href="../../css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/vCard.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+    	<div class="card-block tab-content">
+
+    		<!-- header -->
+    		<div id="header">
+   				<span><img class="team-card-avatar" src="liuxiaojian_square.jpg" alt=""></span>
+   				<div style="padding-top: 30px;">
+   					<h3>刘晓建</h3>
+					<h5>2018级博士</h5>
+   				</div>
+    		</div>
+
+			<hr>
+
+	    	<!-- ===== Second Tab ===== -->
+			<div id="profile">
+				<h4><i class="fa fa-trophy"></i> 项目经历</h4>
+				<li>
+					Interannual variability of PSP toxicity in eastern Maine: testing the leaky gyre hypothesis and improving regional forecasts and management，Institutions:  Woods Hole Oceanographic Institution, University of Maine, North Carolina State University, NOAA/NOS, NOAA/NMFS, Department of Fisheries and Oceans, Canada.
+				</li>
+			</div><!-- Tab Profile -->
+
+			<hr>
+
+			<!-- ===== Third Tab ===== -->
+			<div id="portfolio">
+				<h4><i class="fa fa-trophy"></i> 主要研究方向</h4>			
+				<li>
+					遥感影像信息提取
+				</li>
+				<li>
+					海洋建模
+				</li>
+			</div><!-- /Tab Portfolio -->
+
+			<hr>
+					  
+	    	<!-- ===== Fourth Tab ===== -->
+			<div id="contact">
+				<h4>联系方式</h4>			  
+					  
+				<p class="sm">
+					<i class="fa fa-envelope"></i> - <a href="mailto:liuxiaojian2018@whu.edu.cn">liuxiaojian2018@whu.edu.cn</a><br/>
+					<i class="fa fa-github"></i> - <a href="">xiaojianliu2016@gmail.com</a>
+				</p>
+			</div><!-- Tab Contact -->
+
+        	<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.cn">遥感信息工程学院</a></div>
+    		
+    	</div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../js/jquery-3.1.1.js"></script>
+    <script src="../../js/bootstrap.min-3.1.1.js"></script>
+	<script>	
+//		$('#right').css("height", $('#left').height());
+		var trans_y = $(window).height() / 2 - $('.card-block').height() / 2;
+		if (trans_y > 0) {
+			$('.container').css("transform","translateY(" + trans_y + "px)");
+		}	
+	</script>    
+    
+  </body>
+</html>

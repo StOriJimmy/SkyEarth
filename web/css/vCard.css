@@ -1,5 +1,4 @@
 
-
 body {
   	background-color: #f2f2f2;
     font-family: "Lato";
@@ -25,14 +24,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
-.autoScroll { 
-	overflow: auto; 
-}
 
 /* Paragraph & Typographic */
 p {
-    line-height: 28px;
+    line-height: 30px;
     margin-bottom: 25px;
+}
+
+.container {
+    padding: 0;
+}
+
+.quato {
+	line-height: 30px;
 }
 
 .centered {
@@ -42,23 +46,19 @@ p {
 .card-block {
 	display: block;
 	margin: auto;
+    padding: 0;
 	width: 600px;
+	height: 600px;
+	overflow: auto;
 }
 
 img {
 	width: 100%;
+	text-align: right;
 }
-
-.card-block-test {
-	display: block;
-	position: absolute;
-	margin: auto;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 500px;
-	height: 357px;
+.team-card-avatar {
+	width: 100px;
+	float: right;
 }
 
 /* Links */
@@ -88,20 +88,18 @@ a:after {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
-.copyrights{
-	text-indent:-9999px;
-	height:0;
-	line-height:0;
-	font-size:0;
-	overflow:hidden;
-}
- hr {
+
+hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+li {
+	text-align: justify;
 }
 
 .w {
@@ -112,63 +110,17 @@ a:after {
 	box-shadow: 5px 5px rgba(0,0,0,0.2);
 }
 
-
-.col-md-4 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-.col-md-8 {
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-
-.nav-tabs {
-	border-bottom: 1px solid #dddddd;
-}
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-	color: #555555;
-	cursor: default;
-	background-color: #ffffff;
-	border-left: 5px solid #1abc9c;
-	border-bottom-color: transparent;
-	border-top-color: transparent;
-	border-right-color: transparent;
-	width: 100%;
-}
-
-.nav-tabs > li > a {
-	margin-right: 2px;
-	line-height: 1.428571429;
-	border-bottom: 1px solid #dddddd;
-	border-radius: 0 0 0 0;
-	width: 100%;
-	background-color: #f2f2f2;
-}
-
 .tab-content {
 	background-color: #ffffff;
 	padding-left: 15px;
 	padding-top: 20px;
 	padding-right: 15px;
-	overflow: hidden;
 }
 
 .tab-content h5 {
 	color: #bdc3c7;
 	font-weight: 700;
 	letter-spacing: 1px;
-}
-
-.red i {
-	font-size: 12px;
-	color: #e74c3c;
-}
-
-i {
-	vertical-align: middle;
 }
 
 .sm {
@@ -186,4 +138,12 @@ a h6:hover {
 grey {
 	color: #bdc3c7;
 	font-weight: 700;
+}
+
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
 }
