@@ -61,7 +61,7 @@ html[xmlns] .slides {display: block;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 1; }
 .flex-direction-nav .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
 .flex-direction-nav a:hover{ background:#63b2f5; text-decoration:none;}
-.flex-direction-nav a:before  { font-family: "fontello";
+.flex-direction-nav a:before  { font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -75,11 +75,11 @@ html[xmlns] .slides {display: block;}
 	margin-left: .2em;
 	color:#fff;
 	font-size:24px;
-	content: '\e891';
+	content: '\f0da';
 	position:absolute;
 	left:50%;
 	margin-left:-3px;}
-.flex-direction-nav a.flex-prev:before  { content: '\e890'; margin-left:-6px;}
+.flex-direction-nav a.flex-prev:before  { content: '\f0d9'; margin-left:-6px;}
 
 /* Pause/Play */
 .flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
