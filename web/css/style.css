@@ -70,6 +70,10 @@ img{
 
 .fixed-bottom {position: fixed;bottom: 0;width:100%;}
 
+.icon-before {
+	margin-right: 10px;
+}
+
 img.align-left{
 	text-align:left;
 	float:left;
@@ -348,7 +352,7 @@ h6.shortcodes-caption{
 }
 
 #main-header blockquote:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -361,7 +365,7 @@ h6.shortcodes-caption{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\ebe1';
+	content: '\f10d';
 	color:#50688c;
 	font-size:11px;
 	position:absolute;
@@ -370,7 +374,7 @@ h6.shortcodes-caption{
 }
 
 #main-header blockquote:after{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -383,7 +387,7 @@ h6.shortcodes-caption{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\ebe2';
+	content: '\f10e';
 	color:#50688c;
 	font-size:11px;
 	position:relative;
@@ -701,7 +705,7 @@ h6.shortcodes-caption{
 
 #navigation>li>a:after,
 #navigation>li>span:after{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -717,7 +721,7 @@ h6.shortcodes-caption{
 	color:#a8abae;
 	font-size:13px;
 	margin-left:5px;
-	content: '\e88e';
+	content: '\f0d7';
 }
 
 #navigation>li>a:only-child:after,
@@ -779,7 +783,7 @@ h6.shortcodes-caption{
 
 #navigation li ul li>a:after,
 #navigation li ul li>span:after{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -795,7 +799,7 @@ h6.shortcodes-caption{
 	color:#a8abae;
 	font-size:13px;
 	margin-left:5px;
-	content: '\e891';
+	content: '\f0da';
 	position:absolute;
 	right:15px;
 	top:15px;
@@ -1188,7 +1192,7 @@ h6.shortcodes-caption{
 }
 
 .tparrows.default:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -1202,14 +1206,14 @@ h6.shortcodes-caption{
 	margin-left: .2em;
 	color:#fff;
 	font-size:24px;
-	content: '\e891';
+	content: '\f0da';
 	position:absolute;
 	left:50%;
 	margin-left:-3px;
 }
 
 .tparrows.default.tp-leftarrow:before{
-	content: '\e890'; 
+	content: '\f0d9'; 
 	margin-left:-6px;
 }
 
@@ -1579,31 +1583,22 @@ h6.shortcodes-caption{
 .project{
 	position:relative;
 	overflow:hidden;
-	padding-bottom:50px;
-	margin-bottom:10px;
+	margin-bottom:20px;
 	border-radius:3px;
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 
 	background:#fff;
-	padding:0;
+	padding:15px;
 }
 
-
-
 .project .project-image{
-	width:30%;
-	padding-right:15px;
-	float:left;
+	width:100%;
 }
 
 .project .project-info{
 	position:relative;
-	margin-top:-20px;
-	top:0;
-	float:left;
-	width:70%;
-	padding:30px 30px 30px 15px;
+	text-align: justify;
 }
 
 .project-info .time{
@@ -1617,19 +1612,6 @@ h6.shortcodes-caption{
 .project-info h2{
 	margin:3px 0 0;
 }
-
-.project .project-more{
-	opacity:1;
-	-moz-opacity:1;
-	transform: scale(1);
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-}
-
-
-
-
 
 
 /* Contact */
@@ -2260,7 +2242,7 @@ h6.shortcodes-caption{
 }
 
 .filter-dropdown>li>span:after{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -2273,7 +2255,7 @@ h6.shortcodes-caption{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\e88e';
+	content: '\f0d7';
 	position:absolute;
 	right:15px;
 	top:9px;
@@ -4609,7 +4591,7 @@ a.button.details-button:hover:after{
 
 .image-banner .button:after,
 .image-banner .button:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -4628,137 +4610,10 @@ a.button.details-button:hover:after{
 
 .image-banner .button.button-arrow:after{
 	margin-left:5px;
-	content: '\e891';
+	content: '\f0da';
 	color:#fff;
 	margin-right:-5px;
 }
-
-
-
-
-
-
-
-/* Flickr and Instagram Feed */
-
-.flickr-feed,
-#instagram-feed{
-	list-style:none;
-	margin:-3px -3px;
-	padding:0;
-	overflow:hidden
-}
-
-.flickr-feed li,
-#instagram-feed li{
-	width:33.3333%;
-	float:left;
-	padding:3px;
-	position:relative;
-}
-
-.flickr-feed li img,
-#instagram-feed li img{
-	width:100%;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-}
-
-.flickr-feed li a,
-#instagram-feed li a{
-	display:block;
-}
-
-.flickr-feed a:hover,
-#instagram-feed a:hover{
-	text-decoration:none;
-}
-
-.flickr-feed li>a:before,
-#instagram-feed lI>a:before{
-	content:'';
-	position:absolute;
-	display:block;
-	background:#000;
-	background:rgba(0,0,0,0.4);
-	left:3px;
-	right:3px;
-	top:3px;
-	bottom:3px;
-	border-radius:3px;
-	-webkit-border-radius:3px;
-	-moz-border-radius:3px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	-moz-opacity: 0;
-	-khtml-opacity: 0;
-	opacity: 0;
-	transform:scale(0);
-	-webkit-transform:scale(0);
-	-moz-transform:scale(0);
-	transition:opacity 0.3s, transform 0.4s;
-	-webkit-transition:opacity 0.3s, -webkit-transform 0.4s;
-	-moz-transition:opacity 0.3s, -moz-transform 0.4s;
-	z-index:10;
-}
-
-.flickr-feed li>a:after,
-#instagram-feed li>a:after{
-	font-family: "fontello";
-	font-style: normal;
-	font-weight: normal;
-	speak: none;
-	display: inline-block;
-	text-decoration: inherit;
-	width: 1em;
-	margin-right: .2em;
-	text-align: center;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1em;
-	margin-left: .2em;
-	content: '\e987';
-	position:absolute;
-	left:50%;
-	color:#fff;
-	font-size:18px;
-	top:50%;
-	margin-top:-10px;
-	margin-left:-10px;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter: alpha(opacity=0);
-	-moz-opacity: 0;
-	-khtml-opacity: 0;
-	opacity: 0;
-	visibility:hidden;
-	transform:scale(0);
-	-webkit-transform:scale(0);
-	-moz-transform:scale(0);
-	transition:opacity 0.3s, transform 0.4s;
-	-webkit-transition:opacity 0.3s, -webkit-transform 0.4s;
-	-moz-transition:opacity 0.3s, -moz-transform 0.4s;
-	z-index:10;
-}
-
-.flickr-feed li:hover>a:before,
-.flickr-feed li:hover>a:after,
-#instagram-feed li:hover>a:after,
-#instagram-feed li:hover>a:before{
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	filter: alpha(opacity=100);
-	-moz-opacity: 1;
-	-khtml-opacity: 1;
-	opacity: 1;
-	z-index:1;
-	transform:scale(1);
-	-webkit-transform:scale(1);
-	-moz-transform:scale(1);
-	visibility:visible;
-}
-
-
-
 
 
 
@@ -4827,7 +4682,7 @@ a.tag:hover{
 }
 
 .category-box a:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -4840,7 +4695,7 @@ a.tag:hover{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\e891';
+	content: '\f0da';
 	color:#808ca4;
 	margin-right:5px;
 	transition: color 0.3s;
@@ -5112,7 +4967,7 @@ a.tag:hover{
 }
 
 .menu li a:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -5128,7 +4983,7 @@ a.tag:hover{
 	color:#a8abae;
 	font-size:13px;
 	margin-left:5px;
-	content: '\e891';
+	content: '\f0da';
 	position:absolute;
 	left:-5px;
 	top:5px;
@@ -5139,92 +4994,7 @@ a.tag:hover{
 .menu li a:hover:before{
 	color:#63b2f5;
 	text-decoration:none;
-}	
-
-
-
-
-/* Twitter */
-
-.twitter-widget-area{
-	background:url(../img/twitter-widget-bg.png) 55px center no-repeat;
 }
-
-.twitter-widget ul{
-	list-style:none;
-	margin:0 0 20px;
-	padding:0;
-}
-
-.twitter-widget li{
-	color:#e2eaf2;
-	font-size:15px;
-	font-style:italic;
-}
-
-.twitter-widget a{
-	color:#97acc3;
-}
-
-.twitter-widget li>span{
-	display:inline-block;
-}
-
-.twitter-widget .tweet_time>a{
-	color:#808ca4;
-	font-size:13px;
-}
-
-a.button.twitter-button{
-	background:#40bff5;
-	border-top-color:#53d2f8;
-	border-bottom-color:#36a6d6;
-	color:#fff;
-	height:35px;
-	border-bottom:none;
-}
-
-a.button.twitter-button:after{
-	content:'';
-	display:none;
-}
-
-a.button.twitter-button:before{
-	content: '\e965';
-	font-family: "fontello";
-	font-style: normal;
-	font-weight: normal;
-	speak: none;
-	display: inline-block;
-	text-decoration: inherit;
-	width: 1em;
-	margin-right: .2em;
-	text-align: center;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1em;
-	margin-left: .2em;
-	margin-left:-5px;
-	margin-right:10px;
-	color:#b1e1fa;
-	transition:color 0.2s;
-	-webkit-transition:color 0.2s;
-	-moz-transition:color 0.2s;
-}
-
-a.button.twitter-button:hover{
-	background:#e2eaf2;
-	color:#274472;
-	border-top-color:#f3f7fa;
-	border-bottom-color:#e2eaf2;
-}
-
-a.button.twitter-button:hover:before{
-	color:#40bff5;
-}
-
-
-
 
 
 /* Lower Footer */
@@ -5603,7 +5373,7 @@ a.button:after,
 a.button:before,
 button:before,
 button:after{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -5623,7 +5393,7 @@ button:after{
 a.button.button-arrow:after,
 button.button-arrow:after{
 	margin-left:5px;
-	content: '\e891';
+	content: '\f0da';
 	color:#808ca4;
 	margin-right:-5px;
 }
@@ -5631,7 +5401,7 @@ button.button-arrow:after{
 a.button.button-arrow-before:before,
 button.button-arrow-before:before{
 	margin-left:-5px;
-	content: '\e890';
+	content: '\f0d9';
 	color:#808ca4;
 	margin-right:5px;
 }
@@ -5778,7 +5548,7 @@ button.active-button:after{
 }
 
 .accordion-icon:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -5791,22 +5561,22 @@ button.active-button:after{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\e989';
+	content: '\f0fe';
 	color:#808ca4;
 	transition:color 0.3s;
 	-webkit-transition:color 0.3s;
 	-moz-transition:color 0.3s;
 }
 .accordion-icon.papers:before{
-	content: '\e9f4';
+	content: '\f0da';
 }
 
 .accordion-active .accordion-icon:before{
-	content: '\e98c';
+	content: '\f146';
 	color:#f2f4f9;
 }
 .accordion-active .accordion-icon.papers:before{
-	content: '\e9f2';
+	content: '\f0d7';
 }
 
 .accordion-content{
@@ -5985,7 +5755,7 @@ ol.list li{
 }
 
 ul.list li:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6006,26 +5776,26 @@ ul.list li:before{
 }
 
 .arrow-list li:before{
-	content: '\e891';
+	content: '\f0da';
 }
 
 .check-list li:before{
-	content: '\e818';
+	content: '\f11e';
 	font-size:11px;
 }
 
 .star-list li:before{
-	content: '\e902';
+	content: '\f069';
 	font-size:9px;
 }
 
 .plus-list li:before{
-	content: '\e81f';
+	content: '\f067';
 	font-size:11px;
 }
 
 .finger-list li:before{
-	content: '\e8aa';
+	content: '\f0a4';
 }
 
 
@@ -6075,7 +5845,7 @@ blockquote.link-quote{
 
 blockquote.iconic-quote:after,
 blockquote.iconic-quote:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6093,21 +5863,21 @@ blockquote.iconic-quote:before{
 }
 
 blockquote.iconic-quote:before{
-	content: '\e849';
+	content: '\f10d';
 	position:absolute;
 	left:15px;
 	top:23px;
 }
 
 blockquote.iconic-quote:after{
-	content: '\e84a';
+	content: '\f10e';
 	position:absolute;
 	right:15px;
 	top:23px;
 }
 
 blockquote.link-quote:before{
-	content: '\e82c';
+	content: '\f0c1';
 	position:absolute;
 	left:15px;
 	top:23px;
@@ -6511,7 +6281,7 @@ input[type="checkbox"]+label+input[type="checkbox"]+label{
 
 input[type="radio"]+label:before,
 input[type="checkbox"]+label:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6545,7 +6315,7 @@ input[type="radio"]+label:before{
 }
 
 input[type="radio"]:checked+label:before{
-	content: '\e8ff';
+	content: '\f111';
 }
 
 input[type="checkbox"]+label:before{
@@ -6562,7 +6332,7 @@ input[type="checkbox"]+label:before{
 }
 
 input[type="checkbox"]:checked+label:before{
-	content: '\e818';
+	content: '\f00c';
 }
 
 input[type="submit"],
@@ -6627,7 +6397,7 @@ input[type="reset"]:hover{
 
 .increase-button:before,
 .decrease-button:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6658,7 +6428,7 @@ input[type="reset"]:hover{
 }
 
 .increase-button:before{
-	content: '\e987';
+	content: '\f067';
 }
 
 .decrease-button{
@@ -6669,7 +6439,7 @@ input[type="reset"]:hover{
 }
 
 .decrease-button:before{
-	content: '\e98a';
+	content: '\f068';
 }
 
 input.numeric-input{
@@ -6838,7 +6608,7 @@ input.numeric-input:focus{
 }
 
 .audio-play-button:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6851,13 +6621,13 @@ input.numeric-input:focus{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\e8bd';
+	content: '\f04b';
 	color:#fff;
 	font-size:14px;
 }
 
 .audio-play-button.pause:before{
-	content: '\e8c1';
+	content: '\f04c';
 }
 
 /* Progress Bar */
@@ -6916,7 +6686,7 @@ input.numeric-input:focus{
 }
 
 .audio-volume .volume-bar:before{
-	font-family: "fontello";
+	font-family: "icomoon";
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -6929,7 +6699,7 @@ input.numeric-input:focus{
 	text-transform: none;
 	line-height: 1em;
 	margin-left: .2em;
-	content: '\e87d';
+	content: '\f028';
 	color:#97acc3;
 	position:absolute;
 	font-size:16px;
@@ -6939,11 +6709,11 @@ input.numeric-input:focus{
 }
 
 .audio-volume.volume-down .volume-bar:before{
-	content: '\e87c';
+	content: '\f027';
 }
 
 .audio-volume.volume-off .volume-bar:before{
-	content: '\e87b';
+	content: '\f026';
 }
 
 .volume-bar{
