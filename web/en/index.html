@@ -1,0 +1,1058 @@
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Title -->
+		<title>地像天图课题组</title>
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="https://skyearth.org/img/favicon.ico">
+		
+		<!-- Stylesheets -->
+		<link href="https://skyearth.org/css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
+		<link href="../css/icomoon.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/flexslider.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" media="screen" />
+		<link href="https://skyearth.org/css/style.css" rel="stylesheet" type="text/css">
+		
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		
+		<!-- jQuery -->
+		<script src="https://skyearth.org/js/jquery-1.11.0.min.js"></script>
+		<script src="https://skyearth.org/js/jquery-ui-1.10.4.min.js"></script>
+		
+		<!-- Preloader -->
+		<script src="https://skyearth.org/js/jquery.queryloader2.min.js"></script>		
+
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		
+		$(document).ready(function(){
+			
+			$('html').show();
+			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();
+			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000,
+				onComplete: function(){
+					
+					$('.animate-onscroll').filter(function(index){
+					
+						return this.offsetTop < (window_s + window_h);
+						
+					}).each(function(index, value){
+						
+						var el = $(this);
+						var el_y = $(this).offset().top;
+						
+						if((window_s) > el_y){
+							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
+							setTimeout(function(){
+								$(el).css('opacity','1').removeClass('animated fadeInDown');
+							},2000);
+						}
+						
+					});
+					
+				}
+			});
+			
+		});
+		</script>
+		
+	</head>
+	
+	<body class="sticky-header-on tablet-sticky-header">
+	
+		<!-- Container -->
+		<div class="container">			
+			
+			<!-- Header -->
+			<header id="header" >
+				
+				<!-- Main Header -->
+				<div id="main-header">
+					
+					<div class="container">
+					
+					<div class="row">	
+						<!-- rsgis -->
+						<div id="rsgis" class="col-lg-3 col-md-3 col-sm-3">							
+							<a href="http://rsgis.whu.edu.cn"><img src="https://skyearth.org/img/rsgis.png" alt="rsgis"></a>	
+						</div>
+						<!-- /rsgis -->
+
+						<!-- Logo -->
+						<div class="col-lg-7 col-md-7 col-sm-7">							
+						<!--	<a href="index.html"><img src="img/logo.png" alt="Logo"></a> -->	
+							<blockquote> 地像天图课题组 </blockquote>
+						</div>
+						<!-- /Logo -->	
+
+						<!-- whu -->
+						<div id="whu" class="col-lg-2 col-md-2 col-sm-2">							
+							<a href="http://www.whu.edu.cn/"><img src="https://skyearth.org/img/whu.png" alt="whu"></a>
+						</div>
+						<!-- /whu -->
+						
+					</div>
+					
+					</div>
+					
+				</div>
+				<!-- /Main Header -->
+
+				<!-- Lower Header -->
+				<div id="lower-header">
+					
+					<div class="container">
+					
+					<div id="menu-button">
+						<div>
+						<span></span>
+						<span></span>
+						<span></span>
+						</div>
+						<span>Menu</span>
+					</div>
+					
+					<ul id="navigation">
+						
+						<!-- Home -->
+						<li class="home-button current-menu-item">						
+							<a href="https://skyearth.org"><i class="icons icon-home"></i></a>
+						</li>
+						<!-- /Home -->
+												
+						<!-- Team -->
+						<li >						
+							<a href="https://skyearth.org/team">团队</a>						
+							<ul>
+								<li><a href="https://skyearth.org/team#prof">教授</a></li>
+								<li><a href="https://skyearth.org/team#phd">博士生</a></li>
+								<li><a href="https://skyearth.org/team#grad">硕士生</a></li>
+								<li><a href="https://skyearth.org/team#alumni">毕业生</a></li>
+							</ul>							
+						</li>
+						<!-- /Team -->
+						
+						<!-- Projects -->
+						<li >
+							<a href="https://skyearth.org/projects">项目</a> <!-- <span>项目</span> -->
+						</li>
+						<!-- /Projects -->
+						
+						<!-- Publication -->
+						<li >
+							<span>成果</span>							
+							<ul>
+								<li><a href="https://skyearth.org/publication#book">书</a></li>
+								<li><a href="https://skyearth.org/publication#journal">期刊论文</a></li>
+								<li><a href="https://skyearth.org/publication#conference">会议论文</a></li>
+								<li><a href="https://skyearth.org/publication#properties">知识产权</a></li>
+							</ul>
+						</li>
+						<!-- /Publication -->
+						
+						<!-- Blog -->
+						<li >						
+							<a href="https://skyearth.org/blog">博客</a>
+						</li>
+						<!-- /Blog -->						
+						
+						<!-- Events -->
+						<li >
+							<a href="https://skyearth.org/blog/events.html">活动</a>
+						</li>
+						<!-- /Events -->						
+						
+						<!-- Contact -->
+						<li >
+							<a href="https://skyearth.org/contact">联系方式</a>
+						</li>
+						<!-- /Contact -->
+
+						<!-- About -->
+						<li >
+							<a href="https://skyearth.org/zhangyj">关于</a>
+						</li>
+						<!-- /About -->
+						
+						<!-- English -->
+						<li class="donate-button ">
+							<a href="https://en.skyearth.org">English Version</a>
+						</li>
+						<!-- /English -->
+						
+					</ul>					
+					</div>					
+				</div>
+				<!-- /Lower Header -->				
+				
+			</header>
+			<!-- /Header -->
+
+			<section id="content">
+			
+				<!-- Section -->
+				<section class="section full-width-bg">
+				
+					<div class="row">
+				
+						<div class="col-lg-9 col-md-9 col-sm-8">
+						
+							<!-- Main Slider -->
+							<div class="flexslider main-flexslider">
+							
+								<ul class="slides">
+								
+									<li id="main_flex_1">
+									
+									<div class="slide align-right">
+										<h2><br><br><br></h2>
+										<a href="https://skyearth.org/team" class="button big button-arrow">加入我们</a>
+									</div>
+										
+									</li>
+									
+									<li id="main_flex_2">
+								
+									<div class="slide align-right">
+										<h2><br><br><br></h2>
+										<a href="https://skyearth.org/blog" class="button big button-arrow">更多新闻</a>
+									</div>
+										
+									</li>
+									
+									<li id="main_flex_3">
+								
+									<div class="slide align-center">
+										<h2><br></h2>
+										<h4 class="great-vibes">地理成像  天地测图</h4>
+										<h2> </h2>
+										<a href="https://skyearth.org/projects" class="button big button-arrow">更多项目</a>
+									</div>
+										
+									</li>
+									
+								</ul>
+								
+							</div>	
+							<!-- /Main Slider -->
+							
+						</div>					
+					
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+
+							<div class="banner-wrapper">
+								<a class="banner" href="https://skyearth.org/team">
+									<i class="icons icon-group"></i>
+									<h4>团队成员</h4>
+									<p>联系方式 | 加入我们</p>
+								</a>
+							</div>
+							
+							<div class="banner-wrapper">
+								<a class="banner" href="https://skyearth.org/publication">
+									<i class="icons icon-graduation-cap"></i>
+									<h4>科研成果</h4>
+									<p>论文著作 | 知识产权</p>
+								</a>
+							</div>
+							
+							<div class="banner-wrapper">
+								<a class="banner" href="https://skyearth.org/projects">
+									<i class="icons icon-newspaper-o"></i>
+									<h4>科研项目</h4>
+									<p>研究方向 | 支撑项目</p>
+								</a>
+							</div>
+	
+							<div class="banner-wrapper">
+								<a class="banner" href="https://skyearth.org/blog">
+									<i class="icons icon-camera-retro"></i>
+									<h4>博客</h4>
+									<p>新闻 | 相册</p>
+								</a>
+							</div>
+
+							<!-- Featured Video -->
+							<div class="media-item" style="margin: 30px 0 0">
+								<div class="media-image">
+									<video poster="https://skyearth.org/img/team_video.jpg" width=100% onmouseover="controls=true" onmouseout="controls=false">
+  										<source src="https://skyearth.org/img/team.mp4" type="video/mp4"></source>
+									</video>
+								</div>
+							</div>
+							<!-- /Featured Video -->
+
+						</div>
+					
+					</div>
+					
+				</section>
+				<!-- /Section -->				
+				
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+				
+				<!-- Section -->
+				<section class="section full-width-bg gray-bg" style="padding-top: 30px;">
+				
+					<div class="row" >
+					
+						<div class="col-lg-9 col-md-9 col-sm-8">
+	
+							<!-- Owl Carousel -->
+							<div class="owl-carousel-container">
+
+								<div class="owl-header">
+
+									<h3 class="no-margin-top">科研项目</h3>
+									<div class="carousel-arrows">
+										<span class="left-arrow"><i class="icons icon-caret-left"></i></span>
+										<span class="right-arrow"><i class="icons icon-caret-right"></i></span>
+										<span><a class="icons icon-list" href="https://skyearth.org/projects"></a></span>
+									</div>
+
+								</div>
+								
+								<div class="owl-carousel" data-max-items="3">
+
+									<!-- Owl Item -->
+									<div class="blog-post animate-onscroll">
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj11_brief.jpg" alt="prj11">
+										</div>										
+										<h4 class="post-title" style="font-size: 16px;"><a href="https://skyearth.org/projects#prj11">结合LiDAR点云和多视角航空影像的建筑物结构化模型重建理论与方法</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2019.01 - 2022.12</span>
+										</div>											
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post animate-onscroll">
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj10_brief.jpg" alt="prj10">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj10">人工智能驱动的领域知识建模与深度共享服务</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2018.05 - 2020.12</span>
+										</div>											
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post animate-onscroll">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj9_brief.jpg" alt="prj9">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj9">基于单立体模型的多视影像密集匹配理论与方法</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2016.01 - 2019.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj8_brief.jpg" alt="prj8">
+										</div>
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj8">数字摄影测量与遥感</a></h4>	
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2014.01 - 2016.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj7_brief.jpg" alt="prj7">
+										</div>
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj7">基于多源数据联合平差的机载LiDAR点云精度优化</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2012.01 - 2015.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj6_brief.jpg" alt="prj6">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj6">中低空自由飞行遥感影像智能处理系统</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2011.01 - 2013.06</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj5_brief.jpg" alt="prj5">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj5">多源线阵、面阵光学影像的联合区域网空中三角测量</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2011.01 - 2013.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj4_brief.jpg" alt="prj4">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj4">村镇地理信息采集技术与设备研发</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2007.01 - 2009.08</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">										
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj3_brief.jpg" alt="prj3">
+										</div>										
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj3">遥感影像自动匹配</a></h4>										
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2007.01 - 2009.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj2_brief.jpg" alt="prj2">
+										</div>
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj2">广义点摄影测量解算方法及其应用基础研究</a></h4>
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2007.01 - 2009.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+	
+									<!-- Owl Item -->
+									<div class="blog-post">
+										<div class="post-image">
+											<img src="https://skyearth.org/projects/img/prj1_brief.jpg" alt="prj1">
+										</div>
+										<h4 class="post-title"><a href="https://skyearth.org/projects#prj1">基于视频摄影测量的城市三维建模关键技术研究</a></h4>
+										<div class="post-meta">
+											<span><i class="icons icon-calendar icon-before"></i>2004.01 - 2006.12</span>
+										</div>
+									</div>
+									<!-- /Owl Item -->
+								
+								</div>
+
+							</div>
+							<!-- /Owl Carousel -->
+	
+							<!-- Owl Carousel -->
+							<div class="owl-carousel-container">
+								
+								<div class="owl-header">
+
+									<h3 class="no-margin-top">团队成员</h3>									
+									<div class="carousel-arrows">
+										<span class="left-arrow"><i class="icons icon-caret-left"></i></span>
+										<span class="right-arrow"><i class="icons icon-caret-right"></i></span>
+										<span><a class="icons icon-list" href="https://skyearth.org/team"></a></span>
+									</div>
+
+								</div>
+								
+								<div class="owl-carousel" data-max-items="4">									
+									<!-- Team Member -->
+									<div class="team-member animate-onscroll">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/zhangyj_square.jpg" alt="zhangyj">										
+										<div class="team-member-info">										
+											<h3>张永军</h3>
+											<span class="job">Lab Leader</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/zhangyj" class="button " style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member animate-onscroll">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/wanyi_square.jpg" alt="wanyi">										
+										<div class="team-member-info">										
+											<h3>万一</h3>
+											<span class="job">2015级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/wanyi.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member animate-onscroll">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/xiexunwei_square.jpg" alt="xiexunwei">										
+										<div class="team-member-info">										
+											<h3>谢勋伟</h3>
+											<span class="job">2015级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/xiexunwei.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member animate-onscroll">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/wangxiang_square.jpg" alt="wangxiang">										
+										<div class="team-member-info">										
+											<h3>王祥</h3>
+											<span class="job">2015级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/wangxiang.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/liuxinyi_square.jpg" alt="liuxinyi">										
+										<div class="team-member-info">										
+											<h3>刘欣怡</h3>
+											<span class="job">2016级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/liuxinyi.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/wenfei_square.jpg" alt="wenfei">										
+										<div class="team-member-info">										
+											<h3>文飞</h3>
+											<span class="job">2016级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/wenfei.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/liuchi_square.jpg" alt="liuchi">										
+										<div class="team-member-info">										
+											<h3>刘驰</h3>
+											<span class="job">2017级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/liuchi.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/zhuxianzhang_square.jpg" alt="zhuxianzhang">										
+										<div class="team-member-info">										
+											<h3>祝宪章</h3>
+											<span class="job">2018级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/zhuxianzhang.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/weidong_square.jpg" alt="weidong">										
+										<div class="team-member-info">										
+											<h3>魏东</h3>
+											<span class="job">2018级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/weidong.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/liuxiaojian_square.jpg" alt="liuxiaojian">										
+										<div class="team-member-info">										
+											<h3>刘晓建</h3>
+											<span class="job">2018级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/liuxiaojian.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/yangwangshan_square.jpg" alt="yangwangshan">										
+										<div class="team-member-info">										
+											<h3>杨望山</h3>
+											<span class="job">2018级博士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/yangwangshan.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/sunping_square.jpg" alt="sunping">										
+										<div class="team-member-info">										
+											<h3>孙萍</h3>
+											<span class="job">2016级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/sunping.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/liulinyu_square.jpg" alt="liulinyu">										
+										<div class="team-member-info">										
+											<h3>刘林钰</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/liulinyu.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/zhengzhi_square.jpg" alt="zhengzhi">										
+										<div class="team-member-info">										
+											<h3>郑志</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/zhengzhi.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/huangxignbei_square.jpg" alt="huangxingbei">										
+										<div class="team-member-info">										
+											<h3>黄星北</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/huangxingbei.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/wangguangshuai_square.jpg" alt="wangguangshuai">										
+										<div class="team-member-info">										
+											<h3>王广帅</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/wangguangshuai.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/caiping_square.jpg" alt="caiping">										
+										<div class="team-member-info">										
+											<h3>蔡平</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/caiping.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/zhangbin_square.jpg" alt="zhangbin">										
+										<div class="team-member-info">										
+											<h3>张斌</h3>
+											<span class="job">2017级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/zhangbin.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->					
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/xieyiming_square.jpg" alt="xieyiming">										
+										<div class="team-member-info">										
+											<h3>谢一鸣</h3>
+											<span class="job">2018级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/xieyiming.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+									<!-- Team Member -->
+									<div class="team-member">										
+										<img class="team-member-image" src="https://skyearth.org/team/members/helin_square.jpg" alt="helin">										
+										<div class="team-member-info">										
+											<h3>何林</h3>
+											<span class="job">2018级硕士生</span>										
+											<div class="team-member-more">
+												<div class="social-media">
+													<ul class="social-icons">
+														<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+														<a href="https://skyearth.org/team/members/helin.html" class="button fancybox-member fancybox.iframe" style="width: 35px; padding: 6px;">...</a>
+													</ul>
+													<ul class="social-buttons">
+													</ul>
+												</div>
+											</div>										
+										</div>									
+									</div>
+									<!-- /Team Member -->
+	
+								</div>
+	
+							</div>
+							<!-- /Owl Carousel -->
+							
+						</div>
+											
+						<!-- Sidebar -->
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+	
+							<!-- Upcoming Events -->
+							<div class="sidebar-box white">
+								<h3>Upcoming Events</h3>
+								<ul class="upcoming-events">
+								
+									<!-- Event -->
+									<li>
+										<div class="date">
+											<span>
+												<span class="day">6</span>
+												<span class="month">SEP</span>
+											</span>
+										</div>
+										
+										<div class="event-content">
+											<h6><a href="https://skyearth.org/blog/events.html">例会</a></h6>
+											<ul class="event-meta">
+												<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
+												<li><i class="icons icon-location"></i> 遥感院207会议室</li>
+											</ul>
+										</div>
+									</li>
+									<!-- /Event -->
+									
+									<!-- Event -->
+									<li>
+										<div class="date">
+											<span>
+												<span class="day">14</span>
+												<span class="month">SEP</span>
+											</span>
+										</div>
+										
+										<div class="event-content">
+											<h6><a href="event-post-v2.html">例会</a></h6>
+											<ul class="event-meta">
+												<li><i class="icons icon-clock"></i> 7:00 pm - 9:00 pm</li>
+												<li><i class="icons icon-location"></i> 遥感院207会议室</li>
+											</ul>
+										</div>
+									</li>
+									<!-- /Event -->								
+									
+								</ul>
+								<a href="#" class="button transparent button-arrow">更多</a>
+							</div>
+							<!-- /Upcoming Events -->	
+
+							<div id="tencentmap" style="margin-top: 30px; height: 260px;"></div>
+    						
+    						<div class="social-media" style="margin-top: 30px;">
+    							<span class="small-caption">Get connected:</span>
+								<ul class="social-icons">
+									<li class="researchgate"><a href="https://www.researchgate.net/profile/Yongjun_Zhang7" class="tooltip-ontop" title="ResearchGate"><i class="icons icon-researchgate"></i></a></li>
+									<li class="googlescholar"><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN" class="tooltip-ontop" title="Google Scholar"><i class="icons icon-google"></i></a></li>
+									<li class="github"><a href="https://github.com/YongjunZhangWHU" class="tooltip-ontop" title="Github"><i class="icons icon-github"></i></a></li>
+									<li class="email"><a href="mailto:zhangyj@whu.edu.cn" class="tooltip-ontop" title="Email"><i class="icons icon-envelope"></i></a></li>
+								</ul>
+							</div>
+	
+						</div>
+						<!-- /Sidebar fab fa-researchgate-->
+					
+					</div>
+					
+				</section>
+				<!-- /Section -->
+			
+			</section>
+
+			<!-- Footer -->
+			<footer id="footer">
+				
+				<!-- Lower Footer -->
+				<div id="lower-footer">
+					
+					<div class="row">
+						
+						<div class="animate-onscroll" style="text-align: center;">
+
+							<p class="footer-link">
+								<a href="https://skyearth.org"><strong>地像天图课题组</strong></a> |
+								<a href="https://skyearth.org/team/">团队成员</a> | 
+								<a href="https://skyearth.org/contact/">联系我们</a> | 
+								<a href="https://skyearth.org/blog/">博客新闻</a> | 
+								<a href="https://skyearth.org/blog/events.html">活动日历</a> | 
+								<a href="https://skyearth.org/projects/">科研项目</a> | 
+								<a href="https://skyearth.org/publication/">论文著作</a> | 
+								<a href="https://skyearth.org/publication#properties">知识产权</a> | 
+								<a href="https://skyearth.org/zhangyj/">关于我们</a>
+							</p>
+						
+							<p class="copyright">© 2018 SkyEarth. All Rights Reserved.
+								<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
+								<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">遥感信息工程学院</a>
+							</p>
+							
+						</div>						
+					</div>
+					
+				</div>
+				<!-- /Lower Footer -->
+							
+			</footer>
+			<!-- /Footer -->
+
+			<!-- Back To Top -->
+			<a href="#" id="button-to-top"><i class="icons icon-caret-up"></i></a>
+		
+		</div>
+		<!-- /Container -->	
+	
+		<!-- JavaScript -->
+		
+		<!-- Bootstrap -->
+		<script type="text/javascript" src="https://skyearth.org/js/bootstrap.min-3.1.1.js"></script>
+		
+		<!-- Modernizr -->
+		<script type="text/javascript" src="https://skyearth.org/js/modernizr.js"></script>
+		
+		<!-- Sliders/Carousels -->
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/owl.carousel.min.js"></script>
+				
+		<!-- Add fancyBox -->
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.fancybox-buttons.js?v=1.0.5"></script>		
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+		<!-- Tencent Map-->		
+		<script src="https://map.qq.com/api/js?v=2.exp"></script>
+				
+		<!-- Main Script -->
+		<script type="text/javascript" src="https://skyearth.org/js/script.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				enableFancyBox('.fancybox-member');
+
+				enableOwlCarousel();
+				enableFlexSlider();
+				enableBannerHoverEffect();
+
+				enableTencentMap();
+			});
+		</script>
+		
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+			<script type="text/javascript" src="js/script_ie.js"></script>
+		<![endif]-->
+		
+		
+	</body>
+
+</html>
