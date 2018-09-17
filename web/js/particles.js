@@ -59,7 +59,7 @@ var pJS = function(tag_id, params){
         random: false,
         anim: {
           enable: false,
-          speed: 20,
+          speed: 2,   //--20  --xyliu 20180917
           size_min: 0,
           sync: false
         }
@@ -520,7 +520,7 @@ var pJS = function(tag_id, params){
 
       /* move the particle */
       if(pJS.particles.move.enable){
-        var ms = pJS.particles.move.speed/5;
+        var ms = pJS.particles.move.speed/6; // --2 xyliu 20180917
         p.x += p.vx * ms;
         p.y += p.vy * ms;
       }
