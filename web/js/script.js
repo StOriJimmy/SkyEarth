@@ -262,54 +262,6 @@ function enableTooltips(){
 	
 }
 
-/* Flickr Feed */
-function enableFlickrFeed(){
-	
-	$('.flickr-feed').jflickrfeed({
-		limit: 6,
-		qstrings: {
-			id: '76745153@N04'
-		},
-		itemTemplate: 
-		'<li>' +
-			'<a href="{{link}}" target="_blank"><img src="{{image_s}}" alt="{{title}}" /></a>' +
-		'</li>'
-	});
-	
-}
-
-/* Instagram Feed */
-function enableInstagramFeed(){
-	
-	if($('#instagram-feed').length){
-		var instagram_feed = new Instafeed({
-			get: 'popular',
-			clientId: '0ce2a8c0d92248cab8d2a9d024f7f3ca',
-			target: 'instagram-feed',
-			template: '<li><a target="_blank" href="{{link}}"><img src="{{image}}" /></a></li>',
-			resolution: 'standard_resolution',
-			limit: 6
-		});
-		instagram_feed.run();
-	}
-	
-}
-
-/* Twitter Feed */
-function enableTwitterFeed(){
-	
-	/* Twitter WIdget */
-	$('.twitter-widget').tweet({
-		modpath: 'php/twitter/',
-		count: 1,
-		loading_text: 'Loading twitter feed...',
-	})
-	
-	/* Twitter Share Button */
-	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-	
-}
-
 /* Content Animation */
 function enableContentAnimation(){
 	
