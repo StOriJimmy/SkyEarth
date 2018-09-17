@@ -211,7 +211,7 @@ h2{
 }
 
 h3{
-  font-weight:800;
+  font-weight:400;
 }
 
 h4{
@@ -311,6 +311,18 @@ hr {
   margin-right: 10px;
 }
 
+.align-left{
+  text-align:left;
+}
+
+.align-center{
+  text-align:center;
+}
+
+.indent-text{
+  text-indent:2em;
+}
+
 /*---------------------------------------------------------
  3. Header
 -------------------------------------------------------- */
@@ -385,7 +397,7 @@ h3.profile-title {
 }
 
 .main-navigation {
-  margin: 10px 0;
+  margin: 0;
 }
 .main-navigation li {
   display: block;
@@ -408,6 +420,10 @@ h3.profile-title {
 }
 .main-navigation li a.active:hover {
   background: #495461;
+}
+
+.en-navigation {
+  text-align: left;
 }
 
 .language-link a {
@@ -551,6 +567,16 @@ h3.profile-title {
   color: white;
   margin-bottom: 16px;
 }
+
+.welcome-text h3 {
+  font-size: 14px;
+  font-family: 'robotoregular';
+  font-weight: 1;
+  color: white;
+  text-align: justify;
+  line-height: 20px;
+}
+
 .welcome-text h4 {
   font-size: 18px;
   font-family: 'robotoregular';
