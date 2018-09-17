@@ -2266,11 +2266,11 @@ h6.shortcodes-caption{
 }
 
 .filter-dropdown.opened>li>span:after{
-	content: '\e88f';
+	content: '\f0d8';
 }
 
 .sorting-desc:after{
-	content: '\e88f';
+	content: '\f0d8';
 	margin-left:10px;
 	margin-right:-5px;
 }
@@ -2364,7 +2364,7 @@ h6.shortcodes-caption{
 }
 
 .sorting-asc:after{
-	content: '\e88e';
+	content: '\f0d7';
 	margin-left:10px;
 	margin-right:-5px;
 }
