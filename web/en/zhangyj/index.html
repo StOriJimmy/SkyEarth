@@ -67,7 +67,7 @@
         <!-- SIDEBAR -->
         <div class="sidebar-menu hidden-xs hidden-sm align-center">
             <div class="home-button"><a href="https://skyearth.org"><i class="icon-home icon-home-button"></i></a></div>
-            <div class="top-section">
+            <div class="top-section" style="padding: 20px 10px;">
                 <img class="profile-image" src="https://skyearth.org/zhangyj/img/profile.jpg" alt="Zhangyj">
                 <h3 class="profile-title">Yongjun Zhang</h3>
                 <p class="profile-description">School of Remote Sensing and Information Engineering</p>
@@ -86,7 +86,7 @@
                     <li><a href="#contact"><i class="icon-address-card"></i>Contact</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
-            <div class="social-icons2">
+            <div id="social-icons" class="social-icons2">
                 <ul>
                     <li><a href="https://www.researchgate.net/profile/Yongjun_Zhang7"><i class="icon icon-researchgate"></i></a></li>
                     <li><a href="https://scholar.google.com/citations?user=ZECiXAkAAAAJ&hl=EN"><i class="icon icon-google"></i></a></li>
@@ -4080,31 +4080,15 @@
                 //$("#book_clone").load("https://skyearth.org/publication/index.html #book");
                 //$("#journal").load("https://skyearth.org/publication/index.html #journal");
                 //$("#conference").load("https://skyearth.org/publication/index.html #conference");
+                
+                enableOwlCarousel();
 
-                $(".owl-carousel").owlCarousel({
-        items:2,
-        center:true,
-        URLhashListener:true,
-        autoplayHoverPause:true,
-        autoHeight: true,
-        startPosition: 'URLHash',
-        center: false
-    });
-
-    $('.owl-goto').each(function(){
-        $(this).find('li.box-item').hover(function(){
-            location.href = '#'+$(this).attr('name');                        
-        });
-    });
-
-               // enableOwlCarousel();
-
-                //enableFancyBox('.fancybox');
+                enableFancyBox('.fancybox');
 
                 enableAccordions();
 
-                enableTencentMap();
- 
+                enableTencentMap();                
+            
             });
         </script>
 
