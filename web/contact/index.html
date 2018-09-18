@@ -50,28 +50,7 @@
 				barHeight: 4,
 				percentage:false,
 				deepSearch:true,
-				minimumTime:1000,
-				onComplete: function(){
-					
-					$('.animate-onscroll').filter(function(index){
-					
-						return this.offsetTop < (window_s + window_h);
-						
-					}).each(function(index, value){
-						
-						var el = $(this);
-						var el_y = $(this).offset().top;
-						
-						if((window_s) > el_y){
-							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
-							setTimeout(function(){
-								$(el).css('opacity','1').removeClass('animated fadeInDown');
-							},2000);
-						}
-						
-					});
-					
-				}
+				minimumTime:1000
 			});
 			
 		});
