@@ -556,8 +556,7 @@ function enableFancyBox(e){
 	// vcard
 	if (e == ".fancybox-member") {
 		$(e).fancybox({
-		'width':535,
-		'height':360,
+			'width':630,
 		});
 	}	
 
@@ -586,19 +585,6 @@ function enableFancyBox(e){
 		});
 	}	
 
-}
-
-/* JackBox Plugin */
-function enableJackBox(){
-	
-	$(window).load(function(){
-
-		jQuery(".jackbox[data-group]").jackBox("init", {
-			deepLinking: false
-		});
-		
-	});
-	
 }
 	
 /* Accordions */
@@ -638,49 +624,6 @@ function enableAccordions(){
 		});
 	
 	});	
-	
-	
-	
-	/* Link Toggles */
-	$('.toggle-link').each(function(){
-		
-		var target = $(this).attr('href');
-		$(target).hide();
-		
-		$(this).click(function(e){
-			
-			e.preventDefault();
-			
-			var target = $(this).attr('href');
-			$(target).slideToggle(300);
-			
-		});
-		
-	});
-	
-	
-	
-	/* Payment Options Accordion */
-	$('.payment-options').each(function(){
-		
-		$(this).find('.payment-content').hide();
-		$(this).find('input[type="radio"]:checked').parent().parent().addClass('active').find('.payment-content').show();
-		
-		$(this).find('.payment-header').click(function(){
-			
-			if($(this).find('input[type="radio"]').is(':checked')){
-				
-				$(this).parent().parent().find('.payment-content').slideUp(300);
-				$(this).parent().parent().find('li.active').removeClass('active');
-				$(this).parent().addClass('active').find('.payment-content').slideDown(300);
-				
-			}
-			
-		});
-		
-	});
-
-
 }
 
 /* Tabs */
@@ -700,53 +643,8 @@ function enableTabs(){
 			$(this).find('.tab-header ul li:first-child').addClass('active-tab');
 		}
 
-		//// Prevent Default
-		//$(this).find('.tab-header li a').click(function(e){
-		//	e.preventDefault();
-		//});
-		//
-		//// Tab Navigation 
-		//$(this).find('.tab-header li').click(function(){
-		// 	
-		//	var target = $(this).find('a').attr('href');
-//
-		//	var _type = location.href.split('#')[0];
-		//	location.href = _type + target;
-		//
-		//	$(this).parent().parent().parent().find('.tab').fadeOut(200);
-		//	$(this).parent().parent().parent().find('.tab'+target).delay(200).fadeIn(200);
-		//	
-		//	$(this).parent().find('.active-tab').removeClass('active-tab');
-		//	$(this).addClass('active-tab');
-		//});
 	});
 }
-//	function enableTabs(){
-//		$('.tabs').each(function(){
-//			
-//			// Set Active Tab
-//			$(this).find('.tab').hide();
-//			$(this).find('.tab:first-child').show();
-//			$(this).find('.tab-header ul li:first-child').addClass('active-tab');
-//			
-//			// Prevent Default
-//			$(this).find('.tab-header li a').click(function(e){
-//				e.preventDefault();
-//			});
-//			
-//			// Tab Navigation 
-//			$(this).find('.tab-header li').click(function(){
-//				
-//				var target = $(this).find('a').attr('href');
-//				
-//				$(this).parent().parent().parent().find('.tab').fadeOut(200);
-//				$(this).parent().parent().parent().find(target).delay(200).fadeIn(200);
-//				
-//				$(this).parent().find('.active-tab').removeClass('active-tab');
-//				$(this).addClass('active-tab');
-//			});
-//		});
-//	}
 	
 /* Alert Boxes */
 function enableAlertBoxes(){
@@ -1074,9 +972,6 @@ function enableMixItup(){
 	
 	// Mix It Up
 	$('.media-items').mixItUp();
-	$('.shop-items').mixItUp();
-	
-	
 	
 	/* Filtering Dropdown */
 	$('.filter-dropdown>li').click(function(){
@@ -1118,59 +1013,6 @@ function enableMixItup(){
 	
 }	
 
-/* Start Rating */
-function enableStarRating(){
-	
-	// Read Only Rating
-	$('.shop-rating.read-only').raty({ 
-		readOnly: true,
-		path:'img/rating',
-		score: function() {
-			return $(this).attr('data-score');
-		}
-	 });
-	 
-	 // Rate Only Rating
-	$('.shop-rating.rate-only').raty({ 
-		readOnly: false,
-		path:'img/rating',
-		score: function() {
-			return $(this).attr('data-score');
-		}
-	 });
-	 
-	 // Read Only Rating Small
-	$('.shop-rating.read-only-small').raty({ 
-		readOnly: true,
-		path:'img/rating/small',
-		score: function() {
-			return $(this).attr('data-score');
-		}
-	 });
-	
-}
-
-/* Shopping Cart */
-function enableShoppingCart(){
-	
-	$('.shopping-cart-table .remove-shopping-item').click(function(){
-		
-		$(this).parent().parent().fadeOut(300, function(){
-			$(this).remove();
-		});
-		
-	});
-	
-	
-	$('.shopping-cart-dropdown .remove-shopping-item').click(function(){
-		
-		$(this).parent().parent().parent().fadeOut(300, function(){
-			$(this).remove();
-		});
-		
-	});
-	
-}
 
 /* Social Share Buttons */
 function enableSocialShare(){
@@ -1227,85 +1069,6 @@ function enableContactForm(){
 	
 }	
 
-/* AJAX Newsletter Form */
-function enableNewsletterForm(){
-
-	$('#newsletter>*').wrap('<div class="form-content"></div>');
-	$('#newsletter').append('<div class="form-report"></div>');
-	
-	
-	$('#newsletter').submit(function(e){
-		
-		e.preventDefault();
-		
-		$('#newsletter .newsletter-email input').tooltip('destroy');
-		$('#newsletter .newsletter-zip input').tooltip('destroy');
-		
-		var form = $(this);
-		var action = $(this).attr('action');
-		var data = $(this).serialize();
-		
-		var error = false;
-		var email_val = form.find('.newsletter-email input').val();
-		var zip_val = form.find('.newsletter-zip input').val();
-		
-		if(email_val == '' || email_val == ' '){
-			
-			error = true;
-			form.find('.newsletter-email input').tooltip({title:'Required', trigger: 'manual'});
-			form.find('.newsletter-email input').tooltip('show');
-			
-		}else{
-			
-			var email_re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			
-			if(!email_re.test(email_val)){
-				error = true;
-				form.find('.newsletter-email input').tooltip({title:'Email not valid', trigger: 'manual'});
-				form.find('.newsletter-email input').tooltip('show');
-				
-			}else{
-				form.find('.newsletter-email input').tooltip('hide');
-			}
-			
-		}
-			
-		if(zip_val == '' || zip_val == ' '){
-			
-			error = true;
-			form.find('.newsletter-zip input').tooltip({title:'Required', trigger: 'manual'});
-			form.find('.newsletter-zip input').tooltip('show');
-			
-		}else{
-			form.find('.newsletter-zip input').tooltip('hide');
-		}
-		
-		
-		if(!error){
-			$.ajax({
-				type: "POST",
-				url: action,
-				data: data, 
-				beforeSend: function(){
-					form.css('opacity', '0.5');
-				},
-				success: function(data){
-					
-					// Display returned data
-					form.css('opacity', '1');
-					form.find('.form-report').html(data);
-					
-					// Hide Form on Success
-					if (data.indexOf('class="success"') >= 0){
-						form.find('.form-content').slideUp(300);
-					}
-				}
-			});
-		}
-		
-	});
-	
-}
 
 /* ClouZoom Products Slider */
 function enableProductSlider(){
@@ -1413,10 +1176,6 @@ $(document).ready(function(){
 		$html.addClass('notcsstransforms3d');
 	
 
-	/* Main Functions */
-	
-	
-	/* Layout Options */
 	enableStickyHeader(); // Sticky Header 
 	
 	enableFullWidth(); // Full Width Section
@@ -1425,77 +1184,8 @@ $(document).ready(function(){
 	
 	enableContentAnimation(); // Content Animation
 
-//	enableBannerHoverEffect();
-	
-//	enableSpecialCssEffects(); // CSS Animations
-	
 	enableBackToTop(); // Back to top button
 	
 	enableMobileNav(); // Mobile Navigation
-	
-//	enableCustomInput(); // Custom Input Styles
-	
-	
-	
-	/* Sliders */
-	
-//	enableFlexSlider(); // FlexSlider
-	
-//	enableOwlCarousel(); // Owl Carousel
-	
-//	enableRevolutionSlider(); // Revolution Slider
-	
-	
-	
-	/* Social Media Feeds */
-	
-//	enableFlickrFeed(); // Flickr Feed
-	
-//	enableInstagramFeed(); // Instagram Feed
-	
-//	enableTwitterFeed(); // Twitter Feed
-	
-	
-	
-	/* Elements */
-	
-//	enableAccordions(); // Accordion
-	
-//	enableTabs(); // Tabs
-	
-//	enableAlertBoxes(); // Alert Boxes
-	
-//	enableProgressbars(); // Progress Bars
-	
-//	enableCustomAudio(); // Custom Audio Player
-	
-//	enableShoppingCart(); // Shopping Cart 
-	
-//	enableSocialShare(); // Social Share Buttons
-	
-	
-	
-	
-	/* Other Plugins */
-
-//	enableFancyBox();
-	
-//	enableJackBox(); // JackBox Plugin
-	
-//	enableCalendar(); // Full Calendar
-	
-//	enableStarRating(); // Star Rating
-	
-//	enableMixItup(); // MixItUp (Filtering and Sorting)
-	
-//	enableProductSlider(); // ClouZoom Products Slider
-	
-	
-	
-	/* AJAX forms */
-	
-//	enableContactForm(); // AJAX Contact Form
-	
-//	enableNewsletterForm(); // AJAX Newsletter Form
 	
 });
