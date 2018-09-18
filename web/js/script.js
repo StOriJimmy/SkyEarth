@@ -350,27 +350,7 @@ function enableBannerHoverEffect(){
 /* Special CSS Effects */
 function enableSpecialCssEffects(){
 	
-	/* Firefox Pricing Tables Height Fix */
-	$(window).load(function(){
-		fixPricingTables();
-	});
-	
-	$(window).resize(function(){
-		fixPricingTables();
-	});
-		
-	
-	/* Sorting Float Fix */
-
-	//! Xinyi Liu - 20180703
-	
-	$(window).load(function(){
-	//	mediaSortFix();
-	});
-	
-	$(window).resize(function(){
-	//	mediaSortFix();
-	});
+	//! Xinyi Liu - 20180703	
 
 	function mediaSortFix(){
 		var media_items_height = 0;
