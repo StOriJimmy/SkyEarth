@@ -169,21 +169,6 @@ a:hover{
 	font-size:13px;
 }
 
-
-
-.great-vibes{
-	font-family: 'Great Vibes', cursive;
-}
-
-#lower-footer .social-media ul{
-	float:right;
-	margin:0;
-}
-
-#lower-footer .social-icons{
-	margin-left:20px;
-}
-
 .blue{
 	color:#4174c5;
 }
@@ -4008,13 +3993,10 @@ a.tag:hover{
 	border-top:1px solid #324e79;
 	padding-top:15px;
 	padding-bottom:15px;
+	text-align: center;
 	-webkit-transform: translateZ(0px);
 }
 
-#lower-footer .social-buttons{
-	margin:8px 0 0!important;
-	overflow:hidden;
-}
 .footer-link{
 	color: #22a2c3;
 	font-size: 14px;
