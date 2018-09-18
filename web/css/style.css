@@ -5064,14 +5064,14 @@ blockquote.link-quote:after{
 }
 
 .button-pagination a.previous:before{
-	content: '\e890';
+	content: '\f0d9';
 	margin-right:5px;
 	color:#808ca4;
 	margin-left:-5px;
 }
 
 .button-pagination a.next:after{
-	content: '\e891';
+	content: '\f0da';
 	margin-left:5px;
 	color:#808ca4;
 	margin-right:-5px;
@@ -6069,7 +6069,7 @@ input.numeric-input:focus{
 	
 	#navigation>li.home-button>a:after,
 	#navigation>li.home-button>span:after{
-		content:'\e891';
+		content:'\f0da';
 		display:block;
 	}
 	
@@ -6096,12 +6096,12 @@ input.numeric-input:focus{
 		right:15px;
 		position:absolute;
 		top:15px;
-		content:'\e891';
+		content:'\f0da';
 	}
 	
 	#navigation li.dropdown-opened>span:after,
 	#navigation li.dropdown-opened>a:after{
-		content: '\e88e'; 
+		content: '\f0d7'; 
 	}
 	
 	#navigation.navigation-opened{

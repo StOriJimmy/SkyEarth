@@ -972,12 +972,6 @@ function enableMixItup(){
 	});
 	
 	
-	/* Sorting Options */
-	$('.order-group>button:last-child').hide();
-	$('.order-group.ascending-sort>button:first-child').hide();
-	$('.order-group.ascending-sort>button:last-child').show();
-	$('.order-group.descending-sort>button:last-child').hide();
-	$('.order-group.descending-sort>button:first-child').show();
 	
 	$('.filter-sorting button').click(function(){
 		
@@ -1050,51 +1044,6 @@ function enableContactForm(){
 		
 	});
 	
-}	
-
-
-/* ClouZoom Products Slider */
-function enableProductSlider(){
-	
-	if($('.shop-product-gallery').length > 0){
-		
-		var current_img = $('.shop-product-gallery .main-image img').attr('src');
-		$('.shop-product-gallery .slider-navigation li').find('a[href="'+current_img+'"]').parent().addClass('active');
-		
-	}
-	
-	/* Slider Navigation */
-	$('.shop-product-gallery .slider-navigation li').click(function(e){
-		
-		var image = $(this).find('a').attr('href');
-		$(this).parent().find('.active').removeClass('active');
-		$(this).addClass('active');
-		
-		$('.shop-product-gallery .main-image img').animate({opacity:0},300,function(){
-			$(this).attr('src',image).animate({opacity:1}, 300);
-		});
-		
-	});
-	
-		
-	/* JackBox */
-	$('.shop-product-gallery .main-image .fullscreen-icon').click(function(){
-		
-		var image = $(this).parent().find('>img').attr('src');
-		$('.shop-product-gallery .slider-navigation li').find('a[href="'+image+'"]').trigger('click');
-		
-	});
-	
-	
-	/* Cloud Zoom */
-	$(".cloud-zoom-image").imagezoomsl({
-		zoomrange: [3, 3]
-	});
-	
-	$('.tracker').click(function(){
-		alrt('a');
-	});	
-	
 }
 
 function enableTencentMap(){
@@ -1161,11 +1110,7 @@ $(document).ready(function(){
 
 	enableStickyHeader(); // Sticky Header 
 	
-	enableFullWidth(); // Full Width Section
-	
 	enableTooltips(); // Tooltips
-	
-	enableContentAnimation(); // Content Animation
 
 	enableBackToTop(); // Back to top button
 	
