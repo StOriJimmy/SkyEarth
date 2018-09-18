@@ -1381,11 +1381,8 @@ html[xmlns] .slides {display: block;}
 	transition: all .4s ease 0.1s;
 	-webkit-transition: all .4s ease 0.1s;
 	-moz-transition: all .4s ease 0.1s;
-}	
+}
 
-/*.team-member:hover .team-member-info{
-	top:190px;
-}*/
 .team-member-info:hover{
 	top:190px;
 }
@@ -1440,10 +1437,6 @@ html[xmlns] .slides {display: block;}
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);
 	-o-transform: scale(1);
-}
-
-.member-image{
-	width: 200px;
 }
 
 .fancybox-image{
