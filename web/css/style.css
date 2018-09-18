@@ -524,7 +524,7 @@ h6.shortcodes-caption{
 	display:none;
 }
 
-#navigation li.donate-button{
+#navigation li.language-button{
 	color:#fff;
 	text-transform:capitalize;
 	font-size:18px;
@@ -535,16 +535,16 @@ h6.shortcodes-caption{
 	-moz-transition: background 0.3s;
 }
 
-#navigation li.donate-button:hover{
+#navigation li.language-button:hover{
 	background:#8cc269/*#d3311a;*/
 }
 
-#navigation li.donate-button:hover>a{
+#navigation li.language-button:hover>a{
 	border-top-color:#8cc269;/*#de3d21;*/
 	border-bottom-color: #8cc269;
 }
 
-#navigation li.donate-button>a{
+#navigation li.language-button>a{
 	color:#fff;
 	padding:18px 10px;
 	background:transparent;
