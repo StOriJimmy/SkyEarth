@@ -400,23 +400,6 @@ function enableSpecialCssEffects(){
 		});
 		$('.media-items').height(media_items_height);
 	}
-	/*
-	function mediaSortFix(){
-		if(window_w > 767){
-			var media_item_height = 0;
-			$('.media-items .mix').css('height','');
-			
-			$('.media-items .mix').each(function(){
-				if($(this).height() > media_item_height)
-					media_item_height = $(this).height();
-			});
-			$('.media-items .mix').height(media_item_height);
-		}else{
-			$('.media-items .mix').css('height','');
-		}
-	}
-	*/
-
 }
 
 /* Back To Top Button */
