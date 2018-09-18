@@ -684,7 +684,6 @@ li.box-item:hover{
 /*--owl carousel --*/
 .owl-carousel-container{
   margin:0 -15px;
-  margin-bottom:30px;
 }
 
 .testimonial-carousel + a.button{
@@ -706,10 +705,6 @@ li.box-item:hover{
   right:15px;
 }
 
-.testimonial-carousel .owl-header .carousel-arrows{
-  top:-25px;
-}
-
 .owl-header .carousel-arrows span{
   display:inline-block;
   width:30px;
@@ -729,12 +724,6 @@ li.box-item:hover{
   -moz-transition: background 0.3s, color 0.2s, border 0.3s;
 }
 
-.testimonial-carousel .owl-header .carousel-arrows span{
-  width:25px;
-  height:25px;
-  padding-top:0;
-}
-
 .owl-header .carousel-arrows span:hover{
   color:#fff;
   background:#63b2f5;
@@ -747,66 +736,6 @@ li.box-item:hover{
 }
 .carousel-arrows a:hover{
   color:#fff;
-}
-
-/* Blog Posts */
-
-.blog-post:before,
-.blog-post:after{
-  content:"";
-    display:table;
-}
-
-.blog-post:after {
-    clear:both;
-}
-
-.blog-post {
-    zoom:1;
-}
-
-.blog-post.big{
-  margin-bottom:50px;
-  margin-top:10px;
-}
-
-.blog-post.big .post-image{
-  float:left;
-  width:55.5555%;
-  margin-right:30px;
-}
-
-.post-image img{
-  width:100%;
-  border-radius:3px;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-}
-
-.post-title{
-  margin:20px 0 7px;
-}
-
-.blog-post.big .post-title{
-  margin-top:0;
-  font-size:24px;
-  font-weight:400;
-}
-
-.post-meta{
-  margin-bottom:15px;
-  line-height:16px;
-}
-
-.post-meta>span{
-  display:inline-block;
-  font-size:13px;
-  color:#95999e;
-  line-height:16px;
-}
-
-.blog-post a.button{
-  margin-top:11px;
 }
 
 /* Media Items */
@@ -861,6 +790,21 @@ li.box-item:hover{
 
 .media-item:hover .media-hover{
   display:block;
+}
+
+.media-info-project {
+  background-color: #fff;
+  text-align: left;
+  padding: 0;
+}
+.media-info-project h4{
+  margin: 20px 0 7px;
+}
+.media-info-project .time{
+  color:#95999e;
+  font-size:13px;
+  display:block;
+  white-space:nowrap;
 }
 
 /* custom for papers - Xinyi Liu - 20180703 */
