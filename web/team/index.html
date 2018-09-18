@@ -17,7 +17,7 @@
 		
 		<!-- Stylesheets -->
 		<link href="../css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
-		<link href="../css/icomoon.css" rel="stylesheet" type="text/css">
+		<link href="../css/icomoon.min.css" rel="stylesheet" type="text/css">
 		<link href="../css/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet" type="text/css" />	
 		<link href="../css/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" type="text/css" />
 		<link href="../css/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" type="text/css" />
@@ -28,7 +28,7 @@
 	  	</style>
 		
 		<!-- jQuery -->
-		<script src="../js/jquery-1.11.0.min.js"></script>
+		<script src="../js/jquery-3.1.1.min.js"></script>
 		<script src="../js/jquery-ui-1.10.4.min.js"></script>
 		
 		<!-- Preloader -->
@@ -51,28 +51,7 @@
 				barHeight: 4,
 				percentage:false,
 				deepSearch:true,
-				minimumTime:1000,
-				onComplete: function(){
-					
-					$('.animate-onscroll').filter(function(index){
-					
-						return this.offsetTop < (window_s + window_h);
-						
-					}).each(function(index, value){
-						
-						var el = $(this);
-						var el_y = $(this).offset().top;
-						
-						if((window_s) > el_y){
-							$(el).addClass('animated fadeInDown').removeClass('animate-onscroll');
-							setTimeout(function(){
-								$(el).css('opacity','1').removeClass('animated fadeInDown');
-							},2000);
-						}
-						
-					});
-					
-				}
+				minimumTime:1000
 			});
 
 		});
@@ -203,16 +182,16 @@
 								<h3 class="no-margin-top">教授</h3>
 								<div class="divider no-margin-top"></div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">									
 											<img src="members/zhangyj.jpg" alt="zhangyj">												
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/zhangyj.jpg" class="media-icon fancybox-member-prof">
+													<a href="https://skyearth.org/team/members/zhangyj.jpg" class="media-icon fancybox-member-prof">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="../zhangyj/index.html" target="_blank" class="media-icon"><i class="icons icon-link"></i></a>
+													<a href="https://skyearth.org/zhangyj" target="_blank" class="media-icon"><i class="icons icon-link"></i></a>
 												</div>
 											</div>											
 										</div>																		
@@ -230,16 +209,16 @@
 								<h3 class="no-margin-top">博士生</h3>
 								<div class="divider no-margin-top"></div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">									
 											<img src="members/wanyi.jpg" alt="wanyi">												
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/wanyi.jpg" title="万一" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/wanyi.jpg" title="万一" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/wanyi.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/wanyi.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -252,16 +231,16 @@
 									</div>									
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">									
 											<img src="members/xiexunwei.jpg" alt="xiexunwei">												
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/xiexunwei.jpg" title="谢勋伟" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/xiexunwei.jpg" title="谢勋伟" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/xiexunwei.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/xiexunwei.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -274,16 +253,16 @@
 									</div>									
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">									
 											<img src="members/wangxiang.jpg" alt="wangxiang">												
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/wangxiang.jpg" title="王祥" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/wangxiang.jpg" title="王祥" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/wangxiang.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/wangxiang.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -296,16 +275,16 @@
 									</div>									
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/liuxinyi.jpg" alt="liuxinyi">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/liuxinyi.jpg" title="刘欣怡" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/liuxinyi.jpg" title="刘欣怡" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/liuxinyi.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/liuxinyi.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -318,16 +297,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/wenfei.jpg" alt="wenfei">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/wenfei.jpg" title="文飞" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/wenfei.jpg" title="文飞" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/wenfei.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/wenfei.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -340,16 +319,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/liuchi.jpg" alt="liuchi">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/liuchi.jpg" title="刘驰" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/liuchi.jpg" title="刘驰" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/liuchi.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/liuchi.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -362,16 +341,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/zhuxianzhang.jpg" alt="zhuxianzhang">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/zhuxianzhang.jpg" title="祝宪章" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/zhuxianzhang.jpg" title="祝宪章" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/zhuxianzhang.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/zhuxianzhang.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -384,16 +363,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/weidong.jpg" alt="weidong">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/weidong.jpg" title="魏东" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/weidong.jpg" title="魏东" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/weidong.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/weidong.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -406,16 +385,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/liuxiaojian.jpg" alt="liuxiaojian">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/liuxiaojian.jpg" title="刘晓建" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/liuxiaojian.jpg" title="刘晓建" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/liuxiaojian.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/liuxiaojian.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -428,16 +407,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/yangwangshan.jpg" alt="yangwangshan">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/yangwangshan.jpg" title="杨望山" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/yangwangshan.jpg" title="杨望山" data-fancybox-group="member-phd" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/yangwangshan.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/yangwangshan.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -457,16 +436,16 @@
 								<h3 class="no-margin-top">硕士生</h3>
 								<div class="divider no-margin-top"></div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/sunping.jpg" alt="sunping">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/sunping.jpg" title="孙萍" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/sunping.jpg" title="孙萍" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/sunping.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/sunping.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -479,16 +458,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/liulinyu.jpg" alt="liulinyu">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/liulinyu.jpg" title="刘林钰" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/liulinyu.jpg" title="刘林钰" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/liulinyu.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/liulinyu.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -501,16 +480,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/zhengzhi.jpg" alt="zhengzhi">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/zhengzhi.jpg" title="郑志" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/zhengzhi.jpg" title="郑志" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/zhengzhi.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/zhengzhi.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -523,16 +502,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/huangxingbei.jpg" alt="huangxingbei">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/huangxingbei.jpg" title="黄星北" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/huangxingbei.jpg" title="黄星北" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/huangxingbei.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/huangxingbei.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -545,16 +524,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/wangguangshuai.jpg" alt="wangguangshuai">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/wangguangshuai.jpg" title="王广帅" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/wangguangshuai.jpg" title="王广帅" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/wangguangshuai.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/wangguangshuai.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -567,16 +546,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/caiping.jpg" alt="caiping">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/caiping.jpg" title="蔡平" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/caiping.jpg" title="蔡平" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/caiping.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/caiping.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -589,16 +568,16 @@
 									</div>
 								</div>
 
-								<div class="col-lg-2 col-md-3 col-sm-3 col-xs-5">
+								<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
 									<div class="media-item">
 										<div class="media-image">
 											<img src="members/zhangbin.jpg" alt="zhangbin">
 											<div class="media-hover">
 												<div class="media-icons">
-													<a href="members/zhangbin.jpg" title="张斌" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
+													<a href="https://skyearth.org/team/members/zhangbin.jpg" title="张斌" data-fancybox-group="member-grad" class="media-icon fancybox-member-stu">
 														<i class="icons icon-search-plus"></i>
 													</a>
-													<a href="members/zhangbin.html" class="media-icon fancybox-member-info fancybox.iframe">
+													<a href="https://skyearth.org/team/members/zhangbin.html" class="media-icon fancybox-member fancybox.iframe">
 														<i class="icons icon-link"></i>
 													</a>
 												</div>
@@ -637,11 +616,11 @@
 											<td style="padding-top: 0; padding-bottom: 0;">
 												<ul class="social-icons">
 													<li class="email">
-														<a href="mailto:ling.xiao@arch.ethz.ch" class="media-icon fancybox-member-info fancybox.iframe tooltip-ontop" title="电子邮箱">
+														<a href="mailto:ling.xiao@arch.ethz.ch" class="media-icon tooltip-ontop" title="电子邮箱">
 														<i class="icons icon-envelope"></i></a>
 													</li>
 													<li class="twitter">
-														<a href="https://skyearth.org/team/members/lingxiao.html" class="media-icon fancybox-member-info fancybox.iframe tooltip-ontop" title="详细信息">
+														<a href="https://skyearth.org/team/members/lingxiao.html" class="media-icon fancybox-member fancybox.iframe tooltip-ontop" title="详细信息">
 														<i class="icons icon-link"></i></a>
 													</li>
 												</ul>
@@ -1054,17 +1033,8 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
-				var _ch = $("#content").height();
-  				var _wh = $(window).height();
-  				var header_footer = $('header').height() + $('footer').height();
-  			  	if(_wh - _ch > header_footer){
-     		   		$("#main-content").css("min-height",(_wh-header_footer)+"px");
-   				}
 
-   				$('.fancybox-member-info').fancybox({
-					'width':630,
-				//	'height':360,
-				});
+   				enableFancyBox('.fancybox-member');
 
    				$(".fancybox-member-prof").fancybox({
    					padding: 0,
@@ -1105,13 +1075,6 @@
 
 			});
 		</script>
-	
-		
-		<!--[if lt IE 9]>
-			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-			<script type="text/javascript" src="js/script_ie.js"></script>
-		<![endif]-->
-		
 		
 	</body>
 
