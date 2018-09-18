@@ -1167,10 +1167,6 @@ html[xmlns] .slides {display: block;}
 	color:#fff;
 }
 
-
-
-
-
 /* Blog Posts */
 
 .blog-post:before,
@@ -1566,17 +1562,6 @@ html[xmlns] .slides {display: block;}
 .issue-content a.button{
 	margin-top:15px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Event Calendar */
@@ -2375,20 +2360,34 @@ button.small{
 	padding:20px 20px 30px;
 }
 
-.media-info.member{
+.media-info-member{
 	text-align: center;
 	padding: 10px;
 }
-.media-info.member h4{
+.media-info-member h4{
 	margin: 0;
 }
-.media-info.member .job{
+.media-info-member .job{
 	color:#95999e;
 	font-size:13px;
 	display:block;
 	white-space:nowrap;
 }
 
+.media-info-project {
+	text-align: left;
+	padding: 0;
+	margin-top: 10px;
+}
+.media-info-project h4{
+	margin: 20px 0 7px;
+}
+.media-info-project .job{
+	color:#95999e;
+	font-size:13px;
+	display:block;
+	white-space:nowrap;
+}
 
 
 .media-item:hover .media-format>div{
