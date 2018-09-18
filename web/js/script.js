@@ -358,24 +358,7 @@ function enableSpecialCssEffects(){
 	$(window).resize(function(){
 		fixPricingTables();
 	});
-	
-	/* Fix Pricing Tables */
-	function fixPricingTables(){
 		
-		$('.pricing-tables').each(function(){
-			
-			$(this).find('.pricing-table').attr('style', '');
-			
-			if(window_w > 767){
-				var pricing_tables_h = $(this).height();
-				$(this).find('.pricing-table').innerHeight(pricing_tables_h);
-			}
-			
-		});
-		
-	}
-	
-	
 	
 	/* Sorting Float Fix */
 
