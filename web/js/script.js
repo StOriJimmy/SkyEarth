@@ -134,7 +134,9 @@ function enableFlexSlider(){
 	// Main Flexslider
 	$('.main-flexslider').flexslider({
 		animation: "slide",
-		controlNav: false,
+		controlNav: true,
+		directionNav: false,
+		slideshowSpeed: 15000,
 		prevText: "",           
 		nextText: "", 
 	});	
@@ -152,7 +154,7 @@ function enableFlexSlider(){
 	$('.portfolio-slideshow').flexslider({
 		animation: "fade",
 		controlNav: false,
-		slideshowSpeed: 4000,
+		slideshowSpeed: 15000,
 		prevText: "",           
 		nextText: "", 
 	});
