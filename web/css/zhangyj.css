@@ -890,10 +890,6 @@ li.box-item:hover{
   text-align:left;
   float:left;
   margin:0 5px 0 0;
-  display: none;
-}
-.accordion-active.papers img{
-  display: block;
 }
 
 /*------ projects ------ */
