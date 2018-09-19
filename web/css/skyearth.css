@@ -119,9 +119,7 @@ html[xmlns] .slides{display:block;}
 .flex-direction-nav .flex-prev{left:-50px;}
 .flex-direction-nav .flex-next{right:-50px;text-align:right;}
 .flexslider:hover .flex-prev{left:10px;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1;}
-.flexslider.portfolio-slideshow:hover .flex-prev{left:20px;}
 .flexslider:hover .flex-next{right:10px;opacity:1;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity:1;}
-.flexslider.portfolio-slideshow:hover .flex-next{right:20px;}
 .flexslider:hover .flex-next:hover,.flexslider:hover .flex-prev:hover{opacity:1;}
 .flex-direction-nav .flex-disabled{opacity:0!important;cursor:default;filter:alpha(opacity=0);}
 .flex-direction-nav a:hover{background:#63b2f5;text-decoration:none;}
