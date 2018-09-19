@@ -96,7 +96,7 @@ h6.shortcodes-caption{margin-top:20px;margin-bottom:40px;}
 .section-row{margin-top:36px;}
 .section>.row:last-child{margin-bottom:0;}
 .full-width-bg{margin-right:-5000px;margin-left:-5000px;padding-right:5000px;padding-left:5000px;}
-.gray-bg{padding-top:60px;padding-bottom:00px;background:#f2f4f9;}
+.gray-bg{background:#f2f4f9;}
 .page-heading{position:relative;margin-right:-5000px;margin-left:-5000px;padding-top:27px;padding-right:5000px;padding-bottom:27px;padding-left:5000px;background:#fff;}
 .page-heading h1{margin:0;}
 .page-heading .breadcrumb{margin:8px 0 0;color:#95999e;font-size:13px;}
