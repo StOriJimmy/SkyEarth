@@ -1,47 +1,26 @@
-
 <!DOCTYPE html>
-
 <html>
-
 	<head>
-		
-		<!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Title -->
 		<title>地像天图课题组</title>
-				
-		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-		
-		<!-- Stylesheets -->
 		<link href="../css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
 		<link href="../css/icomoon.min.css" rel="stylesheet" type="text/css">
 		<link href="../css/blog.css" rel="stylesheet" type="text/css">
-		
 		<style type="text/css">
 			.no-fouc {display:none;}
 	  	</style>
-		
-		<!-- jQuery -->
 		<script src="../js/jquery-3.1.1.min.js"></script>
 		<script src="../js/jquery-ui-1.10.4.min.js"></script>
-		
-		<!-- Preloader -->
 		<script src="../js/jquery.queryloader2.min.js"></script>
-		
 		<script type="text/javascript">
 		$('html').addClass('no-fouc');
-		
 		$(document).ready(function(){
-			
 			$('html').show();
-			
 			var window_w = $(window).width();
 			var window_h = $(window).height();
 			var window_s = $(window).scrollTop();
-			
 			$("body").queryLoader2({
 				backgroundColor: '#f2f4f9',
 				barColor: '#63b2f5',
@@ -50,63 +29,30 @@
 				deepSearch:true,
 				minimumTime:1000
 			});
-			
 		});
 		</script>
-		
-	</head>
-	
+	</head>	
 	<body class="sticky-header-on tablet-sticky-header">
-		
-		<!-- Container -->
-		<div class="container">		
-			
-			<!-- Header -->
-			<header id="header" >				
-				
-				<!-- Lower Header -->
+		<div class="container">
+			<header id="header">
 				<div id="lower-header">
-					
 					<div class="container">
-					
 					<div id="menu-button">
-						<div>
-						<span></span>
-						<span></span>
-						<span></span>
-						</div>
+						<div><span></span><span></span><span></span></div>
 						<span>Menu</span>
 					</div>
-					
 					<ul id="navigation">
-						
-						<!-- Home -->
-						<li class="home-button current-menu-item">						
-							<a href="https://skyearth.org"><i class="icons icon-home"></i></a>
-						</li>
-						<!-- /Home -->
-												
-						<!-- Team -->
-						<li >						
-							<a href="https://skyearth.org/team">团队</a>						
+						<li class="home-button current-menu-item"><a href="https://skyearth.org"><i class="icons icon-home"></i></a></li>
+						<li ><a href="https://skyearth.org/team">团队</a>	
 							<ul>
 								<li><a href="https://skyearth.org/team#prof">教授</a></li>
 								<li><a href="https://skyearth.org/team#phd">博士生</a></li>
 								<li><a href="https://skyearth.org/team#grad">硕士生</a></li>
 								<li><a href="https://skyearth.org/team#alumni">毕业生</a></li>
-							</ul>							
+							</ul>
 						</li>
-						<!-- /Team -->
-						
-						<!-- Projects -->
-						<li >
-							<a href="https://skyearth.org/projects">项目</a>
-						</li>
-						<!-- /Projects -->
-						
-						<!-- Publication -->
-						<li >
-							<a href="publication">成果</a>	
+						<li ><a href="https://skyearth.org/projects">项目</a></li>
+						<li ><a href="publication">成果</a>
 							<ul>
 								<li><a href="https://skyearth.org/publication#book">书</a></li>
 								<li><a href="https://skyearth.org/publication#journal">期刊论文</a></li>
@@ -114,238 +60,62 @@
 								<li><a href="https://skyearth.org/publication#properties">知识产权</a></li>
 							</ul>
 						</li>
-						<!-- /Publication -->
-						
-						<!-- Blog -->
-						<li >						
-							<a href="https://skyearth.org/blog">博客</a>
-						</li>
-						<!-- /Blog -->						
-						
-						<!-- Events -->
-						<li >
-							<a href="https://skyearth.org/blog/events.html">活动</a>
-						</li>
-						<!-- /Events -->						
-						
-						<!-- Contact -->
-						<li >
-							<a href="https://skyearth.org/contact">联系方式</a>
-						</li>
-						<!-- /Contact -->
-
-						<!-- About -->
-						<li >
-							<a href="https://skyearth.org/zhangyj">关于</a>
-						</li>
-						<!-- /About -->
-						
-						<!-- English -->
-						<li class="language-button ">
-							<a href="https://en.skyearth.org/blog/events.html">English Version</a>
-						</li>
-						<!-- /English -->
-						
-					</ul>					
-					</div>					
-				</div>
-				<!-- /Lower Header -->				
-				
-			</header>
-			<!-- /Header -->
-
-			<section id="content">
-				
-				<!-- Section -->
-				<section class="section full-width-bg gray-bg" style="padding-bottom: 30px;">
-					
-					<div class="row">
-						
-						<div class="col-lg-12 col-md-12 col-sm-12">	
-
-							<!-- Events Calendar -->
-						<div class="events-calendar">
-							
-							<!-- Events Calendar Header -->
-							<div class="calendar-header">
-								
-								<div class="row">
-									
-									<div class="col-lg-6 col-md-6 col-sm-6">
-										<h3>Events for September 2018</h3>
-									</div>
-									
-									<div class="col-lg-6 col-md-6 col-sm-6 align-right">
-										<label>View As:</label>
-										<ul class="filter-dropdown">
-											<li><span>All</span>
-												<ul>
-													<li class="filter" data-filter="all">All</li>
-													<li class="filter" data-filter=".category-campaign">Campaign</li>
-													<li class="filter" data-filter=".category-meetings">Meetings</li>
-													<li class="filter" data-filter=".category-videos">Videos</li>
-													<li class="filter" data-filter=".category-photos">Photos</li>
-												</ul>
-											</li>
-										</ul>
-									</div>
-									
-								</div>
-								
-							</div>
-							<!-- /Events Calendar Header -->
-							
-							
-							
-							<table class="event-calendar">
-								
-								<tr class="calendar-days">
-									<th>Sunday</th>
-									<th>Monday</th>
-									<th>Tuesday</th>
-									<th>Wednesday</th>
-									<th>Thursday</th>
-									<th>Friday</th>
-									<th>Saturday</th>									
-								</tr>
-								
-								<tr>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="no-events"><span class="day">1</span></td>
-									
-								</tr>
-								
-								<tr>
-									<td class="no-events"><span class="day">2</span></td>									
-									<td class="no-events"><span class="day">3</span></td>
-									<td class="no-events"><span class="day">4</span></td>
-									<td class="no-events"><span class="day">5</span></td>
-									<td>
-										<span class="day">6</span>
-
-										<ul class="events">
-											<li>
-												<a href="#">例会</a>
-												
-												<div class="event-popover">
-													
-													<h6><a href="event-post-v1.html">例会</a></h6>
-													<ul class="event-meta">
-														<li><i class="icons icon-clock"></i>7:00 pm - 9:00 pm</li>
-														<li><i class="icons icon-location"></i>遥感楼207</li>
-													</ul>
-													
-													<img src="img/events/event1-thumbnail.jpg" alt="" class="align-left">
-													<p>主题: </p>
-													
-												</div>
-											</li>											
-										</ul>
-									</td>
-									<td class="no-events"><span class="day">7</span></td>
-									<td class="no-events"><span class="day">8</span></td>
-									
-								</tr>
-								
-								<tr>
-									<td class="no-events"><span class="day">9</span></td>
-									<td class="no-events"><span class="day">10</span></td>
-									<td class="no-events"><span class="day">11</span></td>
-									<td class="no-events"><span class="day">12</span></td>
-									
-									<td>
-										<span class="day">13</span>
-
-										<ul class="events">
-											<li>
-												<a href="#">例会</a>
-												
-												<div class="event-popover">
-													
-													<h6><a href="event-post-v1.html">例会</a></h6>
-													<ul class="event-meta">
-														<li><i class="icons icon-clock"></i>7:00 pm - 9:00 pm</li>
-														<li><i class="icons icon-location"></i>遥感楼207</li>
-													</ul>
-													
-													<img src="img/events/event1-thumbnail.jpg" alt="" class="align-left">
-													<p>主题: </p>
-													
-												</div>
-											</li>											
-										</ul>
-									</td>
-									<td class="no-events"><span class="day">14</span></td>
-									<td class="no-events"><span class="day">15</span></td>
-								</tr>
-								
-								<tr>
-									<td class="no-events"><span class="day">16</span></td>
-									<td class="no-events"><span class="day">17</span></td>
-									<td class="no-events"><span class="day">18</span></td>
-									<td class="no-events"><span class="day">19</span></td>
-									<td class="no-events"><span class="day">20</span></td>
-									<td class="no-events"><span class="day">21</span></td>
-									<td class="no-events"><span class="day">22</span></td>
-								</tr>
-
-								<tr>
-									<td class="no-events"><span class="day">23</span></td>
-									<td class="no-events"><span class="day">24</span></td>
-									<td class="no-events"><span class="day">25</span></td>
-									<td class="no-events"><span class="day">26</span></td>
-									<td class="no-events"><span class="day">27</span></td>
-									<td class="no-events"><span class="day">28</span></td>
-									<td class="no-events"><span class="day">29</span></td>
-								</tr>
-								
-								<tr>
-									<td class="no-events"><span class="day">30</span></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-									<td class="not-this-month"></td>
-								</tr>
-								
-							</table>
-							
-							<div class="row">
-						
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 align-left animate-onscroll">
-									<a href="#" class="button big button-arrow-before">August</a>
-								</div>
-								
-								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 align-right animate-onscroll">
-									<a href="#" class="button big button-arrow">October</a>
-								</div>
-							
-							</div>
-
-						</div>
-						<!-- /Events Calendar -->
-
-						</div>
-
+						<li ><a href="https://skyearth.org/blog">博客</a></li>
+						<li ><a href="https://skyearth.org/blog/events.html">活动</a></li>
+						<li ><a href="https://skyearth.org/contact">联系方式</a></li>
+						<li ><a href="https://skyearth.org/zhangyj">关于</a></li>
+						<li class="language-button"><a href="https://en.skyearth.org/blog">English Version</a></li>
+					</ul>
 					</div>
-					
-				</section>
-				<!-- /Section -->
-	
+				</div>
+			</header>
+			<section id="content">
+				<section class="section page-heading">
+					<h1>新闻</h1>
+					<p class="breadcrumb"><a href="../">Home</a> / Blog</p>
+				</section>				
+				<section class="section full-width-bg gray-bg">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 col-sm-8">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12">
+
+									<div class="blog-post style2">
+										<div class="post-image" style="max-width: 200px;">
+											<div class="portfolio-slideshow flexslider">
+												<ul class="slides">
+													<li><img src="img/news-20180108-1.jpg" alt=""></li>
+													<li><img src="img/news-20180108-2.jpg" alt=""></li>
+												</ul>
+											</div>
+										</div>
+										<div class="post-content longimage">
+											<div class="post-header">
+												<h2><a href="https://mp.weixin.qq.com/s/RpPfhZx0Tw2KIO_7nAC9yw">科研成果获评国家科技进步二等奖</a></h2>
+												<div class="post-meta">
+													<span>by <a href="#">admin</a></span>
+													<span>Jan 01, 2018</span>
+												</div>
+											</div>
+											<div class="post-exceprt">
+												<p>1月8日，中共中央、国务院在京隆重举行2017年度国家科学技术奖励大会。武汉大学共4项成果获国家科学技术奖励，其中主持完成2项成果分别获国家自然科学二等奖和国家科技进步二等奖，参与完成的2项成果获国家科技进步二等奖；遥感信息工程学院张永军教授主持完成的“航空航天遥感影像摄影测量网格处理关键技术与应用”获国家科技进步二等奖。党和国家领导人习近平、李克强、张高丽、王沪宁等出席大会并为获奖代表颁奖。</p>
+												<a href="https://mp.weixin.qq.com/s/RpPfhZx0Tw2KIO_7nAC9yw" class="button read-more-button big button-arrow">Read More</a>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-4 sidebar">
+
+						</div>
+					</div>					
+				</section>	
 				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
-						
 			</section>
-	
-			<!-- Footer -->
 			<footer id="footer">
-				
-				<!-- Lower Footer -->
 				<div id="lower-footer">
 					<div class="footer-link">
 						<a href="https://skyearth.org"><strong>地像天图课题组</strong></a> | 
@@ -358,47 +128,22 @@
 						<a href="https://skyearth.org/contact/">联系我们</a> | 
 						<a href="https://skyearth.org/zhangyj/">关于我们</a>
 					</div>
-						
 					<div class="copyright">© 2018 SkyEarth. All Rights Reserved.
 						<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
 						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">遥感信息工程学院</a>
 					</div>
 				</div>
-				<!-- /Lower Footer -->
-							
 			</footer>
-			<!-- /Footer -->
-			
-			<!-- Back To Top -->
 			<a href="#" id="button-to-top"><i class="icons icon-caret-up"></i></a>
-		
-		</div>
-		<!-- /Container -->	
-	
-		<!-- JavaScript -->
-		
-		<!-- Bootstrap -->
+		</div>	
 		<script type="text/javascript" src="../js/bootstrap.min-3.1.1.js"></script>
-		
-		<!-- Modernizr -->
 		<script type="text/javascript" src="../js/modernizr.js"></script>
-				
-		<!-- MixItUp -->
-		<script type="text/javascript" src="../js/jquery.mixitup.js"></script>
-		<!-- Main Script -->
+		<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="../js/script.js"></script>
-		
-		
 		<script type="text/javascript">
-
             $(document).ready(function(){
-
-                enableMixItup();
- 
+            	enableFlexSlider();
             });
         </script>
-		
-		
 	</body>
-
 </html>
