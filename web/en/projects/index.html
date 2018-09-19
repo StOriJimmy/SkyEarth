@@ -1,47 +1,26 @@
-
 <!DOCTYPE html>
-
 <html>
-
 	<head>
-		
-		<!-- Meta Tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- Title -->
 		<title>SkyEarth</title>
-		
-		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
-		
-		<!-- Stylesheets -->
 		<link href="../css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
 		<link href="../css/icomoon.min.css" rel="stylesheet" type="text/css">
-		<link href="../css/skyearth.css" rel="stylesheet" type="text/css">
-		
+		<link href="../css/skyearth.css" rel="stylesheet" type="text/css">		
 		<style type="text/css">
 			.no-fouc {display:none;}
 	  	</style>
-		
-		<!-- jQuery -->
 		<script src="../js/jquery-3.1.1.min.js"></script>
 		<script src="../js/jquery-ui-1.10.4.min.js"></script>
-		
-		<!-- Preloader -->
-		<script src="../js/jquery.queryloader2.min.js"></script>
-		
+		<script src="../js/jquery.queryloader2.min.js"></script>		
 		<script type="text/javascript">
-		$('html').addClass('no-fouc');
-		
-		$(document).ready(function(){
-			
-			$('html').show();
-			
+		$('html').addClass('no-fouc');		
+		$(document).ready(function(){			
+			$('html').show();			
 			var window_w = $(window).width();
 			var window_h = $(window).height();
-			var window_s = $(window).scrollTop();
-			
+			var window_s = $(window).scrollTop();			
 			$("body").queryLoader2({
 				backgroundColor: '#f2f4f9',
 				barColor: '#63b2f5',
@@ -49,118 +28,50 @@
 				percentage:false,
 				deepSearch:true,
 				minimumTime:1000
-			});
-			
+			});			
 		});
-		</script>
-		
-	</head>
-	
+		</script>		
+	</head>	
 	<body class="sticky-header-on tablet-sticky-header">
-		
-		<!-- Container -->
-		<div class="container">		
-			
-			<!-- Header -->
-			<header id="header" >				
-				
-				<!-- Lower Header -->
+		<div class="container">
+			<header id="header" >
 				<div id="lower-header">
-					
 					<div class="container">
-					
-					<div id="menu-button">
-						<div>
-						<span></span>
-						<span></span>
-						<span></span>
+						<div id="menu-button">
+							<div><span></span><span></span><span></span></div>
+							<span>Menu</span>
 						</div>
-						<span>Menu</span>
+						<ul id="navigation">
+							<li class="home-button current-menu-item"><a href="https://en.skyearth.org"><i class="icons icon-home"></i></a></li>
+							<li ><a href="https://en.skyearth.org/team">Team</a>
+								<ul>
+									<li><a href="https://en.skyearth.org/team#prof">Professor</a></li>
+									<li><a href="https://en.skyearth.org/team#phd">PhD</a></li>
+									<li><a href="https://en.skyearth.org/team#grad">Master</a></li>
+									<li><a href="https://en.skyearth.org/team#alumni">Alumni</a></li>
+								</ul>
+							</li>
+							<li ><a href="https://en.skyearth.org/projects">Projects</a></li>
+							<li ><a href="https://en.skyearth.org/publication">Publications</a>
+								<ul>
+									<li><a href="https://en.skyearth.org/publication#book">Books</a></li>
+									<li><a href="https://en.skyearth.org/publication#journal">Journal</a></li>
+									<li><a href="https://en.skyearth.org/publication#conference">Conference</a></li>
+									<li><a href="https://en.skyearth.org/publication#properties">Properties</a></li>
+								</ul>
+							</li>
+							<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
+							<li ><a href="https://en.skyearth.org/blog/events.html">Events</a></li>
+							<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
+							<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
+							<li class="language-button "><a href="https://skyearth.org/projects">Chinese Version</a></li>
+						</ul>
 					</div>
-					
-					<ul id="navigation">
-						
-						<!-- Home -->
-						<li class="home-button current-menu-item">						
-							<a href="https://en.skyearth.org"><i class="icons icon-home"></i></a>
-						</li>
-						<!-- /Home -->
-												
-						<!-- Team -->
-						<li >						
-							<a href="team">Team</a>
-							<ul>
-								<li><a href="https://en.skyearth.org/team#prof">Professor</a></li>
-								<li><a href="https://en.skyearth.org/team#phd">PhD</a></li>
-								<li><a href="https://en.skyearth.org/team#grad">Master</a></li>
-								<li><a href="https://en.skyearth.org/team#alumni">Alumni</a></li>
-							</ul>							
-						</li>
-						<!-- /Team -->
-						
-						<!-- Projects -->
-						<li >
-							<a href="projects">Projects</a>
-						</li>
-						<!-- /Projects -->
-						
-						<!-- Publication -->
-						<li >
-							<a href="publication">Publications</a>
-							<ul>
-								<li><a href="https://en.skyearth.org/publication#book">Books</a></li>
-								<li><a href="https://en.skyearth.org/publication#journal">Journal</a></li>
-								<li><a href="https://en.skyearth.org/publication#conference">Conference</a></li>
-								<li><a href="https://en.skyearth.org/publication#properties">Properties</a></li>
-							</ul>
-						</li>
-						<!-- /Publication -->
-						
-						<!-- Blog -->
-						<li >						
-							<a href="blog">Blog</a>
-						</li>
-						<!-- /Blog -->						
-						
-						<!-- Events -->
-						<li >
-							<a href="https://en.skyearth.org/blog/events.html">Events</a>
-						</li>
-						<!-- /Events -->						
-						
-						<!-- Contact -->
-						<li >
-							<a href="https://en.skyearth.org/contact">Contact</a>
-						</li>
-						<!-- /Contact -->
-
-						<!-- About -->
-						<li >
-							<a href="https://en.skyearth.org/zhangyj">About</a>
-						</li>
-						<!-- /About -->
-						
-						<!-- English -->
-						<li class="language-button ">
-							<a href="https://skyearth.org/projects">Chinese Version</a>
-						</li>
-						<!-- /English -->
-						
-					</ul>					
-					</div>					
 				</div>
-				<!-- /Lower Header -->				
-				
 			</header>
-			<!-- /Header -->
-
 			<section id="content">
-				
-				<!-- Section -->
-				<section class="section full-width-bg gray-bg">
-					
-					<div class="row">
-						
+				<section class="section full-width-bg gray-bg">					
+					<div class="row">						
 						<div id="prj11" class="project">
 							<div class="col-lg-4 col-md-4">
 								<img class="project-image" src="img/prj11_1.jpg" alt="prj11">
@@ -323,21 +234,12 @@
 									<p class="indent-text">Three-dimensional (3D) city model is one of the most important components of digital city and also digital earth. It has a promising future in Car Navigation, Tourism and Marketing, Architecture, City Planning, Environment Protection and so on, and attracts much attention from related communities and governments all over the world. At present due to the imperfection of theory and technology, 3D city models are obtained by purely manpower, which is time-consuming with high cost. How to reduce the cost and improve the efficiency of 3D city model generation is the key problem that needs to be resolved urgently. This project is based on the theories of Digital Photogrammetry and Computer Vision. Non-metric digital video camera, is used to obtain image sequences (aerial and terrestrial) with high overlapping and short-baseline. Coarse 2D vector data of buildings and LIDAR data are also used as sources of information. Image sequences based Videogrammetry is used to reconstruct 3D city model. Initial values of camera parameters of each image are given by automatic aerial triangulation technique for high overlapping image sequences. The correspondence between space edge of building and its line feature in image sequences is determined by automatic image matching and multi-view geometry. Hybrid point-line photogrammetry with additional constraints is used to reconstruct buildings accurately. The final achievements of this project are the theory and software ,which can automatically generate 3D city model with fine texture, update low precision digital map, extract DEM and produce orthoimages. Experiments show that the efficiency of the developed system is eight times higher than that of purely manpower. The research project not only reduces the costs and improve efficiency of 3D city model generation, but also enriches and evolves the theory of Digital Photogrammetry toward fully automatic. Results of the project will also make a well foundation of various applications such as 3D city model generation and creation of digital city.</p>
 								</div>
 							</div>
-						</div>					
-
-					</div>
-					
+						</div>
+					</div>					
 				</section>
-				<!-- /Section -->
-	
-				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
-						
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>						
 			</section>
-	
-			<!-- Footer -->
 			<footer id="footer">
-				
-				<!-- Lower Footer -->
 				<div id="lower-footer">
 					<div class="footer-link">
 						<a href="https://en.skyearth.org"><strong>SkyEarth</strong></a> | 
@@ -356,35 +258,11 @@
 						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">School of Remote Sensing and Information Engineering</a>
 					</div>
 				</div>
-				<!-- /Lower Footer -->
-							
 			</footer>
-			<!-- /Footer -->
-			
-			<!-- Back To Top -->
-			<a href="#" id="button-to-top"><i class="icon icon-caret-up"></i></a>
-		
+			<a href="#" id="button-to-top"><i class="icon icon-caret-up"></i></a>		
 		</div>
-		<!-- /Container -->	
-	
-		<!-- JavaScript -->
-		
-		<!-- Bootstrap -->
 		<script type="text/javascript" src="../js/bootstrap.min-3.1.1.js"></script>
-		
-		<!-- Modernizr -->
 		<script type="text/javascript" src="../js/modernizr.js"></script>
-				
-		<!-- Main Script -->
 		<script type="text/javascript" src="../js/script.js"></script>
-		
-		
-		<!--[if lt IE 9]>
-			<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-			<script type="text/javascript" src="js/script_ie.js"></script>
-		<![endif]-->
-		
-		
 	</body>
-
 </html>
