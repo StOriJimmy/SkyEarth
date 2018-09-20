@@ -13,6 +13,7 @@ img.align-right{float:right;margin:0 0 15px 15px;text-align:right;}
 iframe{width:100%;border:none;}
 #qLbar{top:0!important;margin-top:0!important;}
 .copyrights{overflow:hidden;height:0;text-indent:-9999px;font-size:0;line-height:0;}
+.no-margin{margin:0!important;}
 .no-margin-top{margin-top:0!important;}
 .no-margin-bottom{margin-bottom:0!important;}
 .mo-padding-left{padding-left:0!important;}

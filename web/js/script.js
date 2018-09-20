@@ -244,7 +244,8 @@ function enableTooltips(){
 	
 	// Tooltip on TOP
 	$('.tooltip-ontop').tooltip({
-		placement: 'top'
+		placement: 'top',
+		html:true
 	});
 	
 	// Tooltip on BOTTOM
