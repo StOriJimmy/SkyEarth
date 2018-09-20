@@ -95,7 +95,7 @@ h3.profile-title{margin-bottom:5px;color:#fff;font-size:18px;font-family:robotob
 @media screen and (max-width:992px){.responsive-header p{color:#fff;}
 }
 @media screen and (max-width:992px){.responsive-header .profile-image{float:left;overflow:hidden;margin-right:30px;width:100px;height:150px;-webkit-border-radius:1px;border-radius:1px;}
-.responsive-header .profile-content{overflow:hidden;margin-top:30px;text-align:left;}
+.responsive-header .profile-content{overflow:hidden;text-align:left;}
 }
 @media screen and (max-width:992px){.top-section{padding-bottom:0;}
 }
