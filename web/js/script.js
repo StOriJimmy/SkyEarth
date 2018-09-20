@@ -936,7 +936,11 @@ function enableMixItup(){
 		
 	});
 	
-	
+	$('.order-group>button:last-child').hide();
+	$('.order-group.ascending-sort>button:first-child').hide();
+	$('.order-group.ascending-sort>button:last-child').show();
+	$('.order-group.descending-sort>button:last-child').hide();
+	$('.order-group.descending-sort>button:first-child').show();
 	
 	$('.filter-sorting button').click(function(){
 		
