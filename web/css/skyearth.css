@@ -588,7 +588,7 @@ a.button.active-button:after,a.button:hover:after,a.button:hover:before,button.a
 .tabs.style2 .tab-header li{display:block;}
 .tabs.style3>div{vertical-align:top;}
 .tabs.style3 ul{margin:0;padding:0;list-style:none;}
-.tabs.style3 ul li{display:block;margin-bottom:7px;}
+.tabs.style3 .tab-header li{display:block;margin-bottom:7px;}
 ul.list{margin:0;padding:0;list-style:none;}
 ol.list{margin:0;padding:0;list-style-position:inside;}
 ol.list li{padding-left:0;}
@@ -739,8 +739,6 @@ input.numeric-input:focus{outline:0;}
 .banners-inline{display:block;}
 .banners-inline>.banner-wrapper{float:left;display:block;padding:3px;width:50%;}
 ol.list,ul.list{margin-bottom:20px;}
-.apply-coupon input[type=text]{margin-bottom:5px;}
-.shopping-cart-table a.button+a.button{margin-top:5px;}
 .main-revolution h2{font-size:28px;line-height:34px;}
 .main-revolution .great-vibes{font-size:20px;}
 .banner.donate-banner{text-align:center;}
@@ -821,7 +819,7 @@ blockquote.align-center,blockquote.align-left,blockquote.align-right{width:100%!
 .tabs.style2 .tab-header{width:100%!important;}
 .tabs.style2 .tab-header li{display:inline-block;}
 .tabs.style3,.tabs.style3>div{display:block;}
-.tabs.style3 ul li{display:inline-block;}
+.tabs.style3 .tab-header li{display:inline-block;width:150px;}
 .media-item,.testimonial,blockquote,ol.list,ul.list{margin:20px 0;}
 table,tbody,td,th,tr{display:block;width:100%!important;max-width:100%;min-width:100%;}
 table td,table th{border:none;}
