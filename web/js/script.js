@@ -580,18 +580,58 @@ function enableTabs(){
 	var type=window.location.hash||'';
 
 	$('.tabs').each(function(){
+			
 		// Set Active Tab
-		$(this).find('.tab').hide();
+		$(this).find('.tab').hide();		
+
 		if (type) {
 			$(this).find('.tab'+type).show();
-			$(this).find('.tab-header ul li'+type).addClass('active-tab');
+			$(this).find('.tab-header ul li'+type+'-tab').addClass('active-tab');
 		}
-		else {
+		else{
 			$(this).find('.tab:first-child').show();
 			$(this).find('.tab-header ul li:first-child').addClass('active-tab');
-		}
-
+		}		
+		
+		// Prevent Default
+		$(this).find('.tab-header li a').click(function(e){
+			e.preventDefault();			
+		});		
+		
+		// Tab Navigation 
+		$(this).find('.tab-header li').click(function(){
+			
+			var target = $(this).find('a').attr('href');
+			window.location.href=target;
+			window.location.reload();
+			
+//			$(this).parent().parent().parent().find('.tab').fadeOut(200);
+//			$(this).parent().parent().parent().find(target).delay(200).fadeIn(200);
+//			
+//			$(this).parent().find('.active-tab').removeClass('active-tab');
+//			$(this).addClass('active-tab');
+			
+			
+		});
+		
+		
 	});
+
+//	
+//
+//	$('.tabs').each(function(){
+//		// Set Active Tab
+//		$(this).find('.tab').hide();
+//		if (type) {
+//			$(this).find('.tab'+type).show();
+//			$(this).find('.tab-header ul li'+type).addClass('active-tab');
+//		}
+//		else {
+//			$(this).find('.tab:first-child').show();
+//			$(this).find('.tab-header ul li:first-child').addClass('active-tab');
+//		}
+//
+//	});
 }
 	
 /* Alert Boxes */
