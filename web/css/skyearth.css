@@ -589,7 +589,6 @@ a.button.active-button:after,a.button:hover:after,a.button:hover:before,button.a
 .tabs.style3>div{vertical-align:top;}
 .tabs.style3 ul{margin:0;padding:0;list-style:none;}
 .tabs.style3 ul li{display:block;margin-bottom:7px;}
-.tabs.style3 li a{width:100%;}
 ul.list{margin:0;padding:0;list-style:none;}
 ol.list{margin:0;padding:0;list-style-position:inside;}
 ol.list li{padding-left:0;}
