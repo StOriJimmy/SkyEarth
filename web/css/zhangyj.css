@@ -137,6 +137,18 @@ li.box-item:hover{background-color:rgba(205,209,211,.3);}
 .media-info-project{padding:0;background-color:#fff;text-align:left;}
 .media-info-project h4{margin:20px 0 7px;}
 .media-info-project .time{display:block;color:#95999e;white-space:nowrap;font-size:13px;}
+/*div.elsevier-rss-portlet{position:relative;z-index:4;padding:16px;margin-bottom:25px;width:100%;background:rgba(255,255,255,.8);box-shadow:0 2px 4px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important;}*/
+.elsevier-rss-portlet h4{font-weight:400;display:none;}
+.elsevier-rss-portlet ul{margin:10px 0!important;}
+.elsevier-rss-portlet ul li{line-height:16.5px;}
+.elsevier-rss-portlet ul li:before{content:none;}
+.elsevier-rss-portlet ul li.resultsExternal{margin:0;}
+span.scopus-label-docTitle{font-size:15px;line-height:16.5px;}
+span.scopus-label-cited{font-size:12px;}
+span.scopus-label-publicationYear{font-size:12px;}
+span.scopus-label-srcTitle{font-size:12px;}
+span.scopus-label-authors{font-size:12px;}
+div.elsevier-rss-portlet p.footer{padding:0;line-height:12px;}
 .accordions{margin:0;padding:0;list-style:none;}
 .accordion{margin-bottom:7px;}
 .accordion-header{position:relative;padding:15px 20px 15px 45px;border-top:1px solid #f3f7fa;border-bottom:1px solid #bfc8d7;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#e2eaf2;color:#274472;cursor:pointer;-webkit-transition:background .3s,color .2s,border .3s;-moz-transition:background .3s,color .2s,border .3s;transition:background .3s,color .2s,border .3s;}
