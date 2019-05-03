@@ -363,13 +363,13 @@ button.small{padding:5px 20px;}
 .sidebar-fix li.active-tab a,.sidebar-fix li:hover a{color:#fff;}
 .sidebar-fix li a{color:#274472;}
 .sidebar-fix li h6{margin:0;}
-.sidebar-box{padding:20px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
+.sidebar-box{padding:16px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
 .sidebar-box:after,.sidebar-box:before{display:table;content:"";}
 .sidebar-box:after{clear:both;}
 .sidebar-box{zoom:1;}
 .sidebar-box+.sidebar-box{margin-top:30px;}
 .sidebar-box.white{background:#fafbfd;}
-.sidebar-box h3{margin-top:5px;margin-bottom:23px;font-weight:400;font-size:18px;}
+.sidebar-box h3{margin-top:5px;margin-bottom:15px;font-weight:400;font-size:18px;}
 .sidebar-box a.button{margin-top:10px;}
 .sidebar-box a.button.transparent:hover:after{color:#63b2f5;}
 .banners-inline{display:table;margin-top:30px;margin-right:-3px;margin-left:-3px;width:100%;table-layout:fixed;}
@@ -878,3 +878,15 @@ li.box-item:hover{background-color:rgba(205,209,211,.3);}
 .box-item li:hover{background:#8CCEFB;color:#fff;border-top-color:#7cc5f8;border-bottom-color:#579dd9;}
 .box-item li:before{display:inline-block;margin-right:.8em;margin-left:.2em;width:1em;color:#fff;color:#808ca4;content:'\f0da';text-align:center;text-decoration:inherit;text-transform:none;font-weight:400;font-style:normal;font-variant:normal;font-family:icomoon;line-height:1em;-webkit-transition:color .3s;-moz-transition:color .3s;transition:color .3s;speak:none;}
 .box-item .attribute{float:right;}
+
+.elsevier-rss-portlet h4{font-weight:400;display:none;}
+.elsevier-rss-portlet ul{margin:0!important;}
+.elsevier-rss-portlet ul li{line-height:14px;}
+.elsevier-rss-portlet ul li:before{content:none;}
+.elsevier-rss-portlet ul li.resultsExternal{margin:0;}
+span.scopus-label-docTitle{font-size:13px;line-height:14px;}
+span.scopus-label-cited{font-size:11px;}
+span.scopus-label-publicationYear{font-size:11px;}
+span.scopus-label-srcTitle{font-size:11px;}
+span.scopus-label-authors{font-size:11px;}
+div.elsevier-rss-portlet p.footer{display:none;padding:0;line-height:12px;}
