@@ -200,9 +200,10 @@ html[xmlns] .slides{display:block;}
 .team-member-info h2{margin:3px 0 0;}
 .team-member-info h3{margin:-3px 0 0;}
 .team-member-info .job{display:block;color:#95999e;white-space:nowrap;font-size:13px;}
-.team-member.big{padding:0;background:#fff;}
+.team-member.big{padding:0;margin-bottom:30px;background:#fff;}
+.team-member.big .media-item{background: #fff;}
 .team-member.big .team-member-image{float:left;padding-right:15px;width:50%;}
-.team-member.big .team-member-info{position:relative;top:0;float:left;margin-top:0;padding:30px 30px 30px 15px;width:50%;}
+.team-member.big .team-member-info{font:12px; line-height:18px;position:relative;top:0;float:left;margin-top:0;padding:10px;text-align:justify;width:100%;}
 .team-member.big .team-member-more{opacity:1;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);-moz-opacity:1;}
 .fancybox-image{padding:0;}
 .project{position:relative;overflow:hidden;margin-bottom:20px;padding:15px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#fff;}
