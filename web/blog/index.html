@@ -8,6 +8,9 @@
 		<link href="../css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
 		<link href="../css/icomoon.min.css" rel="stylesheet" type="text/css">
 		<link href="../js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="../css/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet" type="text/css" />	
+		<link href="../css/jquery.fancybox-buttons.css?v=1.0.5" rel="stylesheet" type="text/css" />
+		<link href="../css/jquery.fancybox-thumbs.css?v=1.0.7" rel="stylesheet" type="text/css" />
 		<link href="../css/blog.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
 			.no-fouc {display:none;}
@@ -124,27 +127,15 @@
 						
 						<div class="col-lg-12 col-md-12 col-sm-12">
 							<div class="banners-inline">
+
 								<div class="banner-wrapper">
-									<a class="banner" href="https://www.whu.edu.cn">
+									<a class="banner" id="fancybox-grouppic" href="javascript:;">
 										<i class="icons icon-group"></i>
-										<h4>武汉大学</h4>
-										<p>武汉大学官网</p>
+										<h4>相册</h4>
+										<p>师门活动影像集</p>
 									</a>
-								</div>							
-								<div class="banner-wrapper">
-									<a class="banner" href="http://rsgis.whu.edu.cn/">
-										<i class="icons icon-graduation-cap"></i>
-										<h4>武大遥感官网</h4>
-										<p>武汉大学遥感信息工程学院官网</p>
-									</a>
-								</div>							
-								<div class="banner-wrapper">
-									<a class="banner" href="https://mmbiz.qpic.cn/mmbiz_jpg/gibNCpDhSH7AKXweHlOckH4gsklqOb3omlvRmRicQQKZGt1PzSZt3pRzKMfvzqRBa1eZJPKYrW11fGpNpoF9j5SQ/640">
-										<i class="icons icon-newspaper-o"></i>
-										<h4>武大遥感公众号</h4>
-										<p>武汉大学遥感信息工程学院官方公众号</p>
-									</a>
-								</div>	
+								</div>
+
 								<div class="banner-wrapper">
 									<a class="banner" href="https://skyearth.org/blog">
 										<i class="icons icon-camera-retro"></i>
@@ -152,6 +143,23 @@
 										<p>地像天图知识库</p>
 									</a>
 								</div>
+
+								<div class="banner-wrapper">
+									<a class="banner" href="http://rsgis.whu.edu.cn/">
+										<i class="icons icon-graduation-cap"></i>
+										<h4>武大遥感官网</h4>
+										<p>武汉大学遥感信息工程学院官网</p>
+									</a>
+								</div>
+
+								<div class="banner-wrapper">
+									<a class="banner" href="https://mmbiz.qpic.cn/mmbiz_jpg/gibNCpDhSH7AKXweHlOckH4gsklqOb3omlvRmRicQQKZGt1PzSZt3pRzKMfvzqRBa1eZJPKYrW11fGpNpoF9j5SQ/640">
+										<i class="icons icon-newspaper-o"></i>
+										<h4>武大遥感公众号</h4>
+										<p>武汉大学遥感信息工程学院官方公众号</p>
+									</a>
+								</div>
+								
 							</div>
 						</div>
 
@@ -455,11 +463,47 @@
 		<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript" src="../js/revolution-slider/js/jquery.themepunch.plugins.min.js"></script>
 		<script type="text/javascript" src="../js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.fancybox.pack.js?v=2.1.5"></script>
+		<script type="text/javascript" src="../js/jquery.fancybox-buttons.js?v=1.0.5"></script>		
+		<script type="text/javascript" src="../js/jquery.fancybox-thumbs.js?v=1.0.7"></script>	
+		<script type="text/javascript" src="../js/jquery.fancybox-media.js?v=1.0.6"></script>
 		<script type="text/javascript" src="../js/script.js"></script>		
 		<script type="text/javascript">
             $(document).ready(function(){
             	enableFlexSlider();
 				enableRevolutionSlider();
+
+				$("#fancybox-grouppic").click(function() {
+					$.fancybox.open([
+						{
+							href : 'img/group-190910.jpg',
+							title : '2019年教师节师门合影'
+						}, {
+							href : 'img/group-180801.jpg',
+							title : '2018年师门合影'
+						}, {
+							href : 'img/group-180802.jpg',
+							title : '2018年师门合影'
+						}, {
+							href : 'img/meeting-spain.jpg',
+							title : '课题组成员参加2018年IGARSS会议'
+						}
+					], {
+						padding: 0,
+						prevEffect : 'elastic',
+						nextEffect : 'elastic',
+						
+						closeBtn  : true,
+						nextClick : true,
+
+						helpers : {
+							thumbs : {
+								width: 75,
+								height: 50
+							}
+						}
+					});
+				});   
             });
         </script>
 	</body>
