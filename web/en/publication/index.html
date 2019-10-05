@@ -90,12 +90,12 @@
 							<div id="book" class="tab papers">
 
 								<ul class="accordions toggles">
-									<li class="accordion papers">								
+									<li class="accordion papers">
 										<div class="accordion-header papers">
 											<div class="accordion-icon papers"></div>
 											<h6><span class="authorblue">Yongjun Zhang</span>. <strong>Theory and Methods of Visual Inspection with Image Sequences.</strong> Wuhan University Press, ISBN: 978-7-307-06654-0, 148P, 2008.12.
-											</h6>									
-										</div>							
+											</h6>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -137,7 +137,9 @@
 									
 								</div>
 								<!-- /Media Filters -->
-						
+								<div id = "journal_eng_items" class="media-items papers">
+
+								</div>
 								<div class="media-items papers">
 
 									<div class="mix category-engjn" data-nameorder="A" data-dateorder="2019">
@@ -3488,13 +3490,61 @@
 
 		<script type="text/javascript">
 			$(document).ready(function(){
+				//$("#journal_eng_items").append(
+				//'<div class="mix category-engjn" data-nameorder="A" data-dateorder="2019">\
+                //    <ul class="accordions toggles">\
+                //        <li class="accordion papers">\
+                //            <div class="accordion-header papers">\
+                //                <div class="accordion-icon papers"></div>\
+                //                <h6><span class="authorblue">Yongjun Zhang</span>, Zhi Zheng, Yimin Luo, Yanfeng Zhang, Yi Wan, Jun Wu, Zhiyong Peng, Xiu Liu. (2019) <strong>A CNN-Based Subpixel Level DSM Generation Approach via Single Image Super-Resolution.</strong> In: Photogrammetric Engineering and Remote Sensing, Vol.85(10):51-491.\
+                //                </h6>\
+                //            </div>\
+                //            <div class="accordion-content papers">\
+                //                <img src="../publication/papers/2019_acsldgavsis.jpg" alt="2019_acsldgavsis">\
+				//				<p><strong>Abstract: </strong>Previous work for subpixel level Digital Surface Model (DSM) generation mainly focused on data fusion techniques, which are extremely limied by the difficulty of multisource data acquisition. Although several DSMsuper resolution (SR) methods have been developed to ease the problem, a new issue that plenty of DSM samples are needed to train the model is raised. Therefore, considering the original images have vital influence on its DSM\'\
+				//					s accuracy, we address the problem by directly improving images resolution. Several SR models are refined and brought into the traditional DSMgeneration process as an image quality improvement stage to construct an easy but effective workflow for subpixel level DSM generation. Experiments verified the validity and significance of bringing SR technology into this kind of application. Statistical analysis also confirmed that a subpixel level DSM with higher fidelity can be obtained more easily compared to directly DSM interpolation.\
+                //                    <a href="../publication/papers/2019_acsldgavsis.pdf" target="_blank">[full text]</a>\
+                //                    <a href="https://doi.org/10.14358/PERS.85.10.1" target="_blank">[link]</a>\
+                //                </p>\
+                //            </div>\
+                //        </li>\
+                //    </ul>\
+                //</div>\
+				//');
+				
+				//$.getJSON("../../publication/papers.json", "", function(data) {
+				//	
+          		//	$.each(data.journals_eng, function(i, item) {
+				//		var str = 
+				//			'<div class="mix category-engjn" data-nameorder="'+item.sortAs+'" data-dateorder="'+item.year+'">\
+                //			    <ul class="accordions toggles">\
+                //			        <li class="accordion papers">\
+                //			            <div class="accordion-header papers">\
+                //			                <div class="accordion-icon papers"></div>\
+                //			                <h6>'+item.author+'. ('+item.year+') <strong>'+item.name+'.</strong> In: '+item.journal+', Vol.'+item.volumn+'('+item.issue+'):'+item.pages+'.</h6>\
+                //			            </div>\
+                //			            <div class="accordion-content papers">\
+                //			                <img src="https://skyearth.org/publication/papers/'+item.nameAbb+'.jpg" alt="'+item.nameAbb+'">\
+				//							<p><strong>Abstract: </strong>'+item.abstract+'\
+                //			                    <a href="https://skyearth.org/publication/papers/'+item.nameAbb+'.pdf" target="_blank">[full text]</a>\
+                //			                    <a href="'+item.webpage+'" target="_blank">[link]</a>\
+                //			                </p>\
+                //			            </div>\
+                //			        </li>\
+                //			    </ul>\
+				//			</div>\
+				//			';
+              	//		$("#journal_eng_items").append(str);
+          		//	})
+      			//});
+
                 enableTabs();
    				enableAccordions();
                 enableMixItup();
     			enableStickyFooter();
     			$(window).resize(function(){
     				enableStickyFooter();
-    			});
+				});
 			});
 		</script>		
 	</body>

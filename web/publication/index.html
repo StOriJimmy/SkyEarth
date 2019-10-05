@@ -93,7 +93,7 @@
 											<div class="accordion-icon papers"></div>
 											<h6><span class="authorblue">Yongjun Zhang</span>. <strong>Theory and Methods of Visual Inspection with Image Sequences.</strong> Wuhan University Press, ISBN: 978-7-307-06654-0, 148P, 2008.12.
 											</h6>
-										</div>							
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -135,6 +135,8 @@
 									
 								</div>
 								<!-- /Media Filters -->
+
+								<div id = "journal_eng_items" class="media-items papers">	</div>
 						
 								<div class="media-items papers">
 
@@ -3515,14 +3517,41 @@
   			  	//if(_wh - _ch > header_footer){
      		   	//	$("#main-content").css("min-height",(_wh-header_footer)+"px");
    				//}
-   				//$("#main-content").css("min-height",800);
+				//$("#main-content").css("min-height",800);
+
+				//$.getJSON("papers.json", "", function(data) {
+				//
+				//	$.each(data.journals_eng, function(i, item) {
+				//	  var str = 
+				//		  '<div class="mix category-engjn" data-nameorder="'+item.sortAs+'" data-dateorder="'+item.year+'">\
+				//			  <ul class="accordions toggles">\
+				//				  <li class="accordion papers">\
+				//					  <div class="accordion-header papers">\
+				//						  <div class="accordion-icon papers"></div>\
+				//						  <h6>'+item.author+'. ('+item.year+') <strong>'+item.name+'.</strong> In: '+item.journal+', Vol.'+item.volumn+'('+item.issue+'):'+item.pages+'.</h6>\
+				//					  </div>\
+				//					  <div class="accordion-content papers">\
+				//						  <img src="https://skyearth.org/publication/papers/'+item.nameAbb+'.jpg" alt="'+item.nameAbb+'">\
+				//						  <p><strong>Abstract: </strong>'+item.abstract+'\
+				//							  <a href="https://skyearth.org/publication/papers/'+item.nameAbb+'.pdf" target="_blank">[full text]</a>\
+				//							  <a href="'+item.webpage+'" target="_blank">[link]</a>\
+				//						  </p>\
+				//					  </div>\
+				//				  </li>\
+				//			  </ul>\
+				//		  </div>\
+				//		  ';
+				//		$("#journal_eng_items").append(str);
+				//	})
+				//});
+
                 enableTabs();
    				enableAccordions();
-                enableMixItup();
+				enableMixItup();
     			enableStickyFooter();
     			$(window).resize(function(){
     				enableStickyFooter();
-    			});
+				});
 			});
 		</script>
 	</body>
