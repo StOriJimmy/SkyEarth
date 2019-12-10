@@ -197,7 +197,26 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                    </div>
+									</div>
+									
+									<div class="mix category-engjn" data-nameorder="t" data-dateorder="2018">
+										<ul class="accordions toggles">
+											<li class="accordion papers">
+												<div class="accordion-header papers">
+													<div class="accordion-icon papers"></div>
+													<h6>Daifeng Peng, <span class="authorblue">Yongjun Zhang</span>, Haiyan Guan (2019) <strong>End-to-End Change Detection for High Resolution Satellite Images Using Improved UNet++.</strong> In: Remote Sensing, 11:1382.
+													</h6>
+												</div>
+												<div class="accordion-content papers">
+													<img src="https://skyearth.org/publication/papers/2019_ecdhrsiuiu.jpg" alt="2019_ecdhrsiuiu">													
+													<p><strong>Abstract: </strong>Change detection (CD) is essential to the accurate understanding of land surface changes using available Earth observation data. Due to the great advantages in deep feature representation and nonlinear problem modeling, deep learning is becoming increasingly popular to solve CD tasks in remote-sensing community. However, most existing deep learning-based CD methods are implemented by either generating difference images using deep features or learning change relations between pixel patches, which leads to error accumulation problems since many intermediate processing steps are needed to obtain final change maps. To address the abovementioned issues, a novel end-to-end CD method is proposed based on an effective encoderdecoder architecture for semantic segmentation named UNet++, where change maps could be learned from scratch using available annotated datasets. Firstly, co-registered image pairs are concatenated as an input for the improved UNet++ network, where both global and fine-grained information can be utilized to generate feature maps with high spatial accuracy. Then, the fusion strategy of multiple side outputs is adopted to combine change maps from different semantic levels, thereby generating a final change map with high accuracy. The effectiveness and reliability of our proposed CD method are verified on very-high-resolution (VHR) satellite image datasets. Extensive experimental results have shown that our proposed approach outperforms the other state-of-the-art CD methods.
+														<a href="https://skyearth.org/publication/papers/2019_ecdhrsiuiu.pdf" target="_blank">[full text]</a>
+														<a href="https://www.mdpi.com/2072-4292/11/11/1382" target="_blank">[link]</a>
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
                 
                                     <div class="mix category-engjn" data-nameorder="t" data-dateorder="2019">
                                         <ul class="accordions toggles">
@@ -237,62 +256,81 @@
                                         </ul>
                                     </div>
                                     
-                                    <div class="mix category-engjn" data-nameorder="B" data-dateorder="2019">
+                                    <div class="mix category-engjn" data-nameorder="a" data-dateorder="2019">
+										<ul class="accordions toggles">
+											<li class="accordion papers">
+												<div class="accordion-header papers">
+													<div class="accordion-icon papers"></div>
+													<h6><span class="authorblue">Yongjun Zhang</span>, Xinyi Liu, Yi Zhang, Xiao Ling, Xu Huang. (2019) <strong>Automatic and Unsupervised Water Body Extraction Based on Spectral-Spatial Features Using GF-1 Satellite Imagery.</strong> In: IEEE Geoscience and Remote Sensing Letters, Vol.16, No.6:927-931.
+													</h6>
+												</div>
+												<div class="accordion-content papers">
+													<img src="https://skyearth.org/publication/papers/2019_auwbe.jpg" alt="2019_auwbe">													
+													<p><strong>Abstract: </strong>Water body extraction from remote sensing imagery is an essential and nontrivial issue due to the complexity of the spectral characteristics of various kinds of water bodies and the redundant background information. An automatic multifeature water body extraction (MFWE) method integrating spectral and spatial features is proposed in this letter for water body extraction from GF-1 multispectral imagery in an unsupervised way. This letter first discusses a spatial feature index, called the pixel region index (PRI), to describe the smoothness in a local area surrounding a pixel. PRI is advantageous for assisting the normalized difference water index (NDWI) in detecting major water bodies, especially in urban areas. On the other hand, part of the water pixels near the borders may not be included in major water bodies, k-means clustering is subsequently conducted to cluster all the water pixels into the same group as a guide map. Finally, the major water bodies and the guide map are merged to obtain the final water mask. Our experimental results demonstrate that accurate water masks were achieved for all seven GF-1 imagery scenes examined. Three images with a complex background and water conditions were used to quantitatively compare the proposed method to NDWI thresholding and support vector machine classification, which verified the higher accuracy and effectiveness of the proposed method.
+														<a href="https://skyearth.org/publication/papers/2019_auwbe.pdf" target="_blank">[full text]</a>
+														<a href="https://ieeexplore.ieee.org/document/8595430/" target="_blank">[link]</a>
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									
+									<div class="mix category-engjn" data-nameorder="B" data-dateorder="2019">
+										<ul class="accordions toggles">
+											<li class="accordion papers">
+												<div class="accordion-header papers">
+													<div class="accordion-icon papers"></div>
+													<h6>Shunping Ji, Yanyun Shen, Meng Lu, <span class="authorblue">Yongjun Zhang</span>. (2019) <strong>Building Instance Change Detection from Large-Scale Aerial Images using Convolutional Neural Networks and Simulated Samples.</strong> In: Remote Sensing, Vol.11(11):1343.
+													</h6>
+												</div>
+												<div class="accordion-content papers">
+													<img src="https://skyearth.org/publication/papers/2019_bicdlaicnnss.jpg" alt="2019_bicdlaicnnss">
+													<p><strong>Abstract: </strong>We present a novel convolutional neural network (CNN)-based change detection framework for locating changed building instances as well as changed building pixels from very high resolution (VHR) aerial images. The distinctive advantage of the framework is the self-training ability, which is highly important in deep-learning-based change detection in practice, as high-quality samples of changes are always lacking for training a successful deep learning model. The framework consists two parts: a building extraction network to produce a binary building map and a building change detection network to produce a building change map. The building extraction network is implemented with two widely used structures: a Mask R-CNN for object-based instance segmentation, and a multi-scale full convolutional network for pixel-based semantic segmentation. The building change detection network takes bi-temporal building maps produced from the building extraction network as input and outputs a building change map at the object and pixel levels. By simulating arbitrary building changes and various building parallaxes in the binary building map, the building change detection network is well trained without real-life samples. This greatly lowers the requirements of labeled changed buildings, and guarantees the algorithm’s robustness to registration errors caused by parallaxes. To evaluate the proposed method, we chose a wide range of urban areas from an open-source dataset as training and testing areas, and both pixel-based and object-based model evaluation measures were used. Experiments demonstrated our approach was vastly superior: without using any real change samples, it reached 63% average precision (AP) at the object (building instance) level. In contrast, with adequate training samples, other methods—including the most recent CNN-based and generative adversarial network (GAN)-based ones—have only reached 25% AP in their best cases.
+														<a href="https://skyearth.org/publication/papers/2019_bicdlaicnnss.pdf" target="_blank">[full text]</a>
+														<a href="https://www.mdpi.com/2072-4292/11/11/1343" target="_blank">[link]</a>
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+                                    <div class="mix category-engjn" data-nameorder="p" data-dateorder="2019">
                                         <ul class="accordions toggles">
                                             <li class="accordion papers">
                                                 <div class="accordion-header papers">
                                                     <div class="accordion-icon papers"></div>
-                                                    <h6>Shunping Ji, Yanyun Shen, Meng Lu, <span class="authorblue">Yongjun Zhang</span>. (2019) <strong>Building Instance Change Detection from Large-Scale Aerial Images using Convolutional Neural Networks and Simulated Samples.</strong> In: Remote Sensing, Vol.11(11):1343.
+                                                    <h6><span class="authorblue">Yongjun Zhang</span>, Chi Liu, Mingwei Sun, Yangjun Ou. (2019) <strong>Pan-Sharpening Using an Efficient Bidirectional Pyramid Network.</strong> In: IEEE Transactions on Geoscience and Remote Sensing, Vol.99:1-15.
                                                     </h6>
                                                 </div>
                                                 <div class="accordion-content papers">
-                                                    <img src="https://skyearth.org/publication/papers/2019_bicdlaicnnss.jpg" alt="2019_bicdlaicnnss">
-                                                    <p><strong>Abstract: </strong>We present a novel convolutional neural network (CNN)-based change detection framework for locating changed building instances as well as changed building pixels from very high resolution (VHR) aerial images. The distinctive advantage of the framework is the self-training ability, which is highly important in deep-learning-based change detection in practice, as high-quality samples of changes are always lacking for training a successful deep learning model. The framework consists two parts: a building extraction network to produce a binary building map and a building change detection network to produce a building change map. The building extraction network is implemented with two widely used structures: a Mask R-CNN for object-based instance segmentation, and a multi-scale full convolutional network for pixel-based semantic segmentation. The building change detection network takes bi-temporal building maps produced from the building extraction network as input and outputs a building change map at the object and pixel levels. By simulating arbitrary building changes and various building parallaxes in the binary building map, the building change detection network is well trained without real-life samples. This greatly lowers the requirements of labeled changed buildings, and guarantees the algorithm’s robustness to registration errors caused by parallaxes. To evaluate the proposed method, we chose a wide range of urban areas from an open-source dataset as training and testing areas, and both pixel-based and object-based model evaluation measures were used. Experiments demonstrated our approach was vastly superior: without using any real change samples, it reached 63% average precision (AP) at the object (building instance) level. In contrast, with adequate training samples, other methods—including the most recent CNN-based and generative adversarial network (GAN)-based ones—have only reached 25% AP in their best cases.
-                                                        <a href="https://skyearth.org/publication/papers/2019_bicdlaicnnss.pdf" target="_blank">[full text]</a>
-                                                        <a href="https://www.mdpi.com/2072-4292/11/11/1343" target="_blank">[link]</a>
+                                                    <img src="https://skyearth.org/publication/papers/2019_puebpn.jpg" alt="2019_puebpn">													
+                                                    <p><strong>Abstract: </strong>Pan-sharpening is an important preprocessing step for remote sensing image processing tasks; it fuses a low-resolution multispectral image and a high-resolution (HR) panchromatic (PAN) image to reconstruct a HR multispectral (MS) image. This paper introduces a new end-to-end bidirectional pyramid network for pan-sharpening. The overall structure of the proposed network is a bidirectional pyramid, which permits the network to process MS and PAN images in two separate branches level by level. At each level of the network, spatial details extracted from the PAN image are injected into the upsampled MS image to reconstruct the pan-sharpened image from coarse resolution to fine resolution. Subpixel convolutional layers and the enhanced residual blocks are used to make the network efficient. Comparison of the results obtained with our proposed method and the results using other widely used state-of-the-art approaches confirms that our proposed method outperforms the others in visual appearance and objective indexes.
+                                                        <a href="https://skyearth.org/publication/papers/2019_puebpn.pdf" target="_blank">[full text]</a>
+                                                        <a href="https://ieeexplore.ieee.org/abstract/document/8667448" target="_blank">[link]</a>
                                                     </p>
                                                 </div>
                                             </li>
                                         </ul>
                                     </div>
 
-									<div class="mix category-engjn" data-nameorder="p" data-dateorder="2019">
-										<ul class="accordions toggles">
-											<li class="accordion papers">
-												<div class="accordion-header papers">
-													<div class="accordion-icon papers"></div>
-													<h6><span class="authorblue">Yongjun Zhang</span>, Chi Liu, Mingwei Sun, Yangjun Ou. (2019) <strong>Pan-Sharpening Using an Efficient Bidirectional Pyramid Network.</strong> In: IEEE Transactions on Geoscience and Remote Sensing, Vol.99:1-15.
-													</h6>
-												</div>
-												<div class="accordion-content papers">
-													<img src="https://skyearth.org/publication/papers/2019_puebpn.jpg" alt="2019_puebpn">													
-													<p><strong>Abstract: </strong>Pan-sharpening is an important preprocessing step for remote sensing image processing tasks; it fuses a low-resolution multispectral image and a high-resolution (HR) panchromatic (PAN) image to reconstruct a HR multispectral (MS) image. This paper introduces a new end-to-end bidirectional pyramid network for pan-sharpening. The overall structure of the proposed network is a bidirectional pyramid, which permits the network to process MS and PAN images in two separate branches level by level. At each level of the network, spatial details extracted from the PAN image are injected into the upsampled MS image to reconstruct the pan-sharpened image from coarse resolution to fine resolution. Subpixel convolutional layers and the enhanced residual blocks are used to make the network efficient. Comparison of the results obtained with our proposed method and the results using other widely used state-of-the-art approaches confirms that our proposed method outperforms the others in visual appearance and objective indexes.
-														<a href="https://skyearth.org/publication/papers/2019_puebpn.pdf" target="_blank">[full text]</a>
-														<a href="https://ieeexplore.ieee.org/abstract/document/8667448" target="_blank">[link]</a>
-													</p>
-												</div>
-											</li>
-										</ul>
-									</div>
-
-									<div class="mix category-engjn" data-nameorder="a" data-dateorder="2019">
-										<ul class="accordions toggles">
-											<li class="accordion papers">
-												<div class="accordion-header papers">
-													<div class="accordion-icon papers"></div>
-													<h6><span class="authorblue">Yongjun Zhang</span>, Fei Wen, Zhi Gao, Xiao Ling. (2019) <strong>A Coarse-to-Fine Framework for Cloud Removal in Remote Sensing Image Sequence.</strong> In: IEEE Transactions on Geoscience and Remote Sensing, Vol.99:1-12.
-													</h6>
-												</div>
-												<div class="accordion-content papers">
-													<img src="https://skyearth.org/publication/papers/2019_acfcrrsis.jpg" alt="2019_acfcrrsis">													
-													<p><strong>Abstract: </strong>Clouds and accompanying shadows, which exist in optical remote sensing images with high possibility, can degrade or even completely occlude certain ground-cover information in images, limiting their applicabilities for Earth observation, change detection, or land-cover classification. In this paper, we aim to deal with cloud contamination problems with the objective of generating cloud-removed remote sensing images. Inspired by low-rank representation together with sparsity constraints, we propose a coarse-to-fine framework for cloud removal in the remote sensing image sequence. Leveraging on group-sparsity constraint, we first decompose the observed cloud image sequence of the same area into the low-rank component, group-sparse outliers, and sparse noise, corresponding to cloud-free land-covers, clouds (and accompanying shadows), and noise respectively. Subsequently, a discriminative robust principal component analysis (RPCA) algorithm is utilized to assign aggressive penalizing weights to the initially detected cloud pixels to facilitate cloud removal and scene restoration. Moreover, we incorporate geometrical transformation into a low-rank model to address the misalignment of the image sequence. Significantly superior to conventional cloud-removal methods, neither cloud-free reference image(s) nor additional operations of cloud and shadow detection are required in our method. Extensive experiments on both simulated data and real data demonstrate that our method works effectively, outperforming many state-of-the-art approaches.
-														<a href="https://skyearth.org/publication/papers/2019_acfcrrsis.pdf" target="_blank">[full text]</a>
-														<a href="https://ieeexplore.ieee.org/abstract/document/8675771" target="_blank">[link]</a>
-													</p>
-												</div>
-											</li>
-										</ul>
-									</div>
+                                    <div class="mix category-engjn" data-nameorder="a" data-dateorder="2019">
+                                        <ul class="accordions toggles">
+                                            <li class="accordion papers">
+                                                <div class="accordion-header papers">
+                                                    <div class="accordion-icon papers"></div>
+                                                    <h6><span class="authorblue">Yongjun Zhang</span>, Fei Wen, Zhi Gao, Xiao Ling. (2019) <strong>A Coarse-to-Fine Framework for Cloud Removal in Remote Sensing Image Sequence.</strong> In: IEEE Transactions on Geoscience and Remote Sensing, Vol.99:1-12.
+                                                    </h6>
+                                                </div>
+                                                <div class="accordion-content papers">
+                                                    <img src="https://skyearth.org/publication/papers/2019_acfcrrsis.jpg" alt="2019_acfcrrsis">													
+                                                    <p><strong>Abstract: </strong>Clouds and accompanying shadows, which exist in optical remote sensing images with high possibility, can degrade or even completely occlude certain ground-cover information in images, limiting their applicabilities for Earth observation, change detection, or land-cover classification. In this paper, we aim to deal with cloud contamination problems with the objective of generating cloud-removed remote sensing images. Inspired by low-rank representation together with sparsity constraints, we propose a coarse-to-fine framework for cloud removal in the remote sensing image sequence. Leveraging on group-sparsity constraint, we first decompose the observed cloud image sequence of the same area into the low-rank component, group-sparse outliers, and sparse noise, corresponding to cloud-free land-covers, clouds (and accompanying shadows), and noise respectively. Subsequently, a discriminative robust principal component analysis (RPCA) algorithm is utilized to assign aggressive penalizing weights to the initially detected cloud pixels to facilitate cloud removal and scene restoration. Moreover, we incorporate geometrical transformation into a low-rank model to address the misalignment of the image sequence. Significantly superior to conventional cloud-removal methods, neither cloud-free reference image(s) nor additional operations of cloud and shadow detection are required in our method. Extensive experiments on both simulated data and real data demonstrate that our method works effectively, outperforming many state-of-the-art approaches.
+                                                        <a href="https://skyearth.org/publication/papers/2019_acfcrrsis.pdf" target="_blank">[full text]</a>
+                                                        <a href="https://ieeexplore.ieee.org/abstract/document/8675771" target="_blank">[link]</a>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
 
 									<div class="mix category-engjn" data-nameorder="a" data-dateorder="2019">
 										<ul class="accordions toggles">
@@ -312,7 +350,7 @@
 											</li>
 										</ul>
 									</div>
-		
+
 									<div class="mix category-engjn" data-nameorder="a" data-dateorder="2019">
 										<ul class="accordions toggles">
 											<li class="accordion papers">
@@ -331,20 +369,20 @@
 											</li>
 										</ul>
 									</div>
-		
-									<div class="mix category-engjn" data-nameorder="a" data-dateorder="2018">
+
+									<div class="mix category-engjn" data-nameorder="t" data-dateorder="2018">
 										<ul class="accordions toggles">
 											<li class="accordion papers">
 												<div class="accordion-header papers">
 													<div class="accordion-icon papers"></div>
-													<h6><span class="authorblue">Yongjun Zhang</span>, Xinyi Liu, Yi Zhang, Xiao Ling, Xu Huang. (2018) <strong>Automatic and Unsupervised Water Body Extraction Based on Spectral-Spatial Features Using GF-1 Satellite Imagery.</strong> In: IEEE Geoscience and Remote Sensing Letters.
+													<h6>Mi Wang, <span class="authorblue">Yongjun Zhang</span>, Yanfei Zhong, Xin Huang, Xiangyun Hu, Nengcheng Chen, Bisheng Yang, Jingbin Liu, Huanfeng Shen, Zeming Wang, Liqiong Chen, Jinglin He, Steve McClure. (2018) <strong>The State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing. Part of Celebrating 125 Years of Academic Excellence: Wuhan University (1893–2018).</strong> In: Science, pp.32-36, Online Publication, 2018.11.28.
 													</h6>
 												</div>
 												<div class="accordion-content papers">
-													<img src="https://skyearth.org/publication/papers/2018_auwbe.jpg" alt="2018_auwbe">													
-													<p><strong>Abstract: </strong>Water body extraction from remote sensing imagery is an essential and nontrivial issue due to the complexity of the spectral characteristics of various kinds of water bodies and the redundant background information. An automatic multifeature water body extraction (MFWE) method integrating spectral and spatial features is proposed in this letter for water body extraction from GF-1 multispectral imagery in an unsupervised way. This letter first discusses a spatial feature index, called the pixel region index (PRI), to describe the smoothness in a local area surrounding a pixel. PRI is advantageous for assisting the normalized difference water index (NDWI) in detecting major water bodies, especially in urban areas. On the other hand, part of the water pixels near the borders may not be included in major water bodies, k-means clustering is subsequently conducted to cluster all the water pixels into the same group as a guide map. Finally, the major water bodies and the guide map are merged to obtain the final water mask. Our experimental results demonstrate that accurate water masks were achieved for all seven GF-1 imagery scenes examined. Three images with a complex background and water conditions were used to quantitatively compare the proposed method to NDWI thresholding and support vector machine classification, which verified the higher accuracy and effectiveness of the proposed method.
-														<a href="https://skyearth.org/publication/papers/2018_auwbe.pdf" target="_blank">[full text]</a>
-														<a href="https://ieeexplore.ieee.org/document/8595430/" target="_blank">[link]</a>
+													<img src="https://skyearth.org/publication/papers/2018_science.jpg" alt="2018_science">													
+													<p>Zhang Zuxun and his team first proposed and investigated the concept of a “full digital automation mapping system,” creating VirtuoZo, an intellectual property of China. The team also advanced a novel digital photogrammetrc grid processing system (DPGrid), which was China’s first set of technologies for fully automatic processing of remotely sensed aerospace images with completely independent intellectual property rights (Figure 4). DPGrid made a crucial breakthrough by transitioning from human–machine interaction to automatic processing, which improves production efficiency by at least 10-fold. Major national engineering projects, such as geographical conditions monitoring and emergency response systems, have applied these innovations widely (Figure 5). The Environmental Systems Research Institute’s ArcGIS system has integrated the core technology of DPGrid, boosting its popularity and use around the world.
+														<a href="https://skyearth.org/publication/papers/2018_science.pdf" target="_blank">[full text]</a>
+														<a href="http://www.sciencemag.org/collections/celebrating-125-years-academic-excellence-wuhan-university-1893-2018" target="_blank">[link]</a>
 													</p>
 												</div>
 											</li>
