@@ -918,9 +918,29 @@ html[xmlns] .slides {display: block;}
 	padding-top:100px;
 }
 
+#main_flex_4{
+	background:url(../img/slide4.jpg) no-repeat center;
+}
 
+#main_flex_4 .slide{
+	padding-top:100px;
+}
 
+#main_flex_5{
+	background:url(../img/slide5.jpg) no-repeat center;
+}
 
+#main_flex_5 .slide{
+	padding-top:100px;
+}
+
+#main_flex_6{
+	background:url(../img/slide6.jpg) no-repeat center;
+}
+
+#main_flex_6 .slide{
+	padding-top:100px;
+}
 
 
 /* Revolution Slider */
