@@ -156,18 +156,18 @@ html[xmlns] .slides{display:block;}
 .main-flexslider .great-vibes{position:relative;display:inline-block;margin-bottom:0;font-size:36px;}
 .main-flexslider .great-vibes:before{position:absolute;top:50%;left:-60px;display:block;width:40px;border-color:rgba(255,255,255,.6);border-top:1px solid #fff;content:'';}
 .main-flexslider .great-vibes:after{position:absolute;top:50%;right:-60px;display:block;width:40px;border-color:rgba(255,255,255,.6);border-top:1px solid #fff;content:'';}
-#main_flex_1{background:url(../img/slide1.jpg) no-repeat center;}
+#main_flex_1{background:url(https://skyearth.org/img/slide1.jpg) no-repeat center;}
 #main_flex_1 .slide{padding-left:100px;}
-#main_flex_2{background:url(../img/slide2.jpg) no-repeat center;}
+#main_flex_2{background:url(https://skyearth.org/img/slide2.jpg) no-repeat center;}
 #main_flex_2 .slide{padding-top:120px;}
 #main_flex_2 .slide h2{font-weight:700;}
-#main_flex_3{background:url(../img/slide3.jpg) no-repeat center;}
+#main_flex_3{background:url(https://skyearth.org/img/slide3.jpg) no-repeat center;}
 #main_flex_3 .slide{padding-top:100px;}
-#main_flex_4{background:url(../img/slide4.jpg) no-repeat center;}
+#main_flex_4{background:url(https://skyearth.org/img/slide4.jpg) no-repeat center;}
 #main_flex_4 .slide{padding-top:100px;}
-#main_flex_5{background:url(../img/slide5.jpg) no-repeat center;}
+#main_flex_5{background:url(https://skyearth.org/img/slide5.jpg) no-repeat center;}
 #main_flex_5 .slide{padding-top:100px;}
-#main_flex_6{background:url(../img/slide6.jpg) no-repeat center;}
+#main_flex_6{background:url(https://skyearth.org/img/slide6.jpg) no-repeat center;}
 #main_flex_6 .slide{padding-top:100px;}
 .owl-carousel-container{margin:0 -15px;}
 .testimonial-carousel+a.button{margin-top:-20px;}
