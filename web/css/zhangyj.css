@@ -106,7 +106,7 @@ h3.profile-title{margin-bottom:5px;color:#fff;font-size:18px;font-family:robotob
 .toggle-menu{display:block;margin-top:0;padding:0;width:100%;height:25px;background:#6cc0f7;color:#fff;font-size:18px;}
 .toggle-menu:hover{color:#fff;}
 .banner-bg{position:relative;z-index:2;background:url(../img/bg.jpg);background-position:center;background-size:cover;background-repeat:no-repeat;}
-.banner-overlay{position:absolute;top:0;left:0;z-index:3;width:100%;height:100%;background:rgba(95,109,126,.3);}
+.banner-overlay{position:absolute;top:0;left:0;z-index:3;width:100%;height:100%;background:rgba(95,109,126,.5);}
 #particles-js{position:absolute;top:0;left:0;z-index:4;width:100%;height:100%;}
 .welcome-box{margin-bottom:18px;padding:0 10px;}
 .welcome-text{position:relative;z-index:4;}
