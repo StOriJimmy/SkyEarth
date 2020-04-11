@@ -109,10 +109,10 @@ h3.profile-title{margin-bottom:5px;color:#fff;font-size:18px;font-family:robotob
 .banner-overlay{position:absolute;top:0;left:0;z-index:3;width:100%;height:100%;background:rgba(95,109,126,.5);}
 #particles-js{position:absolute;top:0;left:0;z-index:4;width:100%;height:100%;}
 .welcome-box{margin-bottom:18px;padding:0 10px;}
-.welcome-text{position:relative;z-index:4;}
-.welcome-text h2{margin-bottom:16px;color:#fff;font-size:35px;font-family:robotobold;}
-.welcome-text h3{color:#fff;text-align:justify;font-weight:1;font-size:14px;font-family:robotoregular;line-height:20px;}
-.welcome-text h4{color:#fff;text-align:justify;font-weight:1;font-size:18px;font-family:robotoregular;line-height:23px;}
+.welcome-text{padding:16px;position:relative;z-index:4;border-bottom:1px solid #c7d2d4;}
+.welcome-text h2{color:rgba(61, 72, 97, 0.973);font-size:35px;font-family:robotobold;}
+.welcome-text h3{color:rgb(26, 39, 66);text-align:justify;font-weight:1;font-size:14px;font-family:robotoregular;line-height:20px;}
+.welcome-text h4{color:rgb(26, 39, 66);text-align:justify;font-weight:1;font-size:18px;font-family:robotoregular;line-height:24px;}
 .overlay-box{position:relative;z-index:4;margin-bottom:25px;width:100%;background:rgba(255,255,255,.8);box-shadow:0 2px 4px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)!important;}
 .overlay-box .title{padding:16px;}
 .box-item{margin:0;padding:5px 16px;border-bottom:1px solid #c7d2d4;}
