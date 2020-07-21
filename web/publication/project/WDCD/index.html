@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Skyearth</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://skyearth.org/img/favicon.ico">
+		<link href="https://skyearth.org/css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/icomoon.min.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/skyearth-1.1.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		<script src="https://skyearth.org/js/jquery-3.1.1.min.js"></script>
+		<script src="https://skyearth.org/js/jquery-ui-1.10.4.min.js"></script>
+		<script src="https://skyearth.org/js/jquery.queryloader2.min.js"></script>
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		$(document).ready(function(){
+			$('html').show();			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000
+			});			
+		});
+		</script>		
+	</head>
+	
+	<body class="sticky-header-on tablet-sticky-header">
+		<div class="container">
+			<header id="header">
+				<div id="lower-header">
+					<div class="container">
+					<div id="menu-button">
+						<div><span></span><span></span><span></span></div>
+						<span>Menu</span>
+					</div>
+					<ul id="navigation">
+						<li class="home-button current-menu-item"><a href="https://en.skyearth.org"><i class="icons icon-home"></i></a></li>
+						<li ><a href="https://en.skyearth.org/team">Team</a>
+							<ul>
+								<li><a href="https://en.skyearth.org/team#prof">Professor</a></li>
+								<li><a href="https://en.skyearth.org/team#phd">PhD</a></li>
+								<li><a href="https://en.skyearth.org/team#grad">Master</a></li>
+								<li><a href="https://en.skyearth.org/team#alumni">Alumni</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://en.skyearth.org/projects">Projects</a></li>
+						<li ><a href="https://en.skyearth.org/publication">Publications</a>
+							<ul>
+								<li><a href="https://en.skyearth.org/publication#book">Books</a></li>
+								<li><a href="https://en.skyearth.org/publication#journal">Journal</a></li>
+								<li><a href="https://en.skyearth.org/publication#conference">Conference</a></li>
+								<li><a href="https://en.skyearth.org/publication#properties">Properties</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
+						<li ><a href="https://en.skyearth.org/blog/events.html">Events</a></li>
+						<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
+						<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
+						<li class="language-button "><a href="#">Chinese Version</a></li>
+					</ul>
+					</div>
+				</div>
+			</header>
+			<section id="content">
+				<!-- Page Heading -->
+				<section class="section page-heading animate-onscroll">
+				
+					<h1>Weakly supervised Deep learning based Cloud Detection (WDCD)</h1>
+					<p class="breadcrumb"><a href="https://en.skyearth.org">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / WDCD</p>
+				
+				</section>
+				<!-- Page Heading -->
+
+				<section class="section full-width-bg gray-bg">
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-6">
+									
+							<h6>Accurate cloud detection in high-resolution remote sensing imagery by weakly supervised deep learning</h6>
+							<h6>Abstract</h6>
+							<p style="text-align: justify;">Cloud cover is a common and inevitable phenomenon that often hinders the usability of optical remote sensing (RS) image data and further harms the continuous cartography based on RS image interpretation. In the literature, the off-the-shelf cloud detection methods either require various hand-crafted features or utilize data-driven features using deep networks. As a whole, deep networks achieve much better performance than traditional methods using hand-crafted features. However, the current deep networks for cloud detection depend on massive pixel-level annotation labels, which cost lots of manual annotation labor. To alleviate the labor of annotating the pixel-level labels, this paper proposes a weakly supervised deep learning based cloud detection (WDCD) method using block-level labels indicating only the presence or the absence of cloud in one RS image block. In the training stage, a new global convolutional pooling (GCP) operation is proposed to enhance the ability of the feature map to represent useful information (e.g., spatial variance). In the testing stage, the trained deep networks are modified to generate the cloud activation map (CAM) via the local pooling pruning (LPP) strategy which prunes the local pooling layers of the deep networks trained in the training stage to improve the quality (e.g., spatial resolution) of CAM. Given one large RS image, it is cropped to multiple overlapping blocks by a sliding window, and then the CAM of each block is generated by the modified deep networks. Based on the correspondence between image blocks and CAMs, multiple corresponding CAMs are collected to mosaic the CAM of the large image. By segmenting the CAM using a statistical threshold against clear-sky surface, the pixel-level cloud mask of the testing image can be obtained. To verify the effectiveness of our proposed WDCD method, we collect a new global dataset where the training dataset contains over 200,000 RS image blocks with block-level labels from GaoFen-1 imagery and the validation and testing datasets contain 25 large RS image with pixel-level annotation labels composed of the GaoFen-1 and ZiYuan-3 imagery. Even under this extremely weak supervision, our proposed WDCD method could achieve excellent cloud detection performance with the average overall accuracy (OA) as high as 95.4%. Extensive experiments demonstrate that our proposed WDCD method obviously outperforms the state-of-the-art methods.</p>
+							<h6><a href="https://skyearth.org/publication/project/WDCD/data">Dataset</a></h6>
+
+							<li><a href="https://skyearth.org/publication/project/WDCD/data/validation">Validation</a></li>
+							
+							<li><a href="https://skyearth.org/publication/project/WDCD/data/training">Training</a></li>
+
+							<li><a href="https://skyearth.org/publication/project/WDCD/data/testing">Testing</a></li>
+							
+						</div>
+					</div>
+					
+					
+				</section>
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+			</section>
+			<footer id="footer">
+				<div id="lower-footer">
+					<div class="footer-link">
+						<a href="https://en.skyearth.org"><strong>SkyEarth</strong></a> | 
+						<a href="https://en.skyearth.org/projects/">Projects</a> | 
+						<a href="https://en.skyearth.org/publication/">Publications</a> | 
+						<a href="https://en.skyearth.org/publication#properties">Properties</a> | 
+						<a href="https://en.skyearth.org/team/">Team</a> | 
+						<a href="https://en.skyearth.org/blog/">Blog</a> | 
+						<a href="https://en.skyearth.org/blog/events.html">Events</a> | 
+						<a href="https://en.skyearth.org/contact/">Contact</a> | 
+						<a href="https://en.skyearth.org/zhangyj/">About</a>
+					</div>						
+					<div class="copyright">© 2020 SkyEarth. All Rights Reserved.
+						<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> Wuhan University</a> 
+						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">School of Remote Sensing and Information Engineering</a>
+						<a> <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275854917'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275854917%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></a>
+					</div>
+				</div>
+			</footer>
+			<a href="#" id="button-to-top"><i class="icons icon-caret-up"></i></a>
+		</div>
+		<script type="text/javascript" src="https://skyearth.org/js/bootstrap.min-3.1.1.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/modernizr.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/script.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function(){
+                enableMixItup();
+            });
+        </script>
+	</body>
+</html>
