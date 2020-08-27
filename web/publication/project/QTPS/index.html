@@ -62,7 +62,7 @@
 							</ul>
 						</li>
 						<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
-						<li ><a href="https://skyearth.org/research">Research</a></li>
+						<li ><a href="https://en.skyearth.org/research">Research</a></li>
 						<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
 						<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
 						<li class="language-button "><a href="#">Chinese Version</a></li>
@@ -85,12 +85,16 @@
 									
 							<h6>Robust 3D plane segmentation from airborne point clouds based on quasi-a-contrario theory</h6>
 							<h6>Abstract</h6>
-							<p style="text-align: justify;">3D plane segmentation is one of the most important steps in 3D point cloud processing. Most of the existing 3D plane segmentation methods have good performances with specific types of input point cloud. However, these methods usually result in unsatisfactory outcomes when dealing with point clouds that have high noise level, low density, and high complexity. In this paper, a novel quasi-a-contrario theory-based plane segmentation method (QTPS) is proposed to segment accurate planes from different types of point clouds. Firstly, the input point clouds are segmented into multi-scale initial planar supervoxels based on the existing supervoxel segmentation method and the calculated saliency features. Then, a new 3D planar subset extraction algorithm based on quasi-a-contrario theory (QT3D) is proposed to generate rigorous planar supervoxels from the initial planar supervoxels. The meaningfulness of the planar subset is rated by estimating the number of false alarms (NFA). Finally, the integrated planes are segmented by a region growing process that selects the rigorous planar supervoxel as basic unit. Experiments were conducted on three different types of challenging datasets to evaluate the effectiveness and performance of the proposed QTPS method. Specifically, QT3D algorithm was evaluated on both real data and simulated data to demonstrate the effectiveness of the quasi-a-contrario theory. The comparison results from the proposed QTPS and QT3D to other state-of-the-art plane segmentation methods show that QT3D is capable of extracting the most meaningful planar subset from a point set, and QTPS is robust enough to obtain a large proportion of accurate planes from multiple types of point clouds.</p>
+							<p style="text-align: justify;">
+								3D plane segmentation is one of the most important steps in 3D point cloud processing. Most of the existing methods have good performances with specific types of input point cloud. However, the robustness of 3D plane segmentation for dealing with point clouds that have high noise level, low density, and high complexity is still a challenge problem. To overcome this problem, we propose quasi-a-contrario theory-based plane segmentation (QTPS), a method that casts planar subset extraction from point set as a geometric rigidity measuring problem. The meaningfulness of the planar subset is rated by estimating the number of false alarms (NFA), which can prevent false positive effectively. Experiments were conducted to analyze both the planar subset extraction and the 3D plane segmentation. The results show that the proposed algorithms performed well in terms of accuracy and robustness. Executable programs of QTPS and experimental datasets and results are published: https://skyearth.org/publication/project/QTPS.							
+							</p>
 
 							<img src="https://skyearth.org/publication/project/QTPS/img/img_1.jpg" alt="img_1">
 							<p style="text-align: center"><strong>Figure 1.</strong> Dataset overview</p>
 
 							<img src="https://skyearth.org/publication/project/QTPS/img/img_2.jpg" alt="img_2">
+							<img src="https://skyearth.org/publication/project/QTPS/img/img_3.jpg" alt="img_3">
+							<img src="https://skyearth.org/publication/project/QTPS/img/img_4.jpg" alt="img_4">
 							<p style="text-align: center"><strong>Figure 2.</strong> Results overview</p>
 
 							<h6>Download</h6>
