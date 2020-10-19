@@ -505,7 +505,7 @@ function enableFancyBox(e){
 	// vcard
 	if (e == ".fancybox-member") {
 		$(e).fancybox({
-			'width':630,
+			'width':1080,
 		});
 	}	
 
