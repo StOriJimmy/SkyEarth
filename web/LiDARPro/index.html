@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LiDARPro</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://skyearth.org/LiDARPro/img/lidarpro.ico">
+		<link href="https://skyearth.org/css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
+		<link href="../css/icomoon.min.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/skyearth-1.1.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		<script src="https://skyearth.org/js/jquery-3.1.1.min.js"></script>
+		<script src="https://skyearth.org/js/jquery-ui-1.10.4.min.js"></script>
+		<script src="https://skyearth.org/js/jquery.queryloader2.min.js"></script>
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		$(document).ready(function(){
+			$('html').show();			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000
+			});			
+		});
+		</script>		
+	</head>
+	
+	<body class="sticky-header-on tablet-sticky-header">
+		<div class="container">
+			<header id="header" >
+				<div id="lower-header">
+					<div class="container">
+					<div id="menu-button">
+						<div><span></span><span></span><span></span></div>
+						<span>Menu</span>
+					</div>
+					<ul id="navigation">
+						<li class="home-button current-menu-item"><a href="https://skyearth.org"><i class="icons icon-home"></i></a></li>
+						<li ><a href="https://skyearth.org/team">团队</a>	
+							<ul>
+								<li><a href="https://skyearth.org/team#prof">教授</a></li>
+								<li><a href="https://skyearth.org/team#phd">博士生</a></li>
+								<li><a href="https://skyearth.org/team#grad">硕士生</a></li>
+								<li><a href="https://skyearth.org/team#alumni">毕业生</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://skyearth.org/projects">项目</a></li>
+						<li ><a href="https://skyearth.org/publication">成果</a>
+							<ul>
+								<li><a href="https://skyearth.org/publication#book">论著</a></li>
+								<li><a href="https://skyearth.org/publication#journal">期刊论文</a></li>
+								<li><a href="https://skyearth.org/publication#conference">会议论文</a></li>
+								<li><a href="https://skyearth.org/publication#properties">知识产权</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://skyearth.org/blog">博客</a></li>
+						<li ><a href="https://skyearth.org/research">科研</a></li>
+						<li ><a href="https://skyearth.org/contact">联系方式</a></li>
+						<li ><a href="https://skyearth.org/zhangyj">关于</a></li>
+						<li class="language-button"><a href="https://en.skyearth.org/research">English Version</a></li>
+					</ul>
+					</div>
+				</div>
+			</header>
+			<section id="content">
+				<section class="section page-heading">
+				
+					<h1>LiDAR点云与多视航空影像联合建模系统 - LiDARPro</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/">Home</a> / <a href="https://skyearth.org/projects">Projects</a> / LiDARPro</p>
+				
+				</section>
+
+				<section class="section full-width-bg gray-bg">
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-6">
+
+							<div class="media-item" style="margin: 0 0">
+								<div class="media-image">
+									<video poster="https://skyearth.org/LiDARPro/img/preview.png" width=100% onmouseover="controls=true" onmouseout="controls=false">
+										  <source src="https://skyearth.org/LiDARPro/LiDARPro.mp4" type="video/mp4"></source>
+									</video>
+								</div>
+							</div>
+									
+							<h6>系统简介</h6>
+							<p style="text-align: justify;">
+								机载激光雷达与航空影像联合城市三维建模系统LiDARPro以机载LiDAR点云及多视航空影像为主要输入数据，提供点云语义分割、点云影像配准、实景三维模型重建、建筑物单体结构化模型重建、纹理映射等功能模块，具备全自动大测区城市建模、半自动城市高精度精细实体模型重建等解决方案，可实现高效率、自动化、可交互的城市实体三维模型重建。
+							</p>
+
+							<img src="https://skyearth.org/LiDARPro/img/img_1.png" alt="img_1">
+							<p style="text-align: center"><strong>Figure 1.</strong> 模型重建</p>
+
+							<img src="https://skyearth.org/LiDARPro/img/img_2.png" alt="img_2">
+							<img src="https://skyearth.org/LiDARPro/img/img_3.png" alt="img_3">
+							<p style="text-align: center"><strong>Figure 2.</strong> 界面展示</p>
+
+							<h6>资源下载</h6>
+
+							<a href="https://skyearth.org/LiDARPro/data/test.zip" class="button donate">测试数据</a>
+							<a href="https://skyearth.org/LiDARPro/doc/manual.docx" class="button donate">操作手册</a>
+							<a href="https://skyearth.org/LiDARPro/src/demo.zip" class="button donate">试用版(30天,功能限制)</a>
+							<a href="https://skyearth.org/LiDARPro/src/LiDARPro-v1.0.zip" class="button donate">完整版(需硬件狗)</a>
+
+							<h6>联系方式</h6>
+
+							<li>
+								<a href="https://skyearth.org/zhangyj">张永军 教授</a>
+							</li>
+							<li>
+								<a href="https://skyearth.org/team/members/liuxinyi.html">刘欣怡 (联系方式: 13720260319)</a>
+							</li>
+							 
+						</div>
+					</div>
+					
+				</section>
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+			</section>
+			<footer id="footer">
+				<div id="lower-footer">
+					<div class="footer-link">
+						<a href="https://skyearth.org"><strong>地像天图课题组</strong></a> | 
+						<a href="https://skyearth.org/projects/">科研项目</a> | 
+						<a href="https://skyearth.org/publication/">论文著作</a> | 
+						<a href="https://skyearth.org/publication#properties">知识产权</a> | 
+						<a href="https://skyearth.org/team/">团队成员</a> | 
+						<a href="https://skyearth.org/blog/">博客新闻</a> | 
+						<a href="https://skyearth.org/research">科研资源</a> | 
+						<a href="https://skyearth.org/contact/">联系我们</a> | 
+						<a href="https://skyearth.org/zhangyj/">关于我们</a>
+					</div>
+					<div class="copyright">© 2020 SkyEarth. All Rights Reserved.
+						<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> 武汉大学</a> 
+						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">遥感信息工程学院</a>
+					</div>
+				</div>
+			</footer>
+			<a href="#" id="button-to-top"><i class="icons icon-caret-up"></i></a>
+		</div>
+		<script type="text/javascript" src="https://skyearth.org/js/bootstrap.min-3.1.1.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/modernizr.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/script.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function(){
+                enableMixItup();
+            });
+        </script>
+	</body>
+</html>
