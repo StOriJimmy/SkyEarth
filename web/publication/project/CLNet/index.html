@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Skyearth</title>
+		<link rel="shortcut icon" type="image/x-icon" href="https://skyearth.org/img/favicon.ico">
+		<link href="https://skyearth.org/css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/icomoon.min.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/skyearth-1.1.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			.no-fouc {display:none;}
+	  	</style>
+		<script src="https://skyearth.org/js/jquery-3.1.1.min.js"></script>
+		<script src="https://skyearth.org/js/jquery-ui-1.10.4.min.js"></script>
+		<script src="https://skyearth.org/js/jquery.queryloader2.min.js"></script>
+		<script type="text/javascript">
+		$('html').addClass('no-fouc');
+		$(document).ready(function(){
+			$('html').show();			
+			var window_w = $(window).width();
+			var window_h = $(window).height();
+			var window_s = $(window).scrollTop();			
+			$("body").queryLoader2({
+				backgroundColor: '#f2f4f9',
+				barColor: '#63b2f5',
+				barHeight: 4,
+				percentage:false,
+				deepSearch:true,
+				minimumTime:1000
+			});			
+		});
+		</script>		
+	</head>
+	
+	<body class="sticky-header-on tablet-sticky-header">
+		<div class="container">
+			<header id="header">
+				<div id="lower-header">
+					<div class="container">
+					<div id="menu-button">
+						<div><span></span><span></span><span></span></div>
+						<span>Menu</span>
+					</div>
+					<ul id="navigation">
+						<li class="home-button current-menu-item"><a href="https://en.skyearth.org"><i class="icons icon-home"></i></a></li>
+						<li ><a href="https://en.skyearth.org/team">Team</a>
+							<ul>
+								<li><a href="https://en.skyearth.org/team#prof">Professor</a></li>
+								<li><a href="https://en.skyearth.org/team#phd">PhD</a></li>
+								<li><a href="https://en.skyearth.org/team#grad">Master</a></li>
+								<li><a href="https://en.skyearth.org/team#alumni">Alumni</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://en.skyearth.org/projects">Projects</a></li>
+						<li ><a href="https://en.skyearth.org/publication">Publications</a>
+							<ul>
+								<li><a href="https://en.skyearth.org/publication#book">Books</a></li>
+								<li><a href="https://en.skyearth.org/publication#journal">Journal</a></li>
+								<li><a href="https://en.skyearth.org/publication#conference">Conference</a></li>
+								<li><a href="https://en.skyearth.org/publication#properties">Properties</a></li>
+							</ul>
+						</li>
+						<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
+						<li ><a href="https://en.skyearth.org/research">Research</a></li>
+						<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
+						<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
+						<li class="language-button "><a href="#">Chinese Version</a></li>
+					</ul>
+					</div>
+				</div>
+			</header>
+			<section id="content">
+				<section class="section page-heading">
+				
+					<h1>CLNet: Cross-Layer Convolutional Neural Network for Change Detection in Optical Remote Sensing Imagery</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / CLNet</p>
+				
+				</section>
+
+				<section class="section full-width-bg gray-bg">
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-6">
+									
+							<h6>CLNet: Cross-Layer Convolutional Neural Network for Change Detection in Optical Remote Sensing Imagery</h6>
+							
+							<p><i class="icon icon-user icon-before"></i>Zhi Zheng, Yi Wan*, Yongjun Zhang*, Sizhe Xiang, Daifeng Peng and Bin Zhang</p>
+
+							<h6>Abstract</h6>
+							<p style="text-align: justify;">
+								Change detection plays a crucial role in observing earth surface transition and has been widely investigated using deep learning methods. However, the current deep learning methods for pixel-wise change detection still suffer from limited accuracy, mainly due to their insufficient feature extraction and context aggregation. To address this limitation, we propose a novel Cross Layer convolutional neural Network (CLNet) in this paper, where the UNet structure is used as the backbone and newly designed Cross Layer Blocks (CLBs) are embedded to incorporate the multi-scale features and multi-level context information. The designed CLB starts with one input and then split into two parallel but asymmetric branches, which are leveraged to extract the multi-scale features by using different strides; and the feature maps, which come from the opposite branches but have the same size, are concatenated to incorporate multi-level context information. The designed CLBs aggregate the multi-scale features and multi-level context information so that the proposed CLNet can reuse extracted feature information and capture accurate pixel-wise change in complex scenes. Quantitative and qualitative experiments were conducted on a public very-high-resolution satellite image dataset (VHR-Dataset), a newly released building change detection dataset (LEVIR-CD Dataset) and an aerial building change detection dataset(WHU Building Dataset). The CLNet reached an F1-score of 0.921 and an overall accuracy of 98.1% with the VHR-Dataset, an F1-score of 0.900 and an overall accuracy of 98.9% with the LEVIR-CD Dataset, and an F1-score of 0.963 and an overall accuracy of 99.7% with the WHU Building Dataset. The experimental results with all the selected datasets showed that the proposed CLNet outperformed several state-of-the-art (SOTA) methods and achieved competitive accuracy and efficiency trade-offs.
+							</p>
+
+							<img src="https://skyearth.org/publication/project/CLNet/img/img_1.jpg" alt="img_1">
+							<p style="text-align: center"><strong>Figure 1.</strong> </p>
+
+							<h6>Download</h6>
+
+							<a href="https://github.com/qi-zhe/CLNet/tree/master" class="button donate">Code</a>
+							
+						</div>
+					</div>
+					
+					
+				</section>
+				<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.com/" >遥感信息工程学院</a></div>
+			</section>
+			<footer id="footer">
+				<div id="lower-footer">
+					<div class="footer-link">
+						<a href="https://en.skyearth.org"><strong>SkyEarth</strong></a> | 
+						<a href="https://en.skyearth.org/projects/">Projects</a> | 
+						<a href="https://en.skyearth.org/publication/">Publications</a> | 
+						<a href="https://en.skyearth.org/publication#properties">Properties</a> | 
+						<a href="https://en.skyearth.org/team/">Team</a> | 
+						<a href="https://en.skyearth.org/blog/">Blog</a> | 
+						<a href="https://skyearth.org/research">Research</a> | 
+						<a href="https://en.skyearth.org/contact/">Contact</a> | 
+						<a href="https://en.skyearth.org/zhangyj/">About</a>
+					</div>						
+					<div class="copyright">© 2020 SkyEarth. All Rights Reserved.
+						<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> Wuhan University</a> 
+						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">School of Remote Sensing and Information Engineering</a>
+						<a> <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275854917'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275854917%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></a>
+					</div>
+				</div>
+			</footer>
+			<a href="#" id="button-to-top"><i class="icons icon-caret-up"></i></a>
+		</div>
+		<script type="text/javascript" src="https://skyearth.org/js/bootstrap.min-3.1.1.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/modernizr.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/jquery.mixitup.js"></script>
+		<script type="text/javascript" src="https://skyearth.org/js/script.js"></script>
+		<script type="text/javascript">
+            $(document).ready(function(){
+                enableMixItup();
+            });
+        </script>
+	</body>
+</html>
