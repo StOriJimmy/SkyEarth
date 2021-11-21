@@ -573,6 +573,23 @@ function enableAccordions(){
 		});
 	
 	});	
+
+	/* Link Toggles */
+	$('.toggle-link').each(function(){
+			
+		var target = $(this).attr('href');
+		$(target).hide();
+		
+		$(this).click(function(e){
+			
+			e.preventDefault();
+			
+			var target = $(this).attr('href');
+			$(target).slideToggle(300);
+			
+		});
+		
+	});
 }
 
 /* Tabs */
