@@ -8,8 +8,18 @@
 		<link href="https://skyearth.org/css/bootstrap.min-3.1.1.css" rel="stylesheet" type="text/css">
 		<link href="https://skyearth.org/css/icomoon.min.css" rel="stylesheet" type="text/css">
 		<link href="https://skyearth.org/css/skyearth-1.1.css" rel="stylesheet" type="text/css">
+		<link href="https://skyearth.org/css/markdown-dark.css" rel="stylesheet" type="text/css" />
+		<link href="https://skyearth.org/css/markdown-light.css" rel="stylesheet" type="text/css" />
+		<link href="https://skyearth.org/css/markdown.css" rel="stylesheet" type="text/css" />
 		<style type="text/css">
 			.no-fouc {display:none;}
+			.markdown-body {
+        		box-sizing: border-box;
+        		min-width: 200px;
+        		max-width: 980px;
+        		margin: 0 auto;
+        		padding: 45px;
+    		}
 	  	</style>
 		<script src="https://skyearth.org/js/jquery-3.1.1.min.js"></script>
 		<script src="https://skyearth.org/js/jquery-ui-1.10.4.min.js"></script>
@@ -30,7 +40,8 @@
 				minimumTime:1000
 			});			
 		});
-		</script>		
+		</script>
+		
 	</head>
 	
 	<body class="sticky-header-on tablet-sticky-header">
@@ -85,7 +96,7 @@
 									
 							<h6>Generation of Concise 3D Building Model from Dense Meshes by Extracting and Completing Planar Primitives</h6>
 							
-							<p><i class="icon icon-user icon-before"></i>Xianzhang Zhu, Xinyi Liu*, Yongjun Zhang*, Senyuan Wang and Chen Jia</p>
+							<p><i class="icon icon-user icon-before"></i>Xinyi Liu, Xianzhang Zhu*, Yongjun Zhang*, Senyuan Wang and Chen Jia</p>
 
 							<h6>Abstract</h6>
 							<p style="text-align: justify;">
@@ -95,9 +106,43 @@
 							<img src="https://skyearth.org/publication/project/PCBP/img/img_1.jpg" alt="img_1">
 							<p style="text-align: center"><strong>Figure 1.</strong> </p>
 
+							<div id="show_document_0" style="margin: 0 auto; background-color:honeydew">
+								<div class="js_md_content_default" style="display: none;">
+Dataset of the this paper is now available for downloading:
+----------------------------
+****
+Open Data for PCBP
+============================
+
+The input data and the intermediate result of plane segmentation are open for research.
+
+The data covers the experimental results as shown in Fig. 10 - Fig. 16. 
+
+**Dublin** : Experiments in Fig. 14 - Fig. 16
+- off_original : original input mesh data, generated from LiDAR point clouds
+- result : the plane segmentation results
+
+**Experimental data** : Each folder contains the original input mesh data (\*\*.off) and the plane segmentation results (\*\*_segcc.ply)
+- Block : Fig.10(b); Fig. 11 (top row); Fig. 12 (top row)
+- Cluster : Fig.10(d)
+- Dormitory : Fig.10(c); Fig. 11 (bottom row)
+- House_a : Fig.10(e); Fig. 12 (middle row)
+- House_b : Fig.10(f); Fig. 12 (bottom row)
+- Triumphal Arch : Fig.10(a)
+								</div>
+								<div class="markdown-body js_md_content"></div>
+								<script src="https://skyearth.org/js/marked.min.js"></script>
+								<script>
+									var viewid = '0';
+									var content = $('#show_document_'+viewid).find('.js_md_content_default').text();
+									$('#show_document_'+viewid).find('.js_md_content').html(marked(content));
+								</script>
+							</div>
+
 							<h6>Download</h6>
 
-							<a href="" class="button donate">Dataset</a>
+							<a href="https://skyearth.org/publication/project/PCBP/PCBP_data.rar" class="button donate">Dataset</a>
+							<a href="https://skyearth.org/publication/project/PCBP/ReadMe.md" class="button donate">ReadMe</a>
 							
 						</div>
 					</div>
@@ -137,5 +182,6 @@
                 enableMixItup();
             });
         </script>
+		
 	</body>
 </html>
