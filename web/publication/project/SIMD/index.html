@@ -62,7 +62,7 @@
 							</ul>
 						</li>
 						<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
-						<li ><a href="https://skyearth.org/research">Research</a></li>
+						<li ><a href="https://en.skyearth.org/research">Research</a></li>
 						<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
 						<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
 						<li class="language-button "><a href="#">Chinese Version</a></li>
@@ -73,8 +73,8 @@
 			<section id="content">
 				<section class="section page-heading">
 				
-					<h1>Multi-modal Remote Sensing Image Matching (CoFSM)</h1>
-					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / CoFSM</p>
+					<h1>SIMD: Self-similarity Index Map for Multi-modal Remote Sensing Image Matching</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / SIMD</p>
 				
 				</section>
 
@@ -83,18 +83,18 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-6">
 									
-							<h6>Multi-modal Remote Sensing Image Matching Considering Co-occurrence Filter</h6>
+							<h6>SIMD: Self-similarity Index Map for Multi-modal Remote Sensing Image Matching</h6>
 							<h6>Abstract</h6>
-							<p>IEEE Transactions on Image Processing, 2022, vol.31, pp.2584-2597</p>
-							<p style="text-align: justify;">Traditional image feature matching methods cannot obtain satisfactory results for multi-model remote sensing images (MRSIs) in most cases because different imaging mechanisms bring significant nonlinear radiation distortion differences (NRDs) and complicated geometric distortion. The key to MRSI matching is trying to weak or eliminating the NRD and extract more edge features. This paper introduces a new robust MRSI matching method based on co-occurrence filter (CoF) space matching, space matching CoFSM. Our algorithm has three steps: (1) a new co-occurrence scale space based on CoF is constructed, and the feature points in the new scale space are extracted by the optimized image gradient; (2) the gradient location and orientation histogram algorithm is used to construct a 152-dimensional log-polar descriptor, which makes the multi-modal image description more robust; and (3) a position-optimized Euclidean distance function is established, which is used to calculate the displacement error of the feature points in the horizontal and vertical directions to optimize the matching distance function. The optimization results then are rematched, and the outliers are eliminated using a fast sample consensus algorithm. We performed comparison experiments on our CoFSM method with the SIFT, PSO-SIFT, and RIFT methods using a multi-modal image dataset. The algorithms of each method were comprehensively evaluated both qualitatively and quantitatively. Our experimental results show that our proposed CoFSM method can obtain satisfactory results both in the number of corresponding points and the accuracy of its RMSEs. The average number of obtained matches is namely 489.52 of CoFSM, and 412.52 of RIFT. The average RMSE of matching accuracy is namely 1.897 pixels of CoFSM, 1.898 pixels of RIFT. As mentioned earlier, the matching effect of the proposed method was significantly greater than the three state-of-art methods. Our proposed CoFSM method achieved good effectiveness and robustness.</p>
-							<a href="https://ieeexplore.ieee.org/document/9733789">[Link]</a>
-							<img src="https://skyearth.org/publication/project/CoFSM/img/img_1.jpg" alt="img_1">
-							<p style="text-align: center"><strong>Figure 1.</strong> Dataset overview</p>
+							<p style="text-align: justify;">
+								Geometric registration with point matches is the key to multi-modal remote sensing data fusion. However, the different imaging mechanisms of multi-modal remote sensing images (MRSIs) can lead to serious non-linear radiation distortion and significant differences in texture details, making the matching of MRSIs very difficult. In this paper, we propose a novel self-similarity index map (SSIM) based on the MRSI matching method. Our SSIM method includes an extended function to compute the sum of the square differences within an image window as the self-similarity value, a 3D gaussian convolution function to optimize the self-similarity structures and weaken the influence of the image noise, and a SSIM which obtains the stable and robust image features by calculating the maximum of the self-similarity indices. Our proposed SSIM method can deal with limited-scale differences and rotations and uses a coarse-to-fine strategy to obtain accurate corresponding points. A dataset with six types of MRSIs was used for verification. Our experimental results confirmed that our proposed SSIM method outperformed state-of-the-art methods as far as the number of correct matches, the ratio of correct matches, and the accuracy of the corresponding points. Executable programs of SSIM and MRSI datasets are published: https://skyearth.org/publication/project/SSIM/ 
+							</p>
+
+							<img src="https://skyearth.org/publication/project/SIMD/img_1.jpg" alt="img_1">
 
 							<h6>Download</h6>
 
-							<a href="https://skyearth.org/publication/project/CoFSM/data/MRSIDatasets.zip" class="button donate">Dataset</a>
-							<a href="https://skyearth.org/publication/project/CoFSM/data/CoFSM_demo.zip" class="button donate">Demo</a>
+							<a href="https://skyearth.org/publication/project/SIMD/MRSI_Datasets.rar" class="button donate">MRSI Datasets</a>
+							<a href="https://skyearth.org/publication/project/SIMD/SSIM_Code.rar" class="button">Code</a>
 							
 						</div>
 					</div>

@@ -62,7 +62,7 @@
 							</ul>
 						</li>
 						<li ><a href="https://en.skyearth.org/blog">Blog</a></li>
-						<li ><a href="https://skyearth.org/research">Research</a></li>
+						<li ><a href="https://en.skyearth.org/research">Research</a></li>
 						<li ><a href="https://en.skyearth.org/contact">Contact</a></li>
 						<li ><a href="https://en.skyearth.org/zhangyj">About</a></li>
 						<li class="language-button "><a href="#">Chinese Version</a></li>
@@ -73,8 +73,8 @@
 			<section id="content">
 				<section class="section page-heading">
 				
-					<h1>Multi-modal Remote Sensing Image Matching (CoFSM)</h1>
-					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / CoFSM</p>
+					<h1>MoTIF: Multi-orientation tensor index feature descriptor for SAR-optical image registration</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / MoTIF</p>
 				
 				</section>
 
@@ -83,18 +83,18 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-6">
 									
-							<h6>Multi-modal Remote Sensing Image Matching Considering Co-occurrence Filter</h6>
+							<h6>MoTIF: Multi-orientation tensor index feature descriptor for SAR-optical image registration</h6>
 							<h6>Abstract</h6>
-							<p>IEEE Transactions on Image Processing, 2022, vol.31, pp.2584-2597</p>
-							<p style="text-align: justify;">Traditional image feature matching methods cannot obtain satisfactory results for multi-model remote sensing images (MRSIs) in most cases because different imaging mechanisms bring significant nonlinear radiation distortion differences (NRDs) and complicated geometric distortion. The key to MRSI matching is trying to weak or eliminating the NRD and extract more edge features. This paper introduces a new robust MRSI matching method based on co-occurrence filter (CoF) space matching, space matching CoFSM. Our algorithm has three steps: (1) a new co-occurrence scale space based on CoF is constructed, and the feature points in the new scale space are extracted by the optimized image gradient; (2) the gradient location and orientation histogram algorithm is used to construct a 152-dimensional log-polar descriptor, which makes the multi-modal image description more robust; and (3) a position-optimized Euclidean distance function is established, which is used to calculate the displacement error of the feature points in the horizontal and vertical directions to optimize the matching distance function. The optimization results then are rematched, and the outliers are eliminated using a fast sample consensus algorithm. We performed comparison experiments on our CoFSM method with the SIFT, PSO-SIFT, and RIFT methods using a multi-modal image dataset. The algorithms of each method were comprehensively evaluated both qualitatively and quantitatively. Our experimental results show that our proposed CoFSM method can obtain satisfactory results both in the number of corresponding points and the accuracy of its RMSEs. The average number of obtained matches is namely 489.52 of CoFSM, and 412.52 of RIFT. The average RMSE of matching accuracy is namely 1.897 pixels of CoFSM, 1.898 pixels of RIFT. As mentioned earlier, the matching effect of the proposed method was significantly greater than the three state-of-art methods. Our proposed CoFSM method achieved good effectiveness and robustness.</p>
-							<a href="https://ieeexplore.ieee.org/document/9733789">[Link]</a>
-							<img src="https://skyearth.org/publication/project/CoFSM/img/img_1.jpg" alt="img_1">
-							<p style="text-align: center"><strong>Figure 1.</strong> Dataset overview</p>
+							<p style="text-align: justify;">
+								The inherent speckle noise in synthetic aperture radar (SAR) images and the significant differences between SAR and optical images in nonlinear radiation give rise to the great difficulty in computing similarity between image features, improving detection accuracy of corresponding points and the efficiency of image matching, thus making the registration of SAR and optical images a long-standing challenging task. To address these issues, a new SAR-optical image registration method was proposed in this paper, namely, Multi-orientation Tensor Index Feature (MoTIF), which is characterized by a lightweight feature descriptor. Specifically, we firstly established a diffusion tensor model based on the information of image gradient orientation. Then, the model was parameterized using polar coordinates to help identify the MoTIF and get the array of indices of maximum value, with which we could draw a multi-orientation index map and thereupon construct the feature vector descriptors. To evaluate the proposed method, seven representative SAR-optical image pairs were tested along with a comparison with other four state-of-the-art methods. Results show that our MoTIF method outperforms the other methods in that it substantially de-speckles SAR images, overcomes nonlinear radiation distortions caused by the differences between SAR and optical images, and achieves high precision and efficiency in image registration. The average number of correct matches (NCM) of 151.0 and the root of mean-squared error (RMSE) of 1.66 pixels obtained by utilizing MoTIF with lower time consumption adds more evidence to its superior performance. The time consumption of the MoTIF method is better than that of the other four methods, and the calculation speed is 4 times faster than that of the LGHD method. 
+							</p>
+
+							<img src="https://skyearth.org/publication/project/MoTIF/img_1.jpg" alt="img_1">
 
 							<h6>Download</h6>
 
-							<a href="https://skyearth.org/publication/project/CoFSM/data/MRSIDatasets.zip" class="button donate">Dataset</a>
-							<a href="https://skyearth.org/publication/project/CoFSM/data/CoFSM_demo.zip" class="button donate">Demo</a>
+							<a href="https://skyearth.org/publication/project/MoTIF/Images_Datasets.rar" class="button donate">Images Datasets</a>
+							<a href="https://skyearth.org/publication/project/MoTIF/MoTIF.rar" class="button">Code</a>
 							
 						</div>
 					</div>
