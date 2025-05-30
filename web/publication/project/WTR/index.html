@@ -73,8 +73,8 @@
 			<section id="content">
 				<section class="section page-heading">
 				
-					<h1>Robust Line Segment Matching across Views via Ranking the Line-Point Graph (GLSM)</h1>
-					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> /GLSM</p>
+					<h1>Weak texture remote sensing image matching based on hybrid domain features and adaptive	description method</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / WTR</p>
 				
 				</section>
 
@@ -82,47 +82,21 @@
 					
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-6">
-
-							<img src="https://skyearth.org/publication/project/GLSM/img/dublin.jpg" alt="dublin">
-															
-							<h6>● Abstract</h6>
+									
+							<h6>Weak texture remote sensing image matching based on hybrid domain features and adaptive	description method</h6>
+							<h6>Abstract</h6>
 							<p style="text-align: justify;">
-								 Line segment matching in two or multiple views is helpful to 3D reconstruction and pattern
-recognition. To fully utilize the geometry constraint of different features for line segment matching, a
-novel graph-based algorithm denoted as GLSM (Graph-based Line Segment Matching) is proposed in
-this paper, which includes: (1) the employment of three geometry types, i.e., homography, epipolar,
-and trifocal tensor, to constrain line and point candidates across views; (2) the method of unifying
-different geometry constraints into a line-point association graph for two or multiple views; and (3) a
-set of procedures for ranking, assigning, and clustering with the line-point association graph. The
-experimental results indicate that GLSM can obtain sufficient matches with a satisfactory accuracy in
-both two and multiple views. Moreover, GLSM can be employed with large image datasets. 						
+								Weak texture remote sensing image (WTRSI) has characteristics such as low reflectivity, high similarity of neighbouring pixels and insignificant differences between regions. These factors cause difficulties in feature extraction and description, which lead to unsuccessful matching. Therefore, this paper proposes a novel hybrid-domain features and adaptive description (HFAD) approach to perform WTRSI matching. This approach mainly provides two contributions: (1) a new feature extractor that combines both the spatial domain scale space and the frequency domain scale space is established, where a weighted least square filter combined with a phase consistency filter is used to establish the frequency domain scale space; and (2) a new log-polar descriptor of adaptive neighbourhood (LDAN) is established, where the neighbourhood window size of each descriptor is calculated according to the log-normalised intensity value of feature points. This article prepares some remote sensing images under weak texture scenes which include deserts, dense forests, waters, ice and snow, and shadows. The data set contains 50 typical image pairs, on which the proposed HFAD was demonstrated and compared with state-of-the-art matching algorithms (RIFT, HOWP, KAZE, POS-SIFT and SIFT). The statistical results of the comparative experiment show that the HFAD can achieve the accuracy of matching within two pixels and confirm that the proposed algorithm is robust and effective.
 							</p>
-							<h6>● Implementation</h6>
+
+							<img src="https://skyearth.org/publication/project/WTR/img/img_1.jpg" alt="img_1">
+							<p style="text-align: center"><strong>Figure 1.</strong> Results overview</p>
+
+							<h6>Download</h6>
+
+							<a href="https://skyearth.org/publication/project/WTR/data/WTR_Datasets.rar" class="button donate">Experimental Data</a>
+							<a href="https://doi.org/10.1111/phor.12464" class="button">Related Publications</a>
 							
-							<p style="text-align: justify;">
-								+ Before running the program, you need to create four folders:<br>
-									(1) "cameras" contains the camera matrix;<br>  
-									(2) "images" contains the images;<br>
-									(3) "process" contains a "task.txt" to give the stereos;<br>
-									(4) an empty folder named "visual"<br>
-								You can refer to the "example" folder for details.<br>
-								+ The implementation of GLSM runs successfully in MATLAB R2014 with WIN10 system and VS2010.<br>
-								+ One need to run the four MATLAB scripts for the giving dataset. They are <br>"A_Load_Data.m",<br>"B_Construct_Graph.m",<br>"C_BigRRWM",<br> and "D_cluster".<br>
-								+ After running "C_BigRRWM.m", you can use "Draw_Match_4_Stereo.m" to draw the match results for the <br>specific stereo.<br>
-								<img src="https://skyearth.org/publication/project/GLSM/img/drawMatches.jpg" alt="match"><br>
-								+. After running "D_cluster.m", the 3D line segments are saved in "visual\D3lines.obj"<br>
-									(This little maneuver may cost us several days for large datasets and I am
-									trying to improve it.)
-						
-							</p>
-
-							<h6></h6>
-
-
-							<a href="https://skyearth.org/publication/project/GLSM/data/GLSM-imp.rar" class="button donate">Implementations</a>
-
-							<a href="https://skyearth.org/publication/papers/2020_GLSM.pdf" class="button donate">Paper</a>
-
 						</div>
 					</div>
 					

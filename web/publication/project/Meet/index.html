@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MEET</title>
+	<link type="text/css" href="https://skyearth.org/publication/project/Meet/head/system.css" rel="stylesheet"/>
+	<link type="text/css" href="https://skyearth.org/publication/project/Meet/head/custom.css" rel="stylesheet"/>
+	<script type="text/javascript" src="https://skyearth.org/publication/project/Meet/head/custom.js"></script>
+
+
+
+	<style>
+        ol {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .subcategory {
+            font-size: 0.8em;
+            margin-left: 2px;
+        }
+
+        .category {
+            font-weight: bold;
+            font-size: 1em;
+            margin-top: 15px;
+        }
+        .category11 {
+            font-weight: bold;
+            font-size: 1em;
+        }
+		.justified-text {
+            text-align: justify;
+            text-justify: inter-word; /* 使单词之间的间距更均匀 */
+        }
+
+    </style>
+
+
+
+</head>
+
+<body marginheight="0">
+<div align="center"><h1>MEET: A Million-Scale Dataset for Fine-Grained Geospatial Scene Classification with Zoom-Free Remote Sensing Imagery<br></h1></div>
+
+<p style="text-align: center;">Yansheng Li, Yuning Wu, Gong Cheng, Chao Tao, Bo Dang, Yu Wang, Jiahao Zhang, Chuge Zhang, Yiting Liu, <br>Xu Tang, Jiayi Ma, and Yongjun Zhang</p>
+
+
+<!--<p style="text-align: center;">Yansheng Li, Yuning Wu</p> -->
+
+
+	<!--
+<div style="border: 18px solid #FFFFFF"></div>
+<p style="font-size: 12px; color: orange; text-align: center">The <b>Five-Billion-Pixels</b> dataset is released!</p>
+        -->
+
+<p style="text-align: center;">
+	<a href="https://www.ieee-jas.net/article/doi/10.1109/JAS.2025.125324?pageType=en"><b>[Paper]</b></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	<a href="https://github.com/jerrywyn/MEET_code"><b>[Github]</b></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	<a href="#citation"><b>[Citation]</b></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+	<!--<a href="https://pan.baidu.com/s/1qFgzhypLUAA7G0sGR6eDwA?pwd=9pny"><b>[Download MEET]</b></a>-->
+
+</p>
+
+
+
+
+<!--<h3>⭐️ Highlights </h3>-->
+<!--<p> STAR, the first large-scale dataset  for OBD and SGG in <b> large-size </b> VHR SAI. <p>-->
+
+<h3>Introduction</h3>
+<p class="justified-text">
+Accurate fine-grained geospatial scene classification using remote sensing imagery is essential for a wide range of applications. However, existing approaches often rely on manually zooming remote sensing images at different scales to create typical scene samples. This approach fails to adequately support the fixed-resolution image interpretation requirements in real-world scenarios.
+To address this limitation, we introduce the Million-scale finE-grained geospatial scEne classification dataseT (MEET), which contains over 1.03 million zoom-free remote sensing scene samples, manually annotated into 80 fine-grained categories. In MEET, each scene sample follows a scene-in-scene layout, where the central scene serves as the reference, and auxiliary scenes provide crucial spatial context for fine-grained classification.
+Moreover, to tackle the emerging challenge of scene-in-scene classification, we present the Context-Aware Transformer (CAT), a model specifically designed for this task, which adaptively fuses spatial context to accurately classify the scene samples. CAT adaptively fuses spatial context to accurately classify the scene samples by learning attentional features that capture the relationships between the center and auxiliary scenes.
+Based on MEET, we establish a comprehensive benchmark for fine-grained geospatial scene classification, evaluating CAT against 11 competitive baselines. The results demonstrate that CAT significantly outperforms these baselines, achieving a 1.88% higher balanced accuracy (BA) with the Swin-Large backbone, and a notable 7.87% improvement with the Swin-Huge backbone. Further experiments validate the effectiveness of each module in CAT and show the practical applicability of CAT in the urban functional zone mapping.
+</p>
+<br>
+<br>
+<img src="https://skyearth.org/publication/project/Meet/figure/web_intro.png" width="800px">
+<br>
+<br>
+
+<p class="justified-text">
+Fig. (a) shows that the existing FGSC dataset forms typical scene samples by manually zooming remote sensing images at different rates.
+In Fig. (b), the center scene outlined in <span style="color: red;">red</span>, is the basic unit for classification, while the surrounding scene outlined in <span style="color: green;">green</span> and global scene outlined in <span style="color: blue;">blue</span> serve as auxiliary contextual images.
+With zoom-free samples and auxiliary scenes, MEET addresses inter-class and intra-class confusion in zoom-free image samples.
+
+
+Fig. (c) shows remote sensing image scene sample in MEET with the scene-in-scene layout. 
+For the samples from first row and second row, models fail to predict the fine-grained scene category using only the center scene but has a great potential to obtain the right fine-grained scene category using both the center scene and the auxiliary scenes.
+</p>
+
+
+<h3>MEET Dataset</h3>
+<p class="justified-text"> MEET dataset is comprised of over 1.03 million sample annotation pairs, encompassing 80 fine-grained scene categories. Samples are collected globally and include multi-level spatial context information. The large sample size, the granularity of categories, and the inclusion of spatial context imagery make MEET a valuable dataset.	<br>
+</p>
+
+	MEET dataset has five remarkable and important advantages:
+
+<ol>
+	<li class="category11">Fine Granularity of Categories</li>
+	<li class="category11">Large Volume of Samples</li>
+	<li class="category11">High Intra-class Variability and Inter-class Similarity</li>
+
+</ol> </li>
+
+
+
+
+
+
+
+
+<style>
+	.tabMenu ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding: 0;
+		margin: 0;
+		align-items: center;
+	}
+
+	.tabMenu ul li {
+		white-space: nowrap;
+	}
+</style>
+
+
+
+<div style="border: 9px solid #FFFFFF"></div>
+<div id = "tab1" class = "tabMenu">
+	<ul>
+		<li class="on"><h4>Distribution</h4></li>
+	<li class="off"><h4>Dataset Overview</h4></li>
+        <li class="off"><h4>Download Links</h4></li>
+        </ul>
+
+
+		<div id="thirdPage-tab1" class="show">
+			<img src="https://skyearth.org/publication/project/Meet/figure/0720_distribute.png" width="800px">
+	
+			</div>
+
+	<div id="firstPage-tab1" class="hide">
+	<img src="https://skyearth.org/publication/project/Meet/figure/0720_allcase.png" width="800px">
+        </div>
+
+
+
+        <div id="secondPage-tab1" class= "hide">
+	    <!--<img src="/figure/0720_longtail.jpg" width="800px">-->
+		<p>
+			<ol>
+				<li>Baidu Drive: <a href="https://pan.baidu.com/s/1qFgzhypLUAA7G0sGR6eDwA?pwd=9pny">Link</a> <br>   <!-- Link (extraction code: urxy) --></li>
+				<!--<li>Google Drive: <a href="">Link</a>	</li>-->
+			</ol>
+		   
+		   
+	   </p>
+      	</div>
+
+</div>
+<div style="border: 9px solid #FFFFFF"></div>
+
+
+
+
+<h3>Benchmark</h3>
+<p class="justified-text">  
+	To flexibly and efficiently exploit the scene-in-scene layout in FGSC with zoom-free RSI, this paper introduces CAT, a novel approach specifically tailored for this task. CAT incorporates an adaptive context fusion module to effectively extract multi-scale contextual features from the transformer backbone. To ensure performance without excessively increasing parameters, we utilize parameter-efficient fine-tuning (PEFT) methods to finetune the backbone, instead of training from scratch or parameter synchronization. Additionally, we introduce multi-level supervision through independent classification heads during training. This improves feature learning at each level and mitigates overfitting that can arise from auxiliary scenes.
+	
+</p>
+
+
+
+	<div style="border: 9px solid #FFFFFF"></div>
+	<div id = "tab2" class = "tabMenu">
+		<ul>
+		<li class="on"><h4>Baseline Methods</h4></li>
+			<li class="off"><h4>A Strong Baseline with the CAT</h4></li>
+			<li class="off"><h4>Benchmark Results</h4></li>
+			</ul>
+		<div id="firstPage-tab1" class="show">
+			<ol>
+				<span style="font-weight: bold;">Methods Generally Proposed for Natural Image Recognition</span>: InceptionNext, Resnet, HRNet, MaxViT, DAVit, Swin
+					 
+					 <span style="font-weight: bold;">Methods Specifically Proposed for RSI Scene Classification</span>: ARCNet, MF2CNet, GCSANet, DOFA, SkySense
+				
+			</ol>
+			</div>
+	
+			<div id="secondPage-tab1" class= "hide">
+				<br>
+				<img src="https://skyearth.org/publication/project/Meet/figure/0918method.jpg" width="800px">
+			  </div>
+			  <div id="secondPage-tab1" class= "hide">
+				<img src="https://skyearth.org/publication/project/Meet/figure/com_res_0101.jpg" width="800px">
+				  </div>
+	
+	</div>
+	<div style="border: 9px solid #FFFFFF"></div>
+
+
+
+
+
+
+
+
+<h3>Application Evaluation of Our MEET on Urban Functional Zone Mapping</h3>
+<p>To validate the the setting superiority of the zoom-free characteristic and scene-in-scene sample layout of our MEET dataset, we conduct experiments on urban functional zone mapping (UFZ). In the pilot application, UFZ aims to predict the land-use category of each fixed-resolution RSI block and considers 8 land-use categories.</p>
+
+<style>
+	.tabMenu ul {
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		padding: 0;
+		margin: 0;
+		align-items: center;
+	}
+
+	.tabMenu ul li {
+		white-space: nowrap;
+	}
+</style>
+
+
+<div style="border: 9px solid #FFFFFF"></div>
+<div id = "tab3" class = "tabMenu">
+	<ul>
+		<li class="on"><h4>Pilot area evaluation</h4></li>
+	<li class="off"><h4>Shanghai</h4></li>
+        <li class="off"><h4>Wuhan</h4></li>
+        </ul>
+		<div id="firstPage-tab111" class="show">
+			<img src="https://skyearth.org/publication/project/Meet//figure/ufz0_0101.jpg" width="800px">
+				</div>
+		
+				<div id="secondPage-tab111" class= "hide">
+					<img src="https://skyearth.org/publication/project/Meet//figure/ufz1_0101.jpg" width="800px">
+				  </div>
+		
+				  <div id="thirdPage-tab111" class= "hide">
+					<img src="https://skyearth.org/publication/project/Meet//figure/ufz2_0101.jpg" width="800px">
+					  </div>
+</div>
+<div style="border: 9px solid #FFFFFF"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="citation">Citation</h2>
+<p>If you find this work helpful for your research, please consider citing our paper:</p>
+<pre>
+<!--Yansheng Li, Yuning Wu, Gong Cheng, Chao Tao, Bo Dang, Yu Wang, Jiahao Zhang, Chuge Zhang, Yiting Liu, Xu Tang, Jiayi Ma and Yongjun Zhang. MEET: A Million-Scale Dataset for Fine-Grained Geospatial Scene Classification with Zoom-Free Remote Sensing Imagery. IEEE/CAA Journal of Automatica Sinica. 2025, DOI: 10.1109/JAS.2025.125324.-->
+
+Y. Li, Y. Wu, G. Cheng, C. Tao, B. Dang, Y. Wang, J. Zhang, C. Zhang, Y. Liu, X. Tang, J. Ma, and  Y. Zhang,  “MEET: A million-scale dataset for fine-grained geospatial scene classification with zoom-free remote sensing imagery,” IEEE/CAA J. Autom. Sinica, vol. 12, no. 5, pp. 1004–1023, May 2025. doi: 10.1109/JAS.2025.125324	
+<!--
+@article{li2024fine,
+  title={Fine-Grained Scene Graph Generation via Sample-Level Bias Prediction},
+  author={Li, Yansheng and Wang, Tingzhu and Wu, Kang and Wang, Linlin and Guo, Xin and Wang, Wenbin},
+  journal={arXiv preprint arXiv:2407.19259},
+  year={2024}
+}
+
+@article{luo2024sky,
+    title={SkySenseGPT: A Fine-Grained Instruction Tuning Dataset and Model for Remote Sensing Vision-Language Understanding},
+    author={Luo, Junwei and Pang, Zhen and Zhang, Yongjun and Wang, Tingzhu and Wang, Linlin and Dang, Bo and Lao, Jiangwei and Wang, Jian and Chen, Jingdong and Tan, Yihua and Li, Yansheng},
+    journal={arXiv preprint arXiv:2406.10100},
+    year={2024}}
+
+@article{li2024learning,
+    title={Learning to Holistically Detect Bridges From Large-Size VHR Remote Sensing Imagery},
+    author={Li, Yansheng and Luo, Junwei and Zhang, Yongjun and Tan, Yihua and Yu, Jin-Gang and Bai, Song},
+    journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+    volume={44},
+    number={11},
+    pages={7778--7796},
+    year={2024},
+    publisher={IEEE}}
+
+@inproceedings{deng2022hierarchical,
+    title={Hierarchical Memory Learning for Fine-grained Scene Graph Generation},
+    author={Deng, Youming and Li, Yansheng and Zhang, Yongjun and Xiang, Xiang and Wang, Jian and Chen, Jingdong and Ma, Jiayi},
+    booktitle={European Conference on Computer Vision},
+    pages={266--283},
+    year={2022},
+    organization={Springer}}
+-->
+</pre>
+
+
+
+
+
+</body>
+</html>

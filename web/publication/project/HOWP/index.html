@@ -73,8 +73,8 @@
 			<section id="content">
 				<section class="section page-heading">
 				
-					<h1>Robust Line Segment Matching across Views via Ranking the Line-Point Graph (GLSM)</h1>
-					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> /GLSM</p>
+					<h1>Histogram of the orientation of the weighted phase descriptor for multi-modal remote sensing image matching</h1>
+					<p class="breadcrumb"><a href="https://skyearth.org/research/">Home</a> / <a href="https://en.skyearth.org/publication">Publication</a> / HOWP</p>
 				
 				</section>
 
@@ -82,47 +82,21 @@
 					
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-6">
-
-							<img src="https://skyearth.org/publication/project/GLSM/img/dublin.jpg" alt="dublin">
-															
-							<h6>● Abstract</h6>
+									
+							<h6>Histogram of the orientation of the weighted phase descriptor for multi-modal remote sensing image matching</h6>
+							<h6>Abstract</h6>
 							<p style="text-align: justify;">
-								 Line segment matching in two or multiple views is helpful to 3D reconstruction and pattern
-recognition. To fully utilize the geometry constraint of different features for line segment matching, a
-novel graph-based algorithm denoted as GLSM (Graph-based Line Segment Matching) is proposed in
-this paper, which includes: (1) the employment of three geometry types, i.e., homography, epipolar,
-and trifocal tensor, to constrain line and point candidates across views; (2) the method of unifying
-different geometry constraints into a line-point association graph for two or multiple views; and (3) a
-set of procedures for ranking, assigning, and clustering with the line-point association graph. The
-experimental results indicate that GLSM can obtain sufficient matches with a satisfactory accuracy in
-both two and multiple views. Moreover, GLSM can be employed with large image datasets. 						
+								Multi-modal remote sensing image (MRSI) has nonlinear radiation distortion (NRD) and significant contrast differences to which image gradient features are usually sensitive. Although image phase features are more robust against NRD, they might not be much helpful in resolving the problems of directional inversion or phase extreme value mutations that are common in the phase feature calculation. To address these issues, a new MRSI matching method—"histogram of the orientation of weighted phase” (HOWP)—is proposed in this paper. This method distinguishes itself from other methods in three aspects: (1) a feature aggregation strategy is used to optimize feature points by extracting the corner and blob features separately; (2) a novel weighted phase orientation model is established to replace the traditional image gradient orientation features; and (3) a regularization-based log-polar descriptor is constructed to generate robust feature description vectors. To evaluate the performance of the proposed method, we selected 50 sets of typical MRSIs with translation, scale, and rotation differences for comparison with the other four state-of-the-art methods. The results show that our method is more resistant to radiometric distortion and the contrasting differences in MRSIs. It also performs better in tackling the problems of direction reversal and phase extreme value mutation, as evidenced by more, the number of correct matches (NCM). Since the method has improved the average NCM by 1.6–4.5 times, the average success rate by 35.5%, and the average rate of correct matches by 11.1% with an average root of mean-squared error of 1.93 pixels. Moreover, we have put forward an extended version of the HOWP method (Simplified-HOWP) when there is no image rotation, which manifests in an average 0.75 times improvement in NCM of Simplified-HOWP performance over that of the HOWP method. The executable code and test data are linked in https://skyearth.org/publication/project/HOWP/.
 							</p>
-							<h6>● Implementation</h6>
+
+							<img src="https://skyearth.org/publication/project/HOWP/img/img_1.jpg" alt="img_1">
+							<p style="text-align: center"><strong>Figure 1.</strong> 五种算法的对比结果</p>
+
+							<h6>Download</h6>
+
+							<a href="https://skyearth.org/publication/project/HOWP/data/Datasets.rar" class="button donate">Experimental Data</a>
+							<a href="https://skyearth.org/publication/project/HOWP/data/HOWP_Code.rar" class="button donate">Code</a>
 							
-							<p style="text-align: justify;">
-								+ Before running the program, you need to create four folders:<br>
-									(1) "cameras" contains the camera matrix;<br>  
-									(2) "images" contains the images;<br>
-									(3) "process" contains a "task.txt" to give the stereos;<br>
-									(4) an empty folder named "visual"<br>
-								You can refer to the "example" folder for details.<br>
-								+ The implementation of GLSM runs successfully in MATLAB R2014 with WIN10 system and VS2010.<br>
-								+ One need to run the four MATLAB scripts for the giving dataset. They are <br>"A_Load_Data.m",<br>"B_Construct_Graph.m",<br>"C_BigRRWM",<br> and "D_cluster".<br>
-								+ After running "C_BigRRWM.m", you can use "Draw_Match_4_Stereo.m" to draw the match results for the <br>specific stereo.<br>
-								<img src="https://skyearth.org/publication/project/GLSM/img/drawMatches.jpg" alt="match"><br>
-								+. After running "D_cluster.m", the 3D line segments are saved in "visual\D3lines.obj"<br>
-									(This little maneuver may cost us several days for large datasets and I am
-									trying to improve it.)
-						
-							</p>
-
-							<h6></h6>
-
-
-							<a href="https://skyearth.org/publication/project/GLSM/data/GLSM-imp.rar" class="button donate">Implementations</a>
-
-							<a href="https://skyearth.org/publication/papers/2020_GLSM.pdf" class="button donate">Paper</a>
-
 						</div>
 					</div>
 					
@@ -143,7 +117,7 @@ both two and multiple views. Moreover, GLSM can be employed with large image dat
 						<a href="https://en.skyearth.org/contact/">Contact</a> | 
 						<a href="https://en.skyearth.org/zhangyj/">About</a>
 					</div>						
-					<div class="copyright">© 2020 SkyEarth. All Rights Reserved.
+					<div class="copyright">© 2023 SkyEarth. All Rights Reserved.
 						<a href="http://www.whu.edu.cn/" target="_blank" title="武汉大学"> Wuhan University</a> 
 						<a href="http://rsgis.whu.edu.cn/" target="_blank" title="遥感">School of Remote Sensing and Information Engineering</a>
 						<a> <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1275854917'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1275854917%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></a>
