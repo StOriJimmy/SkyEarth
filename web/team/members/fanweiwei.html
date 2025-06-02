@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="./favicon.png">
+	<title>范伟伟</title>
+	<link href="../../css/bootstrap.min-3.1.1.css" rel="stylesheet">
+	<link href="../../css/icomoon.min.css" rel="stylesheet">
+	<link href="../../css/vCard.css" rel="stylesheet">    
+</head>
+<body>
+    <div class="container">
+    	<div class="card-block tab-content">
+    		<div id="header">
+   				<span><img class="team-card-avatar" src="fanweiwei.jpg" alt=""></span>
+   				<div style="padding-top: 30px;">
+   					<h3>范伟伟</h3>
+					<h5>2022级博士生</h5>
+   				</div>
+    		</div>
+			<div id="about">
+				<p >
+					<i class="icon icon-quote-left quato"></i>	
+				</p>
+			</div>
+			<hr>
+			<div id="profile">
+				
+				<h4><i class="icon icon-graduation-cap"></i> 学习经历</h4>
+				<p class="sm">
+					<grey>2014.09 - 2018.06</grey> | 山东农业大学 信息工程学院 本科<br/>
+					<grey>2018.09 - 2021.06</grey> | 东北林业大学 工程技术学院 硕士<br/>
+					<grey>2022.09 - 至今</grey> | 武汉大学 遥感信息工程学院 博士<br/>
+				</p>
+
+				<h4><i class="icon icon-tasks"></i> 项目经历</h4>
+				
+				<li>国家自然科学基金，联合地面移动激光雷达与无人机激光雷达技术的单木结构参数提取与三维建模。</li>
+				<li>黑龙江省自然科学基金，联合无人机激光雷达和高光谱数据的针阔混交林单木生物量反演研究。</li>			
+				
+			</div>
+
+			<hr>
+
+			<div id="portfolio">
+				<h4><i class="icon icon-pie-chart"></i> 主要研究方向</h4>			
+				<li>点云分割</li>
+                <li>隐式三维表达与三维重建</li>
+
+				<p></p>
+
+				<h4><i class="icon icon-bar-chart"></i> 论文成果</h4>
+				<li>Lin W, <strong>Fan W</strong>, Liu H, et al. Classification of handheld laser scanning tree point cloud based on different KNN algorithms and random forest algorithm[J]. Forests, 2021, 12(3): 292.</li>
+				<li><strong>Fan W</strong>, Liu H, Xu Y, et al. Comparison of estimation algorithms for individual tree diameter at breast height based on hand-held mobile laser scanning[J]. Scandinavian Journal of Forest Research, 2021, 36(6): 460-473.</li>
+
+			</div>
+
+			<hr>
+
+			<div id="contact">
+				<h4><i class="icon icon-address-book"></i> 联系方式</h4></h4>			  
+					  
+				<p class="sm">
+					<i class="icon icon-envelope"></i> - <a href="mailto:fanweiwei@whu.edu.cn">fanweiwei@whu.edu.cn</a><br/>
+				
+					<i class="icon icon-github"></i> - <a href="https://github.com/fanwei360">https://github.com/fanwei360</a><br/>
+				</p>
+			</div>
+
+        	<div class="copyrights">武汉大学 <a href="http://rsgis.whu.edu.cn">遥感信息工程学院</a></div>
+    		
+    	</div>
+    </div>
+
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/bootstrap.min-3.1.1.js"></script>
+	<script>
+		var trans_y = $(window).height() / 2 - $('.card-block').height() / 2;
+		if (trans_y > 0) {
+			$('.container').css("transform","translateY(" + trans_y + "px)");
+		}	
+	</script>    
+    
+  </body>
+</html>
