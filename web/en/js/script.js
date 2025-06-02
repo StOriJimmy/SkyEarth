@@ -1037,7 +1037,7 @@ function enableTencentMap(){
         center: center,
     });
 
-    var pos1 = new qq.maps.LatLng(30.525992, 114.360051);
+    var pos1 = new qq.maps.LatLng(30.526071, 114.362050);
     var marker1 = new qq.maps.Marker({ position: pos1, map: map });
     var info1 = new qq.maps.InfoWindow({
         map: map
@@ -1045,7 +1045,7 @@ function enableTencentMap(){
     qq.maps.event.addListener(marker1, 'click', function() {
         info1.open(); 
         info1.setContent('<div style="text-align:center;white-space:wrap;'+
-        'margin-bottom:-50px;">武汉大学遥感信息工程学院5号楼220机房</div>');
+        'margin-bottom:-50px;">武汉大学信息学部教学实验大楼12楼</div>');
         info1.setPosition(pos1); 
     });
 
