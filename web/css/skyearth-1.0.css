@@ -163,12 +163,6 @@ html[xmlns] .slides{display:block;}
 #main_flex_2 .slide h2{font-weight:700;}
 #main_flex_3{background:url(../img/slide3.jpg) no-repeat center;}
 #main_flex_3 .slide{padding-top:100px;}
-#main_flex_4{background:url(../img/slide4.jpg) no-repeat center;}
-#main_flex_4 .slide{padding-top:100px;}
-#main_flex_5{background:url(../img/slide5.jpg) no-repeat center;}
-#main_flex_5 .slide{padding-top:100px;}
-#main_flex_6{background:url(../img/slide6.jpg) no-repeat center;}
-#main_flex_6 .slide{padding-top:100px;}
 .owl-carousel-container{margin:0 -15px;}
 .testimonial-carousel+a.button{margin-top:-20px;}
 .owl-item{padding:0 15px;}
@@ -415,7 +409,6 @@ button.small{padding:5px 20px;}
 .social-buttons li:last-child{margin-right:0;}
 .social-icons li>a{display:block;padding-top:5px;width:35px;height:35px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background:#444;color:#fff;text-align:center;font-size:16px;}
 .social-icons .researchgate>a{border-top:1px solid #0cb;border-bottom:1px solid #0cb;background-color:#0cb;}
-.social-icons .mendeley>a{border-top:1px solid #fff;border-bottom:1px solid #fff;background-color:#fff;}
 .social-icons .googlescholar>a{border-top:1px solid #f17663;border-bottom:1px solid #cc4f42;background-color:#eb5b4c;}
 .social-icons .github>a{border-top:1px solid #24292e;border-bottom:1px solid #24292e;background-color:#24292e;}
 .social-icons .facebook>a{border-top:1px solid #24292e;border-bottom:1px solid #3a4e82;background-color:#4862a3;}
