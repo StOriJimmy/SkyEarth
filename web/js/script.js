@@ -1078,6 +1078,58 @@ function enableTencentMap(){
         info2.setPosition(pos2); 
     });
 }
+// 获取文章函数
+async function fetchLatestArticles(count = 5) {
+	  // 配置信息
+  const AUTHOR_ID = "55577971100";
+  const API_KEY = "e2bcb6dd4b03a4d5c1f7a94d77714ead";
+
+  const url = `https://api.elsevier.com/content/search/scopus?query=AU-ID(${AUTHOR_ID})&sort=-coverDate&count=${count}`;
+	
+  const response = await fetch(url, {
+    headers: { "X-ELS-APIKey": API_KEY }
+  });
+  
+  const data = await response.json();
+  return data["search-results"]?.entry || [];
+}
+
+// 渲染函数
+async function renderArticles(count = 5) {
+  try {
+    const articles = await fetchLatestArticles(count);
+    const container = document.getElementById("scopus-articles");
+	
+    if (!articles.length) {
+      container.innerHTML = "<p>无文章信息</p>";
+      return;
+    }
+	
+    let html = "<ul>";
+    articles.forEach(article => {
+		  const authors = article["dc:creator"] || "";
+      const title = article["dc:title"];
+      const journal = article["prism:publicationName"] || "JournalUnkown";
+      const doi = article["prism:doi"] || "#";
+      const year = article["prism:coverDate"]?.substring(0,4) || "N/A";
+		  const volume = article["prism:volume"] || "";
+		  const issue = article["prism:issueIdentifier"] || "0";
+		  const page = article["prism:pageRange"] || "";
+      html += `
+        <li>
+			  ${authors}, et al. (${year}) <a href="https://doi.org/${doi}" target="_blank">${title}</a>, 
+          <em>${journal}</em>, ${volume}(${issue}): ${page}.
+        </li>
+      `;
+    });
+	
+    container.innerHTML = html + "</ul>";
+  } catch (error) {
+    console.error("Load Error:", error);
+    document.getElementById("scopus-articles").innerHTML = 
+      "<p>Loaded error, refer to the console</p>";
+  }
+}
 
 $(document).ready(function(){
 	
